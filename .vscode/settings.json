@@ -1,0 +1,5 @@
+{
+	"python.linting.mypyEnabled": true,
+	"python.linting.enabled": true,
+	"python.pythonPath": "/Users/merden/anaconda3/envs/tmap/bin/python"
+}
