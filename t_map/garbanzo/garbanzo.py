@@ -19,3 +19,7 @@ class Garbanzo(ABC):
     @abstractmethod
     def get(self, i: int) -> Gene:
         ...
+
+    @abstractmethod
+    def __len__(self) -> int:
+        ...

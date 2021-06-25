@@ -927,6 +927,14 @@
         "documentation": {}
     },
     {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
         "label": "etree",
         "importPath": "lxml",
         "description": "lxml",
@@ -994,11 +1002,59 @@
         "documentation": {}
     },
     {
+        "label": "Iterator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Garbanzo",
         "importPath": "t_map.garbanzo.garbanzo",
         "description": "t_map.garbanzo.garbanzo",
         "isExtraImport": true,
         "detail": "t_map.garbanzo.garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "Garbanzo",
+        "importPath": "t_map.garbanzo.garbanzo",
+        "description": "t_map.garbanzo.garbanzo",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
         "documentation": {}
     },
     {
@@ -1042,11 +1098,21 @@
         "documentation": {}
     },
     {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
+        "label": "pathlib",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "dataclasses",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
         "documentation": {}
     },
     {
@@ -1055,6 +1121,46 @@
         "description": "t_map.garbanzo.edgelist",
         "isExtraImport": true,
         "detail": "t_map.garbanzo.edgelist",
+        "documentation": {}
+    },
+    {
+        "label": "EdgeListGarbanzo",
+        "importPath": "t_map.garbanzo.edgelist",
+        "description": "t_map.garbanzo.edgelist",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.edgelist",
+        "documentation": {}
+    },
+    {
+        "label": "EdgeListGarbanzo",
+        "importPath": "t_map.garbanzo.edgelist",
+        "description": "t_map.garbanzo.edgelist",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.edgelist",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Huri",
+        "importPath": "t_map.garbanzo.huri",
+        "description": "t_map.garbanzo.huri",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.huri",
+        "documentation": {}
+    },
+    {
+        "label": "Hummus",
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "isExtraImport": true,
+        "detail": "t_map.hummus.hummus",
         "documentation": {}
     },
     {
@@ -6393,6 +6499,15 @@
         "documentation": {}
     },
     {
+        "label": "Huri",
+        "kind": 6,
+        "importPath": "t_map.garbanzo.huri",
+        "description": "t_map.garbanzo.huri",
+        "peekOfCode": "class Huri(EdgeListGarbanzo):\n    HURI_URL = \"https://bcb.cs.tufts.edu/huri/huri.tsv\"\n    def __init__(self, gene_path: str, download_path: str = \"/tmp/\"):\n        self._gene_path = gene_path\n        self._graph_pathlib: pathlib.Path = pathlib.Path(\n            download_path) / \"huri\"\n        self._graph = self._download_and_parse_graph()\n        self._genes = self._read_genes_from_path(gene_path)\n    @property\n    def graph_path(self) -> str:",
+        "detail": "t_map.garbanzo.huri",
+        "documentation": {}
+    },
+    {
         "label": "Gene",
         "kind": 6,
         "importPath": "t_map.gene.gene",
@@ -6402,12 +6517,57 @@
         "documentation": {}
     },
     {
+        "label": "Hummus",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "peekOfCode": "class Hummus:\n    K_DEFAULT = 5\n    def __init__(self, data: Garbanzo):\n        self.data = data\n    def with_cv(self, k_fold=5) -> Hummus:\n        self._k = k_fold\n        self._test_size = len(self.data) // self._k\n        self._train_size = len(self.data) - self._test_size\n        items = {i for i in range(len(self.data))}\n        self._train = random.sample(items, k=self._train_size)",
+        "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
+        "label": "HummusTester",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "peekOfCode": "class HummusTester(Iterator):\n    ...\nclass HummusTrainer(Iterator):\n    def __init__(self, data: Garbanzo, train_idx: List[int]):\n        self._data: Garbanzo = data\n        self._train: List[int] = train_idx\n        self._i = 0\n    def __next__(self) -> Tuple[Gene, nx.Graph]:\n        if self._i < len(self._train):\n            i = self._i",
+        "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
+        "label": "HummusTrainer",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "peekOfCode": "class HummusTrainer(Iterator):\n    def __init__(self, data: Garbanzo, train_idx: List[int]):\n        self._data: Garbanzo = data\n        self._train: List[int] = train_idx\n        self._i = 0\n    def __next__(self) -> Tuple[Gene, nx.Graph]:\n        if self._i < len(self._train):\n            i = self._i\n            self._i += 1\n            return (self._data.get(i), self._data.graph)",
+        "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
         "label": "test_edgelist",
         "kind": 2,
         "importPath": "tests.test_garbanzo",
         "description": "tests.test_garbanzo",
-        "peekOfCode": "def test_edgelist():\n    # testing for side effect\n    EdgeListGarbanzo(\n        graph_path=\"./tests/data/unweighted_edge.list\",\n        gene_path=\"./tests/data/gene.list\")",
+        "peekOfCode": "def test_edgelist():\n    # testing for side effect\n    EdgeListGarbanzo(\n        graph_path=\"./tests/data/unweighted_edge.list\",\n        gene_path=\"./tests/data/gene.list\")\ndef test_huri():\n    data = Huri(\"./tests/data/gene.list\")\n    # maybe not the best test as only works for posix\n    assert(data.graph_path == \"/tmp/huri/huri.tsv\")\n    assert data.get(0)",
         "detail": "tests.test_garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "test_huri",
+        "kind": 2,
+        "importPath": "tests.test_garbanzo",
+        "description": "tests.test_garbanzo",
+        "peekOfCode": "def test_huri():\n    data = Huri(\"./tests/data/gene.list\")\n    # maybe not the best test as only works for posix\n    assert(data.graph_path == \"/tmp/huri/huri.tsv\")\n    assert data.get(0)\n    assert data.graph",
+        "detail": "tests.test_garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "test_train",
+        "kind": 2,
+        "importPath": "tests.test_hummus",
+        "description": "tests.test_hummus",
+        "peekOfCode": "def test_train():\n    data = EdgeListGarbanzo(\n        graph_path=\"./tests/data/unweighted_edge.list\",\n        gene_path=\"./tests/data/gene.list\")\n    runner = Hummus(data=data)\n    for (d, g) in runner.train():\n        assert isinstance(d, Gene)\n        assert isinstance(g, nx.Graph)",
+        "detail": "tests.test_hummus",
         "documentation": {}
     },
     {

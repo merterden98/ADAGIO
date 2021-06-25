@@ -1,0 +1,169 @@
+action: GLOB, msg: packaging
+cwd: /Users/merden/Research/TMAP
+cmd: /Users/merden/anaconda3/envs/tmap/bin/python setup.py sdist --formats=zip --dist-dir .tox/dist
+running sdist
+running egg_info
+writing t_map.egg-info/PKG-INFO
+writing dependency_links to t_map.egg-info/dependency_links.txt
+writing entry points to t_map.egg-info/entry_points.txt
+writing requirements to t_map.egg-info/requires.txt
+writing top-level names to t_map.egg-info/top_level.txt
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '__pycache__' found under directory '*'
+warning: no files found matching '*.jpg' under directory 'docs'
+warning: no files found matching '*.gif' under directory 'docs'
+writing manifest file 't_map.egg-info/SOURCES.txt'
+running check
+warning: check: missing required meta-data: url
+
+creating t_map-0.1.0
+creating t_map-0.1.0/.vscode
+creating t_map-0.1.0/docs
+creating t_map-0.1.0/scripts
+creating t_map-0.1.0/src
+creating t_map-0.1.0/src/utils
+creating t_map-0.1.0/t_map
+creating t_map-0.1.0/t_map.egg-info
+creating t_map-0.1.0/t_map/.github
+creating t_map-0.1.0/t_map/garbanzo
+creating t_map-0.1.0/t_map/gene
+creating t_map-0.1.0/test_data
+creating t_map-0.1.0/tests
+creating t_map-0.1.0/tests/data
+copying files to t_map-0.1.0...
+copying .gitignore -> t_map-0.1.0
+copying .travis.yml -> t_map-0.1.0
+copying AUTHORS.rst -> t_map-0.1.0
+copying CONTRIBUTING.rst -> t_map-0.1.0
+copying Cargo.toml -> t_map-0.1.0
+copying HISTORY.rst -> t_map-0.1.0
+copying LICENSE -> t_map-0.1.0
+copying MANIFEST.in -> t_map-0.1.0
+copying Makefile -> t_map-0.1.0
+copying README.rst -> t_map-0.1.0
+copying mypy.ini -> t_map-0.1.0
+copying requirements_dev.txt -> t_map-0.1.0
+copying setup.cfg -> t_map-0.1.0
+copying setup.py -> t_map-0.1.0
+copying tox.ini -> t_map-0.1.0
+copying .vscode/PythonImportHelper-v2-Completion.json -> t_map-0.1.0/.vscode
+copying .vscode/settings.json -> t_map-0.1.0/.vscode
+copying docs/Makefile -> t_map-0.1.0/docs
+copying docs/arch.md -> t_map-0.1.0/docs
+copying docs/authors.rst -> t_map-0.1.0/docs
+copying docs/conf.py -> t_map-0.1.0/docs
+copying docs/contributing.rst -> t_map-0.1.0/docs
+copying docs/history.rst -> t_map-0.1.0/docs
+copying docs/index.rst -> t_map-0.1.0/docs
+copying docs/installation.rst -> t_map-0.1.0/docs
+copying docs/make.bat -> t_map-0.1.0/docs
+copying docs/overview.drawio.png -> t_map-0.1.0/docs
+copying docs/readme.rst -> t_map-0.1.0/docs
+copying docs/usage.rst -> t_map-0.1.0/docs
+copying scripts/allen_view.py -> t_map-0.1.0/scripts
+copying src/main.rs -> t_map-0.1.0/src
+copying src/utils/mod.rs -> t_map-0.1.0/src/utils
+copying src/utils/mondo.rs -> t_map-0.1.0/src/utils
+copying src/utils/reader.rs -> t_map-0.1.0/src/utils
+copying t_map/.editorconfig -> t_map-0.1.0/t_map
+copying t_map/.gitignore -> t_map-0.1.0/t_map
+copying t_map/.travis.yml -> t_map-0.1.0/t_map
+copying t_map/__init__.py -> t_map-0.1.0/t_map
+copying t_map/t_map.py -> t_map-0.1.0/t_map
+copying t_map.egg-info/PKG-INFO -> t_map-0.1.0/t_map.egg-info
+copying t_map.egg-info/SOURCES.txt -> t_map-0.1.0/t_map.egg-info
+copying t_map.egg-info/dependency_links.txt -> t_map-0.1.0/t_map.egg-info
+copying t_map.egg-info/entry_points.txt -> t_map-0.1.0/t_map.egg-info
+copying t_map.egg-info/not-zip-safe -> t_map-0.1.0/t_map.egg-info
+copying t_map.egg-info/requires.txt -> t_map-0.1.0/t_map.egg-info
+copying t_map.egg-info/top_level.txt -> t_map-0.1.0/t_map.egg-info
+copying t_map/.github/ISSUE_TEMPLATE.md -> t_map-0.1.0/t_map/.github
+copying t_map/garbanzo/__init__.py -> t_map-0.1.0/t_map/garbanzo
+copying t_map/garbanzo/edgelist.py -> t_map-0.1.0/t_map/garbanzo
+copying t_map/garbanzo/garbanzo.py -> t_map-0.1.0/t_map/garbanzo
+copying t_map/garbanzo/huri.py -> t_map-0.1.0/t_map/garbanzo
+copying t_map/gene/__init__.py -> t_map-0.1.0/t_map/gene
+copying t_map/gene/gene.py -> t_map-0.1.0/t_map/gene
+copying test_data/edge.list -> t_map-0.1.0/test_data
+copying tests/__init__.py -> t_map-0.1.0/tests
+copying tests/test_garbanzo.py -> t_map-0.1.0/tests
+copying tests/test_hummus.py -> t_map-0.1.0/tests
+copying tests/data/gene.list -> t_map-0.1.0/tests/data
+copying tests/data/unweighted_edge.list -> t_map-0.1.0/tests/data
+Writing t_map-0.1.0/setup.cfg
+creating '.tox/dist/t_map-0.1.0.zip' and adding 't_map-0.1.0' to it
+adding 't_map-0.1.0'
+adding 't_map-0.1.0/test_data'
+adding 't_map-0.1.0/t_map.egg-info'
+adding 't_map-0.1.0/tests'
+adding 't_map-0.1.0/docs'
+adding 't_map-0.1.0/scripts'
+adding 't_map-0.1.0/.vscode'
+adding 't_map-0.1.0/t_map'
+adding 't_map-0.1.0/src'
+adding 't_map-0.1.0/PKG-INFO'
+adding 't_map-0.1.0/Cargo.toml'
+adding 't_map-0.1.0/LICENSE'
+adding 't_map-0.1.0/CONTRIBUTING.rst'
+adding 't_map-0.1.0/Makefile'
+adding 't_map-0.1.0/MANIFEST.in'
+adding 't_map-0.1.0/mypy.ini'
+adding 't_map-0.1.0/setup.py'
+adding 't_map-0.1.0/.gitignore'
+adding 't_map-0.1.0/HISTORY.rst'
+adding 't_map-0.1.0/tox.ini'
+adding 't_map-0.1.0/AUTHORS.rst'
+adding 't_map-0.1.0/setup.cfg'
+adding 't_map-0.1.0/README.rst'
+adding 't_map-0.1.0/.travis.yml'
+adding 't_map-0.1.0/requirements_dev.txt'
+adding 't_map-0.1.0/test_data/edge.list'
+adding 't_map-0.1.0/t_map.egg-info/PKG-INFO'
+adding 't_map-0.1.0/t_map.egg-info/not-zip-safe'
+adding 't_map-0.1.0/t_map.egg-info/SOURCES.txt'
+adding 't_map-0.1.0/t_map.egg-info/entry_points.txt'
+adding 't_map-0.1.0/t_map.egg-info/requires.txt'
+adding 't_map-0.1.0/t_map.egg-info/top_level.txt'
+adding 't_map-0.1.0/t_map.egg-info/dependency_links.txt'
+adding 't_map-0.1.0/tests/data'
+adding 't_map-0.1.0/tests/__init__.py'
+adding 't_map-0.1.0/tests/test_hummus.py'
+adding 't_map-0.1.0/tests/test_garbanzo.py'
+adding 't_map-0.1.0/tests/data/unweighted_edge.list'
+adding 't_map-0.1.0/tests/data/gene.list'
+adding 't_map-0.1.0/docs/index.rst'
+adding 't_map-0.1.0/docs/overview.drawio.png'
+adding 't_map-0.1.0/docs/contributing.rst'
+adding 't_map-0.1.0/docs/Makefile'
+adding 't_map-0.1.0/docs/conf.py'
+adding 't_map-0.1.0/docs/usage.rst'
+adding 't_map-0.1.0/docs/make.bat'
+adding 't_map-0.1.0/docs/history.rst'
+adding 't_map-0.1.0/docs/installation.rst'
+adding 't_map-0.1.0/docs/authors.rst'
+adding 't_map-0.1.0/docs/arch.md'
+adding 't_map-0.1.0/docs/readme.rst'
+adding 't_map-0.1.0/scripts/allen_view.py'
+adding 't_map-0.1.0/.vscode/settings.json'
+adding 't_map-0.1.0/.vscode/PythonImportHelper-v2-Completion.json'
+adding 't_map-0.1.0/t_map/garbanzo'
+adding 't_map-0.1.0/t_map/gene'
+adding 't_map-0.1.0/t_map/.github'
+adding 't_map-0.1.0/t_map/t_map.py'
+adding 't_map-0.1.0/t_map/__init__.py'
+adding 't_map-0.1.0/t_map/.editorconfig'
+adding 't_map-0.1.0/t_map/.gitignore'
+adding 't_map-0.1.0/t_map/.travis.yml'
+adding 't_map-0.1.0/t_map/garbanzo/__init__.py'
+adding 't_map-0.1.0/t_map/garbanzo/huri.py'
+adding 't_map-0.1.0/t_map/garbanzo/garbanzo.py'
+adding 't_map-0.1.0/t_map/garbanzo/edgelist.py'
+adding 't_map-0.1.0/t_map/gene/__init__.py'
+adding 't_map-0.1.0/t_map/gene/gene.py'
+adding 't_map-0.1.0/t_map/.github/ISSUE_TEMPLATE.md'
+adding 't_map-0.1.0/src/utils'
+adding 't_map-0.1.0/src/main.rs'
+adding 't_map-0.1.0/src/utils/mondo.rs'
+adding 't_map-0.1.0/src/utils/mod.rs'
+adding 't_map-0.1.0/src/utils/reader.rs'
+removing 't_map-0.1.0' (and everything under it)

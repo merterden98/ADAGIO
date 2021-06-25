@@ -21,7 +21,11 @@ class EdgeListGarbanzo(Garbanzo):
 
     @property
     def gene_path(self) -> str:
+
         return self._gene_path
+
+    def __len__(self) -> int:
+        return len(self._genes)
 
     def get(self, i: int) -> Gene:
         return self._genes[i]
