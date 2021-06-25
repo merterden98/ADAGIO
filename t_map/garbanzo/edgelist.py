@@ -29,7 +29,7 @@ class EdgeListGarbanzo(Garbanzo):
     def _read_graph_from_path(self, path: str) -> nx.Graph:
         return nx.read_edgelist(path)
 
-    def _read_gene_from_path(self, path: str) -> List[Gene]:
+    def _read_genes_from_path(self, path: str) -> List[Gene]:
         genes = []
         with open(path) as f:
             for line in f.readlines():
