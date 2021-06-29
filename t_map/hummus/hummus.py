@@ -1,9 +1,11 @@
 from __future__ import annotations
 import networkx as nx
 import random
+from functools import partial
 from t_map.garbanzo.garbanzo import Garbanzo
-from typing import Iterator, List, Tuple
+from typing import Iterator, List, Tuple, Union
 from t_map.gene.gene import Gene
+from t_map.hummus.hummus_score import HummusScore, ScoreFn
 
 
 class Hummus:
@@ -31,7 +33,7 @@ class Hummus:
         return HummusTrainer(self.data, self._train)
 
     def test(self) -> HummusTester:
-        raise NotImplementedError
+        raise HummusTester(self.data, self._test)
 
     def __enter__(self) -> HummusTester:
         return self.test()
@@ -41,19 +43,62 @@ class Hummus:
 
 
 class HummusTester(Iterator):
-    ...
+
+    def __init__(self, data: Garbanzo, test_idx: List[int],
+                 with_scoring: Union[None,
+                                     HummusScore] = None):
+
+        self._data: Garbanzo = data
+        self._test: List[int] = test_idx
+        self._i = 0
+        self._with_scoring = with_scoring
+
+    def __next__(self) -> Union[Tuple[Gene, nx.Graph],
+                                Tuple[Gene, nx.Graph, ScoreFn]]:
+
+        if isinstance(self._with_scoring, HummusScore):
+            self._with_scoring.test()
+            score_fn = partial(self._with_scoring.score,
+                               self._data.known_targets)
+
+            if self._i < len(self._train):
+                i = self._i
+                self._i += 1
+                return (self._data.get(i), self._data.graph, score_fn)
+
+        elif self._i < len(self._train):
+            i = self._i
+            self._i += 1
+            return (self._data.get(i), self._data.graph)
+
+        raise StopIteration
 
 
 class HummusTrainer(Iterator):
 
-    def __init__(self, data: Garbanzo, train_idx: List[int]):
+    def __init__(self, data: Garbanzo, train_idx: List[int],
+                 with_scoring: Union[None,
+                                     HummusScore] = None):
+
         self._data: Garbanzo = data
         self._train: List[int] = train_idx
         self._i = 0
+        self._with_scoring = with_scoring
 
-    def __next__(self) -> Tuple[Gene, nx.Graph]:
+    def __next__(self) -> Union[Tuple[Gene, nx.Graph],
+                                Tuple[Gene, nx.Graph, ScoreFn]]:
 
-        if self._i < len(self._train):
+        if isinstance(self._with_scoring, HummusScore):
+            self._with_scoring.train()
+            score_fn = partial(self._with_scoring.score,
+                               self._data.known_targets)
+
+            if self._i < len(self._train):
+                i = self._i
+                self._i += 1
+                return (self._data.get(i), self._data.graph, score_fn)
+
+        elif self._i < len(self._train):
             i = self._i
             self._i += 1
             return (self._data.get(i), self._data.graph)

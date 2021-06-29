@@ -994,6 +994,30 @@
         "documentation": {}
     },
     {
+        "label": "Set",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Set",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -1026,6 +1050,54 @@
         "documentation": {}
     },
     {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Garbanzo",
         "importPath": "t_map.garbanzo.garbanzo",
         "description": "t_map.garbanzo.garbanzo",
@@ -1039,6 +1111,14 @@
         "description": "t_map.garbanzo.garbanzo",
         "isExtraImport": true,
         "detail": "t_map.garbanzo.garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
         "documentation": {}
     },
     {
@@ -1145,6 +1225,30 @@
         "description": "dataclasses",
         "isExtraImport": true,
         "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "partial",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "HummusScore",
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "isExtraImport": true,
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreFn",
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "isExtraImport": true,
+        "detail": "t_map.hummus.hummus_score",
         "documentation": {}
     },
     {
@@ -6485,7 +6589,7 @@
         "kind": 6,
         "importPath": "t_map.garbanzo.edgelist",
         "description": "t_map.garbanzo.edgelist",
-        "peekOfCode": "class EdgeListGarbanzo(Garbanzo):\n    def __init__(self, graph_path: str, gene_path: str):\n        self._graph_path = graph_path\n        self._gene_path = gene_path\n        self._graph = self._read_graph_from_path(graph_path)\n        self._genes = self._read_genes_from_path(gene_path)\n    @property\n    def graph(self) -> nx.Graph:\n        return self._graph\n    @property",
+        "peekOfCode": "class EdgeListGarbanzo(Garbanzo):\n    def __init__(self, graph_path: str, gene_path: str,\n                 known_targets_path: Union[None, str] = None):\n        self._graph_path = graph_path\n        self._gene_path = gene_path\n        self._graph = self._read_graph_from_path(graph_path)\n        self._genes = self._read_genes_from_path(gene_path)\n        if isinstance(known_targets_path, str):\n            self._known_targets = self._read_genes_from_path(\n                known_targets_path)",
         "detail": "t_map.garbanzo.edgelist",
         "documentation": {}
     },
@@ -6530,7 +6634,7 @@
         "kind": 6,
         "importPath": "t_map.hummus.hummus",
         "description": "t_map.hummus.hummus",
-        "peekOfCode": "class HummusTester(Iterator):\n    ...\nclass HummusTrainer(Iterator):\n    def __init__(self, data: Garbanzo, train_idx: List[int]):\n        self._data: Garbanzo = data\n        self._train: List[int] = train_idx\n        self._i = 0\n    def __next__(self) -> Tuple[Gene, nx.Graph]:\n        if self._i < len(self._train):\n            i = self._i",
+        "peekOfCode": "class HummusTester(Iterator):\n    def __init__(self, data: Garbanzo, test_idx: List[int],\n                 with_scoring: Union[None,\n                                     HummusScore] = None):\n        self._data: Garbanzo = data\n        self._test: List[int] = test_idx\n        self._i = 0\n        self._with_scoring = with_scoring\n    def __next__(self) -> Union[Tuple[Gene, nx.Graph],\n                                Tuple[Gene, nx.Graph, ScoreFn]]:",
         "detail": "t_map.hummus.hummus",
         "documentation": {}
     },
@@ -6539,8 +6643,26 @@
         "kind": 6,
         "importPath": "t_map.hummus.hummus",
         "description": "t_map.hummus.hummus",
-        "peekOfCode": "class HummusTrainer(Iterator):\n    def __init__(self, data: Garbanzo, train_idx: List[int]):\n        self._data: Garbanzo = data\n        self._train: List[int] = train_idx\n        self._i = 0\n    def __next__(self) -> Tuple[Gene, nx.Graph]:\n        if self._i < len(self._train):\n            i = self._i\n            self._i += 1\n            return (self._data.get(i), self._data.graph)",
+        "peekOfCode": "class HummusTrainer(Iterator):\n    def __init__(self, data: Garbanzo, train_idx: List[int],\n                 with_scoring: Union[None,\n                                     HummusScore] = None):\n        self._data: Garbanzo = data\n        self._train: List[int] = train_idx\n        self._i = 0\n        self._with_scoring = with_scoring\n    def __next__(self) -> Union[Tuple[Gene, nx.Graph],\n                                Tuple[Gene, nx.Graph, ScoreFn]]:",
         "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
+        "label": "HummusScore",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "class HummusScore:\n    def __init__(self, score_type: str = \"top_k\", k: int = 20):\n        self._training = False\n    def train(self) -> None:\n        self._training = True\n    def test(self) -> None:\n        self._training = False\n    def score(self, ground_truth: Iterable[Gene],\n              scores: Union[List[Gene], List[Tuple[Gene, float]]]) -> None:\n        ...",
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreFn",
+        "kind": 5,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "ScoreFn = Callable[Union[List[Gene], List[Tuple[Gene, float]]], None]\nclass HummusScore:\n    def __init__(self, score_type: str = \"top_k\", k: int = 20):\n        self._training = False\n    def train(self) -> None:\n        self._training = True\n    def test(self) -> None:\n        self._training = False\n    def score(self, ground_truth: Iterable[Gene],\n              scores: Union[List[Gene], List[Tuple[Gene, float]]]) -> None:",
+        "detail": "t_map.hummus.hummus_score",
         "documentation": {}
     },
     {
