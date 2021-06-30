@@ -1,6 +1,5 @@
 import networkx as nx
 from abc import ABC, abstractmethod, abstractproperty
-from typing import Set
 from t_map.gene.gene import Gene
 
 
@@ -19,10 +18,6 @@ class Garbanzo(ABC):
 
     @abstractmethod
     def get(self, i: int) -> Gene:
-        ...
-
-    @abstractproperty
-    def known_targets(self) -> Set[Gene]:
         ...
 
     @abstractmethod
