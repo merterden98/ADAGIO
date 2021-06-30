@@ -694,7 +694,7 @@
         "kind": 5,
         "importPath": "setup",
         "description": "setup",
-        "peekOfCode": "requirements = ['networkx']\ntest_requirements = ['pytest>=3', ]\nsetup(\n    author=\"Mert Erden\",\n    author_email='mert.erden@tufts.edu',\n    python_requires='>=3.6',\n    classifiers=[\n        'Development Status :: 2 - Pre-Alpha',\n        'Intended Audience :: Developers',\n        'License :: OSI Approved :: MIT License',",
+        "peekOfCode": "requirements = ['networkx', 'sklearn']\ntest_requirements = ['pytest>=3', ]\nsetup(\n    author=\"Mert Erden\",\n    author_email='mert.erden@tufts.edu',\n    python_requires='>=3.6',\n    classifiers=[\n        'Development Status :: 2 - Pre-Alpha',\n        'Intended Audience :: Developers',\n        'License :: OSI Approved :: MIT License',",
         "detail": "setup",
         "documentation": {}
     },
