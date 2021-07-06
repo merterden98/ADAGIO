@@ -4,33 +4,36 @@ from t_map.gene.gene import Gene
 from typing import Union, Tuple, Set, List
 from t_map.feta.description import Description
 
-# There are two types of models: iterative and precompute
-# For both the iterative and precompute method we have the following functions:
-#
-#		description: Returns a description of the model.
-#					 Default: requires_training=False, training_opts=None, hyper_params={"alpha": alpha}
-#																  where alpha = 0.85 (probabiltiy of restart)
-#
-#		prioritize: Prioritizes a set of genes in a graph based on random walk with restart algorithm
-# 					Parameters: Takes in a list fo Genes
-#								Optional: a networkx Graph
-# 					Returns a set of tuples with the gene and a probability from 0 to 1 where 1 is the highest
-#					probability of being associated with the known gene
-#
-#		call: Calls prioritization on either a singular gene or a list of genes
-#			  Parameters:
-#			  Returns a set of tuples with the gene and a probability from 0 to 1 where 1 is the highest
-#					probability of being associated with the known gene
-#			  Exceptions: call throws and exception if not given a gene or a list of genes
-#
-# For the precompute method we also have a setup function
-#		setup: Creates the probability matrix based on the graph given
-#			   Parameters: a networkx Graph
-#			   Returns the probability matrix to prioritize so prioritize can use it
-#
-
 
 class Feta(ABC):
+    """
+        Feta is the model which holds different methods of prioritization.
+        For any method there are three functions:
+
+            description: Returns a description of the model.
+
+            prioritize: Prioritizes a set of genes in a graph based
+                            on a prioritization algorithm
+                Parameters: Takes in a list of Genes
+                            Optional: a networkx Graph
+                Returns a set of tuples with the gene and float prioritization
+
+
+            call: Calls prioritization on either a singular
+                    gene or a list of genes
+                Parameters: a list of disease gene or a singular disease gene
+                Returns a set of tuples with the gene and float prioritization
+                Exceptions:throws and exception if not given a gene
+                        or a list of genes
+
+        Within the Feta model there is also a subclass
+        for any method that requires precomputing which
+        requires an additional setup function.
+
+            setup: Does precomputing that prioritize needs for a given method
+                Parameters: a networkx Graph
+
+    """
     @abstractproperty
     def description(self) -> Description:
         ...
@@ -38,7 +41,6 @@ class Feta(ABC):
     @abstractmethod
     def prioritize(self, disease_gene: List[Gene],
                    graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:
-        # In theory a model need not store the Graph and thus should rely on the Data library to pass it.
         ...
 
     def __call__(self, disease_gene: Union[Gene, List[Gene]],
@@ -55,6 +57,15 @@ class Feta(ABC):
 
 
 class PreComputeFeta(Feta):
+    """
+        Within the Feta model there is also a subclass
+        for any method that requires precomputing which
+        requires an additional setup function.
+
+            setup: Does precomputing that prioritize needs for a given method
+                Parameters: a networkx Graph
+
+    """
     @abstractmethod
     def setup(self, graph: nx.Graph, *args, **kwargs):
         ...
