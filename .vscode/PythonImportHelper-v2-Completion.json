@@ -1,218 +1,38 @@
 [
     {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "os",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "typing",
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
         "documentation": {}
     },
     {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "sys",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "typing",
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
         "documentation": {}
     },
     {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "t_map",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "typing",
+        "importPath": "t_map",
+        "description": "t_map",
+        "detail": "t_map",
         "documentation": {}
     },
     {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "pandas",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Set",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Set",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Generator",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Literal",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "ContextManager",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Callable",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Iterable",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Set",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
@@ -449,14 +269,6 @@
         "documentation": {}
     },
     {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
-        "isExtraImport": true,
-        "detail": "dataclasses",
-        "documentation": {}
-    },
-    {
         "label": "networkx",
         "kind": 6,
         "isExtraImport": true,
@@ -474,62 +286,6 @@
         "documentation": {}
     },
     {
-        "label": "to_dict_of_lists",
-        "importPath": "networkx",
-        "description": "networkx",
-        "isExtraImport": true,
-        "detail": "networkx",
-        "documentation": {}
-    },
-    {
-        "label": "ABC",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "abstractmethod",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "abstractproperty",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "ABC",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "abstractmethod",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "abstractproperty",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
         "label": "ABC",
         "importPath": "abc",
         "description": "abc",
@@ -623,70 +379,6 @@
         "description": "t_map.gene.gene",
         "isExtraImport": true,
         "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Description",
-        "importPath": "t_map.feta.description",
-        "description": "t_map.feta.description",
-        "isExtraImport": true,
-        "detail": "t_map.feta.description",
-        "documentation": {}
-    },
-    {
-        "label": "Description",
-        "importPath": "t_map.feta.description",
-        "description": "t_map.feta.description",
-        "isExtraImport": true,
-        "detail": "t_map.feta.description",
         "documentation": {}
     },
     {
@@ -728,38 +420,6 @@
         "description": "t_map.feta.feta",
         "isExtraImport": true,
         "detail": "t_map.feta.feta",
-        "documentation": {}
-    },
-    {
-        "label": "Feta",
-        "importPath": "t_map.feta.feta",
-        "description": "t_map.feta.feta",
-        "isExtraImport": true,
-        "detail": "t_map.feta.feta",
-        "documentation": {}
-    },
-    {
-        "label": "PreComputeFeta",
-        "importPath": "t_map.feta.feta",
-        "description": "t_map.feta.feta",
-        "isExtraImport": true,
-        "detail": "t_map.feta.feta",
-        "documentation": {}
-    },
-    {
-        "label": "Garbanzo",
-        "importPath": "t_map.garbanzo.garbanzo",
-        "description": "t_map.garbanzo.garbanzo",
-        "isExtraImport": true,
-        "detail": "t_map.garbanzo.garbanzo",
-        "documentation": {}
-    },
-    {
-        "label": "Garbanzo",
-        "importPath": "t_map.garbanzo.garbanzo",
-        "description": "t_map.garbanzo.garbanzo",
-        "isExtraImport": true,
-        "detail": "t_map.garbanzo.garbanzo",
         "documentation": {}
     },
     {
@@ -829,22 +489,6 @@
         "documentation": {}
     },
     {
-        "label": "EdgeListGarbanzo",
-        "importPath": "t_map.garbanzo.edgelist",
-        "description": "t_map.garbanzo.edgelist",
-        "isExtraImport": true,
-        "detail": "t_map.garbanzo.edgelist",
-        "documentation": {}
-    },
-    {
-        "label": "annotations",
-        "importPath": "__future__",
-        "description": "__future__",
-        "isExtraImport": true,
-        "detail": "__future__",
-        "documentation": {}
-    },
-    {
         "label": "annotations",
         "importPath": "__future__",
         "description": "__future__",
@@ -870,30 +514,6 @@
         "documentation": {}
     },
     {
-        "label": "partial",
-        "importPath": "functools",
-        "description": "functools",
-        "isExtraImport": true,
-        "detail": "functools",
-        "documentation": {}
-    },
-    {
-        "label": "HummusScore",
-        "importPath": "t_map.hummus.hummus_score",
-        "description": "t_map.hummus.hummus_score",
-        "isExtraImport": true,
-        "detail": "t_map.hummus.hummus_score",
-        "documentation": {}
-    },
-    {
-        "label": "ScoreFn",
-        "importPath": "t_map.hummus.hummus_score",
-        "description": "t_map.hummus.hummus_score",
-        "isExtraImport": true,
-        "detail": "t_map.hummus.hummus_score",
-        "documentation": {}
-    },
-    {
         "label": "HummusScore",
         "importPath": "t_map.hummus.hummus_score",
         "description": "t_map.hummus.hummus_score",
@@ -926,14 +546,6 @@
         "documentation": {}
     },
     {
-        "label": "floor",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
         "label": "KFold",
         "importPath": "sklearn.model_selection",
         "description": "sklearn.model_selection",
@@ -942,47 +554,19 @@
         "documentation": {}
     },
     {
-        "label": "KFold",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
         "isExtraImport": true,
-        "detail": "sklearn.model_selection",
+        "detail": "enum",
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
+        "label": "auto",
+        "importPath": "enum",
+        "description": "enum",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "t_map",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "t_map",
-        "description": "t_map",
-        "detail": "t_map",
-        "documentation": {}
-    },
-    {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -1031,150 +615,6 @@
         "description": "setuptools",
         "isExtraImport": true,
         "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "Description",
-        "kind": 6,
-        "importPath": "build.lib.t_map.feta.description",
-        "description": "build.lib.t_map.feta.description",
-        "peekOfCode": "class Description:\n    requires_training: bool\n    training_opts: Any  # Hummus should know about TrainingOptions\n    hyper_params: Dict[str, Any]",
-        "detail": "build.lib.t_map.feta.description",
-        "documentation": {}
-    },
-    {
-        "label": "Feta",
-        "kind": 6,
-        "importPath": "build.lib.t_map.feta.feta",
-        "description": "build.lib.t_map.feta.feta",
-        "peekOfCode": "class Feta(ABC):\n    @abstractproperty\n    def description(self) -> Description:\n        ...\n    @abstractmethod\n    def prioritize(self, disease_gene: List[Gene],\n                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:\n        # In theory a model need not store the Graph and thus should rely on the Data library to pass it.\n        ...\n    def __call__(self, disease_gene: Union[Gene, List[Gene]],",
-        "detail": "build.lib.t_map.feta.feta",
-        "documentation": {}
-    },
-    {
-        "label": "PreComputeFeta",
-        "kind": 6,
-        "importPath": "build.lib.t_map.feta.feta",
-        "description": "build.lib.t_map.feta.feta",
-        "peekOfCode": "class PreComputeFeta(Feta):\n    @abstractmethod\n    def setup(self, graph: nx.Graph, *args, **kwargs):\n        ...",
-        "detail": "build.lib.t_map.feta.feta",
-        "documentation": {}
-    },
-    {
-        "label": "RandomWalkWithRestart",
-        "kind": 6,
-        "importPath": "build.lib.t_map.feta.randomwalk",
-        "description": "build.lib.t_map.feta.randomwalk",
-        "peekOfCode": "class RandomWalkWithRestart(Feta):\n    def __init__(self, alpha=0.85):\n        self._desc = Description(\n            requires_training=False,\n            training_opts=None,\n            hyper_params={\"alpha\": alpha})\n    def description(self) -> Description:\n        return self.__desc\n    def prioritize(self, disease_gene: List[Gene],\n                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:",
-        "detail": "build.lib.t_map.feta.randomwalk",
-        "documentation": {}
-    },
-    {
-        "label": "PreComputeRWR",
-        "kind": 6,
-        "importPath": "build.lib.t_map.feta.randomwalk",
-        "description": "build.lib.t_map.feta.randomwalk",
-        "peekOfCode": "class PreComputeRWR(PreComputeFeta):\n    def __init__(self, alpha=0.85):\n        self.__desc = Description(\n            requires_training=False,\n            training_opts=None,\n            hyper_params={\"alpha\": alpha})\n    def description(self) -> Description:\n        return self.__desc\n    def prioritize(self, disease_gene: List[Gene],\n                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:",
-        "detail": "build.lib.t_map.feta.randomwalk",
-        "documentation": {}
-    },
-    {
-        "label": "EdgeListGarbanzo",
-        "kind": 6,
-        "importPath": "build.lib.t_map.garbanzo.edgelist",
-        "description": "build.lib.t_map.garbanzo.edgelist",
-        "peekOfCode": "class EdgeListGarbanzo(Garbanzo):\n    def __init__(self, graph_path: str, gene_path: str):\n        self._graph_path = graph_path\n        self._gene_path = gene_path\n        self._graph = self._read_graph_from_path(graph_path)\n        self._genes = self._read_genes_from_path(gene_path)\n    @property\n    def graph(self) -> nx.Graph:\n        return self._graph\n    @property",
-        "detail": "build.lib.t_map.garbanzo.edgelist",
-        "documentation": {}
-    },
-    {
-        "label": "Garbanzo",
-        "kind": 6,
-        "importPath": "build.lib.t_map.garbanzo.garbanzo",
-        "description": "build.lib.t_map.garbanzo.garbanzo",
-        "peekOfCode": "class Garbanzo(ABC):\n    @abstractproperty\n    def graph(self) -> nx.Graph:\n        ...\n    @abstractproperty\n    def graph_path(self) -> str:\n        ...\n    @abstractproperty\n    def gene_path(self) -> str:\n        ...",
-        "detail": "build.lib.t_map.garbanzo.garbanzo",
-        "documentation": {}
-    },
-    {
-        "label": "Huri",
-        "kind": 6,
-        "importPath": "build.lib.t_map.garbanzo.huri",
-        "description": "build.lib.t_map.garbanzo.huri",
-        "peekOfCode": "class Huri(EdgeListGarbanzo):\n    HURI_URL = \"https://bcb.cs.tufts.edu/huri/huri.tsv\"\n    def __init__(self, gene_path: str, download_path: str = \"/tmp/\"):\n        self._gene_path = gene_path\n        self._graph_pathlib: pathlib.Path = pathlib.Path(\n            download_path) / \"huri\"\n        self._graph = self._download_and_parse_graph()\n        self._genes = self._read_genes_from_path(gene_path)\n    @property\n    def graph_path(self) -> str:",
-        "detail": "build.lib.t_map.garbanzo.huri",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "kind": 6,
-        "importPath": "build.lib.t_map.gene.gene",
-        "description": "build.lib.t_map.gene.gene",
-        "peekOfCode": "class Gene:\n    name: str\n    labels: Union[List[str], None] = None",
-        "detail": "build.lib.t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Hummus",
-        "kind": 6,
-        "importPath": "build.lib.t_map.hummus.hummus",
-        "description": "build.lib.t_map.hummus.hummus",
-        "peekOfCode": "class Hummus:\n    def __init__(self, data: Garbanzo,\n                 with_scoring: Optional[HummusScore] = None,\n                 train_test_split_ratio: Optional[float] = None):\n        self.data = data\n        self._genes = [self.data.get(i) for i in range(len(data))]\n        self._score_module = with_scoring\n        self._with_cv = False\n        self._train_test_split_ratio = train_test_split_ratio\n    def with_cv(self, k_fold: Union[int, Literal[\"LOO\"]] = 5) -> Hummus:",
-        "detail": "build.lib.t_map.hummus.hummus",
-        "documentation": {}
-    },
-    {
-        "label": "HummusTester",
-        "kind": 6,
-        "importPath": "build.lib.t_map.hummus.hummus",
-        "description": "build.lib.t_map.hummus.hummus",
-        "peekOfCode": "class HummusTester(ContextManager):\n    def __init__(self, data: Garbanzo, test_idx: List[int],\n                 with_scoring: Union[None,\n                                     HummusScore] = None):\n        self._data: Garbanzo = data\n        self._test: List[int] = test_idx\n        self._i = 0\n        self._heldout_genes = self._collect_heldout_genes()\n        self._with_scoring = with_scoring\n        if self._with_scoring is not None:",
-        "detail": "build.lib.t_map.hummus.hummus",
-        "documentation": {}
-    },
-    {
-        "label": "HummusTrainer",
-        "kind": 6,
-        "importPath": "build.lib.t_map.hummus.hummus",
-        "description": "build.lib.t_map.hummus.hummus",
-        "peekOfCode": "class HummusTrainer(ContextManager):\n    \"\"\"\n        Ideally I expect this to be a training class, but\n        after much thought I am a bit puzzled as to how to\n        best structure this.\n    \"\"\"\n    def __init__(self, data: Garbanzo, train_idx: List[int],\n                 with_scoring: Union[None,\n                                     HummusScore] = None):\n        self._data: Garbanzo = data",
-        "detail": "build.lib.t_map.hummus.hummus",
-        "documentation": {}
-    },
-    {
-        "label": "KnownGenes",
-        "kind": 5,
-        "importPath": "build.lib.t_map.hummus.hummus",
-        "description": "build.lib.t_map.hummus.hummus",
-        "peekOfCode": "KnownGenes = List[Gene]\nHeldoutGenes = List[Gene]\nclass Hummus:\n    def __init__(self, data: Garbanzo,\n                 with_scoring: Optional[HummusScore] = None,\n                 train_test_split_ratio: Optional[float] = None):\n        self.data = data\n        self._genes = [self.data.get(i) for i in range(len(data))]\n        self._score_module = with_scoring\n        self._with_cv = False",
-        "detail": "build.lib.t_map.hummus.hummus",
-        "documentation": {}
-    },
-    {
-        "label": "HeldoutGenes",
-        "kind": 5,
-        "importPath": "build.lib.t_map.hummus.hummus",
-        "description": "build.lib.t_map.hummus.hummus",
-        "peekOfCode": "HeldoutGenes = List[Gene]\nclass Hummus:\n    def __init__(self, data: Garbanzo,\n                 with_scoring: Optional[HummusScore] = None,\n                 train_test_split_ratio: Optional[float] = None):\n        self.data = data\n        self._genes = [self.data.get(i) for i in range(len(data))]\n        self._score_module = with_scoring\n        self._with_cv = False\n        self._train_test_split_ratio = train_test_split_ratio",
-        "detail": "build.lib.t_map.hummus.hummus",
-        "documentation": {}
-    },
-    {
-        "label": "HummusScore",
-        "kind": 6,
-        "importPath": "build.lib.t_map.hummus.hummus_score",
-        "description": "build.lib.t_map.hummus.hummus_score",
-        "peekOfCode": "class HummusScore:\n    \"\"\"Hummus Score is a module used for scoring a particular\n    prioritization algorithm. Its main purpose is to be passed\n    into an instance of Hummus to the `with_scoring` parameter.\n    If provided during testing and training time, the Hummus\n    module with additionally return a score function, which will\n    accept a list of prediction with or without a score.\n    Note: Hummus Score function returns None. It is the responsibility\n    of Hummus Score to later provide results.\n    \"\"\"",
-        "detail": "build.lib.t_map.hummus.hummus_score",
-        "documentation": {}
-    },
-    {
-        "label": "ScoreFn",
-        "kind": 5,
-        "importPath": "build.lib.t_map.hummus.hummus_score",
-        "description": "build.lib.t_map.hummus.hummus_score",
-        "peekOfCode": "ScoreFn = Callable[[Union[List[Gene], List[Tuple[Gene, float]]]], None]\nclass HummusScore:\n    \"\"\"Hummus Score is a module used for scoring a particular\n    prioritization algorithm. Its main purpose is to be passed\n    into an instance of Hummus to the `with_scoring` parameter.\n    If provided during testing and training time, the Hummus\n    module with additionally return a score function, which will\n    accept a list of prediction with or without a score.\n    Note: Hummus Score function returns None. It is the responsibility\n    of Hummus Score to later provide results.",
-        "detail": "build.lib.t_map.hummus.hummus_score",
         "documentation": {}
     },
     {
@@ -1371,7 +811,7 @@
         "kind": 6,
         "importPath": "t_map.feta.feta",
         "description": "t_map.feta.feta",
-        "peekOfCode": "class Feta(ABC):\n    @abstractproperty\n    def description(self) -> Description:\n        ...\n    @abstractmethod\n    def prioritize(self, disease_gene: List[Gene],\n                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:\n        # In theory a model need not store the Graph and thus should rely on the Data library to pass it.\n        ...\n    def __call__(self, disease_gene: Union[Gene, List[Gene]],",
+        "peekOfCode": "class Feta(ABC):\n    \"\"\"\n        Feta is the model which holds different methods of prioritization.\n        For any method there are three functions:\n            description: Returns a description of the model.\n            prioritize: Prioritizes a set of genes in a graph based\n                            on a prioritization algorithm\n                Parameters: Takes in a list of Genes\n                            Optional: a networkx Graph\n                Returns a set of tuples with the gene and float prioritization",
         "detail": "t_map.feta.feta",
         "documentation": {}
     },
@@ -1380,7 +820,7 @@
         "kind": 6,
         "importPath": "t_map.feta.feta",
         "description": "t_map.feta.feta",
-        "peekOfCode": "class PreComputeFeta(Feta):\n    @abstractmethod\n    def setup(self, graph: nx.Graph, *args, **kwargs):\n        ...",
+        "peekOfCode": "class PreComputeFeta(Feta):\n    \"\"\"\n        Within the Feta model there is also a subclass\n        for any method that requires precomputing which\n        requires an additional setup function.\n            setup: Does precomputing that prioritize needs for a given method\n                Parameters: a networkx Graph\n    \"\"\"\n    @abstractmethod\n    def setup(self, graph: nx.Graph, *args, **kwargs):",
         "detail": "t_map.feta.feta",
         "documentation": {}
     },
@@ -1484,6 +924,15 @@
         "documentation": {}
     },
     {
+        "label": "ScoreTypes",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "class ScoreTypes(Enum):\n    TOP_K = auto()\nclass HummusScore:\n    \"\"\"Hummus Score is a module used for scoring a particular\n    prioritization algorithm. Its main purpose is to be passed\n    into an instance of Hummus to the `with_scoring` parameter.\n    If provided during testing and training time, the Hummus\n    module with additionally return a score function, which will\n    accept a list of prediction with or without a score.\n    Note: Hummus Score function returns None. It is the responsibility",
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
         "label": "HummusScore",
         "kind": 6,
         "importPath": "t_map.hummus.hummus_score",
@@ -1497,7 +946,7 @@
         "kind": 5,
         "importPath": "t_map.hummus.hummus_score",
         "description": "t_map.hummus.hummus_score",
-        "peekOfCode": "ScoreFn = Callable[[Union[List[Gene], List[Tuple[Gene, float]]]], None]\nclass HummusScore:\n    \"\"\"Hummus Score is a module used for scoring a particular\n    prioritization algorithm. Its main purpose is to be passed\n    into an instance of Hummus to the `with_scoring` parameter.\n    If provided during testing and training time, the Hummus\n    module with additionally return a score function, which will\n    accept a list of prediction with or without a score.\n    Note: Hummus Score function returns None. It is the responsibility\n    of Hummus Score to later provide results.",
+        "peekOfCode": "ScoreFn = Callable[[Union[List[Gene], List[Tuple[Gene, float]]]], None]\nclass ScoreTypes(Enum):\n    TOP_K = auto()\nclass HummusScore:\n    \"\"\"Hummus Score is a module used for scoring a particular\n    prioritization algorithm. Its main purpose is to be passed\n    into an instance of Hummus to the `with_scoring` parameter.\n    If provided during testing and training time, the Hummus\n    module with additionally return a score function, which will\n    accept a list of prediction with or without a score.",
         "detail": "t_map.hummus.hummus_score",
         "documentation": {}
     },
@@ -1506,7 +955,7 @@
         "kind": 2,
         "importPath": "tests.test_feta",
         "description": "tests.test_feta",
-        "peekOfCode": "def test_rwr():\n    data = EdgeListGarbanzo(\n        graph_path=\"./tests/data/unweighted_edge.list\",\n        gene_path=\"./tests/data/gene.list\")\n    model = RandomWalkWithRestart()\n    model(data.get(0), data.graph)\n    model_data = model([data.get(0), data.get(1)], data.graph)\n    precompute = PreComputeRWR()\n    precompute(data.get(0), data.graph)\n    precomp_data = precompute([data.get(0), data.get(3)], data.graph)",
+        "peekOfCode": "def test_rwr():\n    data = EdgeListGarbanzo(\n        graph_path=\"./tests/data/unweighted_edge.list\",\n        gene_path=\"./tests/data/gene.list\")\n    model = RandomWalkWithRestart()\n    model(data.get(0), data.graph)\n    model([data.get(0), data.get(1)], data.graph)\n    precompute = PreComputeRWR()\n    precompute(data.get(0), data.graph)\n    precompute([data.get(0), data.get(3)], data.graph)",
         "detail": "tests.test_feta",
         "documentation": {}
     },

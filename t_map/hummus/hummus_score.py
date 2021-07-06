@@ -1,7 +1,12 @@
 from typing import Union, List, Tuple, Callable, Iterable, Set
 from t_map.gene.gene import Gene
+from enum import Enum, auto
 
 ScoreFn = Callable[[Union[List[Gene], List[Tuple[Gene, float]]]], None]
+
+
+class ScoreTypes(Enum):
+    TOP_K = auto()
 
 
 class HummusScore:
@@ -16,7 +21,7 @@ class HummusScore:
     of Hummus Score to later provide results.
     """
 
-    def __init__(self, score_type: str = "top_k", k: int = 20):
+    def __init__(self, score_type: ScoreTypes = ScoreTypes.TOP_K, k: int = 20):
         self._score_type = score_type
         self._k = k
         self._training = False
@@ -49,7 +54,7 @@ class HummusScore:
         if self._ground_truth is None:
             self._ground_truth = set(heldout_genes)
 
-        if self._score_type == "top_k":
+        if self._score_type is ScoreTypes.TOP_K:
             '''
                 If the user passes in a list of tuples ensure we
                 sort it by score, otherwise we assume it is passed
@@ -58,11 +63,11 @@ class HummusScore:
             if all(isinstance(v, tuple) for v in predictions):
                 # need to do this for type checking :/
                 new_predictions: List[Tuple[Gene, float]
-                                      ] = predictions  # type: ignore
+                                      ] = list(predictions)  # type: ignore
                 sorted_predictions = sorted(
                     new_predictions,
                     key=lambda x: x[1],
-                    reversed=True)  # type: ignore
+                    reverse=True)  # type: ignore
                 predictions = list(
                     map(lambda x: x[0], sorted_predictions))
 
@@ -84,6 +89,10 @@ class HummusScore:
             self._scores = []
 
     def testing_summary(self) -> str:
+        """
+            Raises:
+                ZeroDivisionError: if  
+        """
         # If we are in testing and have scores left
         # ensure that we include them.
         if not self._training and self._scores:
