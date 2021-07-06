@@ -202,6 +202,14 @@
         "documentation": {}
     },
     {
+        "label": "floor",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "collections",
         "kind": 6,
         "isExtraImport": true,
@@ -927,6 +935,14 @@
         "documentation": {}
     },
     {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
         "label": "etree",
         "importPath": "lxml",
         "description": "lxml",
@@ -994,11 +1010,139 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ContextManager",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Set",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Garbanzo",
         "importPath": "t_map.garbanzo.garbanzo",
         "description": "t_map.garbanzo.garbanzo",
         "isExtraImport": true,
         "detail": "t_map.garbanzo.garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "Garbanzo",
+        "importPath": "t_map.garbanzo.garbanzo",
+        "description": "t_map.garbanzo.garbanzo",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
         "documentation": {}
     },
     {
@@ -1042,11 +1186,21 @@
         "documentation": {}
     },
     {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
+        "label": "pathlib",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "dataclasses",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
         "documentation": {}
     },
     {
@@ -1055,6 +1209,86 @@
         "description": "t_map.garbanzo.edgelist",
         "isExtraImport": true,
         "detail": "t_map.garbanzo.edgelist",
+        "documentation": {}
+    },
+    {
+        "label": "EdgeListGarbanzo",
+        "importPath": "t_map.garbanzo.edgelist",
+        "description": "t_map.garbanzo.edgelist",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.edgelist",
+        "documentation": {}
+    },
+    {
+        "label": "EdgeListGarbanzo",
+        "importPath": "t_map.garbanzo.edgelist",
+        "description": "t_map.garbanzo.edgelist",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.edgelist",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "partial",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "HummusScore",
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "isExtraImport": true,
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreFn",
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "isExtraImport": true,
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "HummusScore",
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "isExtraImport": true,
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "KFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "Huri",
+        "importPath": "t_map.garbanzo.huri",
+        "description": "t_map.garbanzo.huri",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.huri",
+        "documentation": {}
+    },
+    {
+        "label": "Hummus",
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "isExtraImport": true,
+        "detail": "t_map.hummus.hummus",
         "documentation": {}
     },
     {
@@ -6393,6 +6627,15 @@
         "documentation": {}
     },
     {
+        "label": "Huri",
+        "kind": 6,
+        "importPath": "t_map.garbanzo.huri",
+        "description": "t_map.garbanzo.huri",
+        "peekOfCode": "class Huri(EdgeListGarbanzo):\n    HURI_URL = \"https://bcb.cs.tufts.edu/huri/huri.tsv\"\n    def __init__(self, gene_path: str, download_path: str = \"/tmp/\"):\n        self._gene_path = gene_path\n        self._graph_pathlib: pathlib.Path = pathlib.Path(\n            download_path) / \"huri\"\n        self._graph = self._download_and_parse_graph()\n        self._genes = self._read_genes_from_path(gene_path)\n    @property\n    def graph_path(self) -> str:",
+        "detail": "t_map.garbanzo.huri",
+        "documentation": {}
+    },
+    {
         "label": "Gene",
         "kind": 6,
         "importPath": "t_map.gene.gene",
@@ -6402,12 +6645,93 @@
         "documentation": {}
     },
     {
+        "label": "Hummus",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "peekOfCode": "class Hummus:\n    def __init__(self, data: Garbanzo,\n                 with_scoring: Optional[HummusScore] = None,\n                 train_test_split_ratio: Optional[float] = None):\n        self.data = data\n        self._genes = [self.data.get(i) for i in range(len(data))]\n        self._score_module = with_scoring\n        self._with_cv = False\n        self._train_test_split_ratio = train_test_split_ratio\n    def with_cv(self, k_fold: Union[int, Literal[\"LOO\"]] = 5) -> Hummus:",
+        "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
+        "label": "HummusTester",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "peekOfCode": "class HummusTester(ContextManager):\n    def __init__(self, data: Garbanzo, test_idx: List[int],\n                 with_scoring: Union[None,\n                                     HummusScore] = None):\n        self._data: Garbanzo = data\n        self._test: List[int] = test_idx\n        self._i = 0\n        self._heldout_genes = self._collect_heldout_genes()\n        self._with_scoring = with_scoring\n        if self._with_scoring is not None:",
+        "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
+        "label": "HummusTrainer",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "peekOfCode": "class HummusTrainer(ContextManager):\n    \"\"\"\n        Ideally I expect this to be a training class, but\n        after much thought I am a bit puzzled as to how to\n        best structure this.\n    \"\"\"\n    def __init__(self, data: Garbanzo, train_idx: List[int],\n                 with_scoring: Union[None,\n                                     HummusScore] = None):\n        self._data: Garbanzo = data",
+        "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
+        "label": "KnownGenes",
+        "kind": 5,
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "peekOfCode": "KnownGenes = List[Gene]\nHeldoutGenes = List[Gene]\nclass Hummus:\n    def __init__(self, data: Garbanzo,\n                 with_scoring: Optional[HummusScore] = None,\n                 train_test_split_ratio: Optional[float] = None):\n        self.data = data\n        self._genes = [self.data.get(i) for i in range(len(data))]\n        self._score_module = with_scoring\n        self._with_cv = False",
+        "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
+        "label": "HeldoutGenes",
+        "kind": 5,
+        "importPath": "t_map.hummus.hummus",
+        "description": "t_map.hummus.hummus",
+        "peekOfCode": "HeldoutGenes = List[Gene]\nclass Hummus:\n    def __init__(self, data: Garbanzo,\n                 with_scoring: Optional[HummusScore] = None,\n                 train_test_split_ratio: Optional[float] = None):\n        self.data = data\n        self._genes = [self.data.get(i) for i in range(len(data))]\n        self._score_module = with_scoring\n        self._with_cv = False\n        self._train_test_split_ratio = train_test_split_ratio",
+        "detail": "t_map.hummus.hummus",
+        "documentation": {}
+    },
+    {
+        "label": "HummusScore",
+        "kind": 6,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "class HummusScore:\n    \"\"\"Hummus Score is a module used for scoring a particular\n    prioritization algorithm. Its main purpose is to be passed\n    into an instance of Hummus to the `with_scoring` parameter.\n    If provided during testing and training time, the Hummus\n    module with additionally return a score function, which will\n    accept a list of prediction with or without a score.\n    Note: Hummus Score function returns None. It is the responsibility\n    of Hummus Score to later provide results.\n    \"\"\"",
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreFn",
+        "kind": 5,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "ScoreFn = Callable[[Union[List[Gene], List[Tuple[Gene, float]]]], None]\nclass HummusScore:\n    \"\"\"Hummus Score is a module used for scoring a particular\n    prioritization algorithm. Its main purpose is to be passed\n    into an instance of Hummus to the `with_scoring` parameter.\n    If provided during testing and training time, the Hummus\n    module with additionally return a score function, which will\n    accept a list of prediction with or without a score.\n    Note: Hummus Score function returns None. It is the responsibility\n    of Hummus Score to later provide results.",
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
         "label": "test_edgelist",
         "kind": 2,
         "importPath": "tests.test_garbanzo",
         "description": "tests.test_garbanzo",
-        "peekOfCode": "def test_edgelist():\n    # testing for side effect\n    EdgeListGarbanzo(\n        graph_path=\"./tests/data/unweighted_edge.list\",\n        gene_path=\"./tests/data/gene.list\")",
+        "peekOfCode": "def test_edgelist():\n    # testing for side effect\n    EdgeListGarbanzo(\n        graph_path=\"./tests/data/unweighted_edge.list\",\n        gene_path=\"./tests/data/gene.list\")\ndef test_huri():\n    data = Huri(\"./tests/data/gene.list\")\n    # maybe not the best test as only works for posix\n    assert(data.graph_path == \"/tmp/huri/huri.tsv\")\n    assert data.get(0)",
         "detail": "tests.test_garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "test_huri",
+        "kind": 2,
+        "importPath": "tests.test_garbanzo",
+        "description": "tests.test_garbanzo",
+        "peekOfCode": "def test_huri():\n    data = Huri(\"./tests/data/gene.list\")\n    # maybe not the best test as only works for posix\n    assert(data.graph_path == \"/tmp/huri/huri.tsv\")\n    assert data.get(0)\n    assert data.graph",
+        "detail": "tests.test_garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "test_cv",
+        "kind": 2,
+        "importPath": "tests.test_hummus",
+        "description": "tests.test_hummus",
+        "peekOfCode": "def test_cv():\n    data = EdgeListGarbanzo(\n        graph_path=\"./tests/data/unweighted_edge.list\",\n        gene_path=\"./tests/data/gene.list\")\n    score_module = HummusScore()\n    runner = Hummus(data, with_scoring=score_module)\n    # Check if we assert gracefully in cv is not set\n    try:\n        for tester in runner:\n            ...",
+        "detail": "tests.test_hummus",
         "documentation": {}
     },
     {
@@ -6415,7 +6739,7 @@
         "kind": 5,
         "importPath": "setup",
         "description": "setup",
-        "peekOfCode": "requirements = ['networkx']\ntest_requirements = ['pytest>=3', ]\nsetup(\n    author=\"Mert Erden\",\n    author_email='mert.erden@tufts.edu',\n    python_requires='>=3.6',\n    classifiers=[\n        'Development Status :: 2 - Pre-Alpha',\n        'Intended Audience :: Developers',\n        'License :: OSI Approved :: MIT License',",
+        "peekOfCode": "requirements = ['networkx', 'sklearn']\ntest_requirements = ['pytest>=3', ]\nsetup(\n    author=\"Mert Erden\",\n    author_email='mert.erden@tufts.edu',\n    python_requires='>=3.6',\n    classifiers=[\n        'Development Status :: 2 - Pre-Alpha',\n        'Intended Audience :: Developers',\n        'License :: OSI Approved :: MIT License',",
         "detail": "setup",
         "documentation": {}
     },

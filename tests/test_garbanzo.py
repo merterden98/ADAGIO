@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from t_map.garbanzo.edgelist import EdgeListGarbanzo
+from t_map.garbanzo.huri import Huri
 
 
 def test_edgelist():
@@ -7,3 +8,11 @@ def test_edgelist():
     EdgeListGarbanzo(
         graph_path="./tests/data/unweighted_edge.list",
         gene_path="./tests/data/gene.list")
+
+
+def test_huri():
+    data = Huri("./tests/data/gene.list")
+    # maybe not the best test as only works for posix
+    assert(data.graph_path == "/tmp/huri/huri.tsv")
+    assert data.get(0)
+    assert data.graph
