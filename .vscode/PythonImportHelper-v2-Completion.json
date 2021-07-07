@@ -570,6 +570,15 @@
         "documentation": {}
     },
     {
+        "label": "itertools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "itertools",
+        "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
         "label": "PreComputeRWR",
         "importPath": "t_map.feta.randomwalk",
         "description": "t_map.feta.randomwalk",
@@ -865,7 +874,7 @@
         "kind": 6,
         "importPath": "t_map.garbanzo.huri",
         "description": "t_map.garbanzo.huri",
-        "peekOfCode": "class Huri(EdgeListGarbanzo):\n    HURI_URL = \"https://bcb.cs.tufts.edu/huri/huri.tsv\"\n    def __init__(self, gene_path: str, download_path: str = \"/tmp/\"):\n        self._gene_path = gene_path\n        self._graph_pathlib: pathlib.Path = pathlib.Path(\n            download_path) / \"huri\"\n        self._graph = self._download_and_parse_graph()\n        self._genes = self._read_genes_from_path(gene_path)\n    @property\n    def graph_path(self) -> str:",
+        "peekOfCode": "class Huri(EdgeListGarbanzo):\n    HURI_URL = \"https://bcb.cs.tufts.edu/huri/huri.tsv\"\n    HURI_HUGO = \"https://bcb.cs.tufts.edu/huri/huri_hgnc.tsv\"\n    def __init__(self, gene_path: str, download_path: str = \"/tmp/\",\n                 with_hugo: bool = False):\n        self._gene_path = gene_path\n        self._with_hugo = with_hugo\n        self._graph_pathlib: pathlib.Path = pathlib.Path(\n            download_path) / \"huri\"\n        self._graph = self._download_and_parse_graph()",
         "detail": "t_map.garbanzo.huri",
         "documentation": {}
     },

@@ -1,6 +1,7 @@
 from typing import Union, List, Tuple, Callable, Iterable, Set
 from t_map.gene.gene import Gene
 from enum import Enum, auto
+import itertools
 
 ScoreFn = Callable[[Union[List[Gene], List[Tuple[Gene, float]]]], None]
 
@@ -32,15 +33,24 @@ class HummusScore:
 
     def train(self) -> None:
         if len(self._scores) > 0:
-            self._testing_scores.append(self._scores)
+            if self._training:
+                self._training_scores.append(self._scores)
+            else:
+                self._testing_scores.append(self._scores)
             self._scores = []
         self._training = True
 
     def test(self) -> None:
         if len(self._scores) > 0:
-            self._training_scores.append(self._scores)
+            if self._training:
+                self._training_scores.append(self._scores)
+            else:
+                self._testing_scores.append(self._scores)
             self._scores = []
         self._training = False
+
+    def reset_ground_truth(self) -> None:
+        self._ground_truth = None
 
     def score(self, heldout_genes: Iterable[Gene],
               predictions: Union[List[Gene],
@@ -52,7 +62,7 @@ class HummusScore:
         """
 
         if self._ground_truth is None:
-            self._ground_truth = set(heldout_genes)
+            self._ground_truth = set(map(lambda x: x.name, heldout_genes))
 
         if self._score_type is ScoreTypes.TOP_K:
             '''
@@ -73,7 +83,7 @@ class HummusScore:
 
             predictions = predictions[0:self._k]
             genes_in_ground_truth = list(filter(
-                lambda x: x in self._ground_truth, predictions))
+                lambda x: x.name in self._ground_truth, predictions))
 
             self._scores.append({"top_k_predictions": genes_in_ground_truth,
                                  "score": len(genes_in_ground_truth) / self._k,
@@ -91,7 +101,7 @@ class HummusScore:
     def testing_summary(self) -> str:
         """
             Raises:
-                ZeroDivisionError: if  
+                ZeroDivisionError: ...
         """
         # If we are in testing and have scores left
         # ensure that we include them.
@@ -99,7 +109,9 @@ class HummusScore:
             self._testing_scores.append(self._scores)
             self._scores = []
 
-        scores = list(map(lambda x: x['score'], self._scores))
+        merged_scores = list(
+            itertools.chain.from_iterable(self._testing_scores))
+        scores = list(map(lambda x: x['score'], merged_scores))
 
         return (f"For k={self._k}, the scores we got were:\n",
                 f"{scores}\n",

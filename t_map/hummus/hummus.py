@@ -115,6 +115,7 @@ class HummusTester(ContextManager):
 
         if isinstance(self._with_scoring, HummusScore):
             self._with_scoring.test()
+            self._with_scoring.reset_ground_truth()
 
             score_fn = partial(self._with_scoring.score,
                                self._heldout_genes)
