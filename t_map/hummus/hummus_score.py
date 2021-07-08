@@ -53,8 +53,8 @@ class HummusScore:
         self._ground_truth = None
 
     def score(self, heldout_genes: Iterable[Gene],
-              predictions: Union[List[Gene],
-                                 List[Tuple[Gene, float]]]) -> None:
+              predictions: Union[Iterable[Gene],
+                                 Iterable[Tuple[Gene, float]]]) -> None:
         """
 
         Raises:
@@ -86,7 +86,8 @@ class HummusScore:
                 lambda x: x.name in self._ground_truth, predictions))
 
             self._scores.append({"top_k_predictions": genes_in_ground_truth,
-                                 "score": len(genes_in_ground_truth) / self._k,
+                                 "score": len(genes_in_ground_truth)
+                                 / len(self._ground_truth),
                                  "predictions": predictions})
             return
         else:
@@ -98,7 +99,7 @@ class HummusScore:
             self._training_scores.append(self._scores)
             self._scores = []
 
-    def testing_summary(self) -> str:
+    def testing_summary(self) -> dict:
         """
             Raises:
                 ZeroDivisionError: ...
@@ -113,6 +114,5 @@ class HummusScore:
             itertools.chain.from_iterable(self._testing_scores))
         scores = list(map(lambda x: x['score'], merged_scores))
 
-        return (f"For k={self._k}, the scores we got were:\n",
-                f"{scores}\n",
-                f"Averaging out to f{sum(scores) / len(scores)}")
+        return {"k": self._k, "score": scores,
+                "avg_score": sum(scores) / len(scores)}
