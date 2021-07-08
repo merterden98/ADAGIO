@@ -9,7 +9,7 @@ from t_map.feta.description import Description
 
 class RandomWalkWithRestart(Feta):
 
-    def __init__(self, alpha=0.85):
+    def __init__(self, alpha=0.4):
         self._desc = Description(
             requires_training=False,
             training_opts=None,
@@ -37,7 +37,7 @@ class RandomWalkWithRestart(Feta):
 
 
 class PreComputeRWR(PreComputeFeta):
-    def __init__(self, alpha=0.85):
+    def __init__(self, alpha=0.4):
         self.__desc = Description(
             requires_training=False,
             training_opts=None,
@@ -57,7 +57,7 @@ class PreComputeRWR(PreComputeFeta):
             else:
                 indicator_vector.append(0)
         indicator_vector = np.asmatrix(indicator_vector).transpose()
-        final_vector = self.setup(graph) * indicator_vector
+        final_vector = self.s * indicator_vector
         gene_list = to_dict_of_lists(graph)
         final_rankings = set()
         for i, genes in enumerate(gene_list):
@@ -87,6 +87,4 @@ class PreComputeRWR(PreComputeFeta):
         # s = c(I - (1-c)markov)^-1r
         inverse_matrix = np.linalg.inv(
             identity - (1 - prob) * np.asmatrix(markov))
-        s = prob * (inverse_matrix)
-
-        return s
+        self.s = prob * (inverse_matrix)
