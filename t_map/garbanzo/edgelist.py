@@ -21,8 +21,11 @@ class EdgeListGarbanzo(Garbanzo):
 
     @property
     def gene_path(self) -> str:
-
         return self._gene_path
+
+    @property
+    def genes(self) -> List[Gene]:
+        return self._genes
 
     def __len__(self) -> int:
         return len(self._genes)
@@ -30,7 +33,9 @@ class EdgeListGarbanzo(Garbanzo):
     def get(self, i: int) -> Gene:
         return self._genes[i]
 
-    def _read_graph_from_path(self, path: str) -> nx.Graph:
+    def _read_graph_from_path(self, path: str, weighted=False) -> nx.Graph:
+        if weighted:
+            return nx.read_weighted_edgelist(path)
         return nx.read_edgelist(path)
 
     def _read_genes_from_path(self, path: str) -> List[Gene]:
