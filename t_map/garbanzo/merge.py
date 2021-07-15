@@ -28,10 +28,10 @@ class MergedGarbanzo(Garbanzo):
         return self._genes
 
     def get(self, i: int) -> Gene:
-        return self.gene_list[i]
+        return self._genes[i]
 
     def __len__(self) -> int:
-        return len(self.gene_list)
+        return len(self._genes)
 
 
 def merge(items: Iterable[Union[Garbanzo, nx.Graph]]) -> Garbanzo:
@@ -41,7 +41,8 @@ def merge(items: Iterable[Union[Garbanzo, nx.Graph]]) -> Garbanzo:
 
     garbanzos = [item for item in items if isinstance(item, Garbanzo)]
     garbanzo_graphs = [g.graph for g in garbanzos]
-    garbanzo_genes = list(chain([g.genes for g in garbanzos]))
+    list_of_genes = [g.genes for g in garbanzos]
+    garbanzo_genes = list(set(chain(*list_of_genes)))
     graphs = [item for item in items if isinstance(item, nx.Graph)]
     merged_graph = nx.compose_all(list(chain(garbanzo_graphs, graphs)))
     return MergedGarbanzo(merged_graph, garbanzo_genes)
