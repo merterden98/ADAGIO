@@ -88,6 +88,7 @@ class HummusScore:
             self._scores.append({"top_k_predictions": genes_in_ground_truth,
                                  "score": len(genes_in_ground_truth)
                                  / len(self._ground_truth),
+                                 "ground_truth": self._ground_truth,
                                  "predictions": predictions})
             return
         else:
@@ -106,13 +107,21 @@ class HummusScore:
         """
         # If we are in testing and have scores left
         # ensure that we include them.
-        if not self._training and self._scores:
-            self._testing_scores.append(self._scores)
-            self._scores = []
+        self._collate_testing_scores()
 
         merged_scores = list(
             itertools.chain.from_iterable(self._testing_scores))
         scores = list(map(lambda x: x['score'], merged_scores))
 
+        predicted_genes = list(
+            map(lambda x: (x['ground_truth'], x['predictions']),
+                merged_scores))
+
         return {"k": self._k, "score": scores,
-                "avg_score": sum(scores) / len(scores)}
+                "avg_score": sum(scores) / len(scores),
+                "predicted_genes": predicted_genes}
+
+    def _collate_testing_scores(self) -> None:
+        if not self._training and self._scores:
+            self._testing_scores.append(self._scores)
+            self._scores = []
