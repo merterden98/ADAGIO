@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod, abstractproperty
 from t_map.gene.gene import Gene
 from typing import Union, Tuple, Set, List
 from t_map.feta.description import Description
+import pickle
 
 
 class Feta(ABC):
@@ -69,3 +70,12 @@ class PreComputeFeta(Feta):
     @abstractmethod
     def setup(self, graph: nx.Graph, *args, **kwargs):
         ...
+
+    def save(self, file_name: str):
+        with open(file_name, 'wb') as f:
+            pickle.dump(self, f)
+
+    @classmethod
+    def load(cls, file_name: str):
+        with open(file_name, 'rb') as f:
+            return pickle.load(f)
