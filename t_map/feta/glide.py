@@ -34,16 +34,21 @@ class Glider(PreComputeFeta):
         self.gmat, self.gmap = glide_mat(elist)
         self.rgmap = {self.gmap[key]: key for key in self.gmap}
 
-    def find_most_likely(self, gene_name: str, k: int):
+    def find_most_likely(self, gene_name: str,
+                         k: int) -> List[Tuple[Gene, float]]:
         """
         For a single gene
         """
+        if gene_name not in self.gmap:
+            return [(Gene(g_name), 0) for g_name in self.gmap]
+
         geneid = self.gmap[gene_name]
         scores = self.gmat[geneid]
         ids_sorted = np.argsort(scores * -1)[: k]
-        return [(self.rgmap[id], scores[id]) for id in ids_sorted]
+        return [(Gene(self.rgmap[id]), scores[id]) for id in ids_sorted]
 
-    def final_list(self, genes: List[Gene], k: int):
+    def final_list(self, genes: List[Gene],
+                   k: int) -> List[Tuple[Gene, float]]:
         gene_scores = {}
         for gene in genes:
             slist = self.find_most_likely(gene.name, k)
