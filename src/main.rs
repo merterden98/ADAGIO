@@ -102,10 +102,7 @@ fn set_algo(algorithm: &str, mut imports: String) -> (String, String) {
         model.push_str("model = RandomWalkWithRestart(alpha=config['alpha'])\n");
     } else if algorithm == "glider" {
         imports.push_str("from t_map.feta.glide import Glider\n");
-        model.push_str(
-            "model = Glider()\nmodel.setup(graph = data.graph)
-        ",
-        );
+        model.push_str("model = Glider()\nmodel.setup(graph = data.graph)\n");
     } else {
         imports.push_str("print('Sorry, don't recognize that algorithm.')\n");
     }
