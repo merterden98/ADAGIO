@@ -33,33 +33,26 @@ class Glider(PreComputeFeta):
             map(lambda x_y_z: (x_y_z[0], x_y_z[1], x_y_z[2]['weight']), elist))
         self.gmat, self.gmap = glide_mat(elist)
         self.rgmap = {self.gmap[key]: key for key in self.gmap}
+        self.graph = self._update_edge_weights(graph, self.gmat, self.gmap)
 
-    def find_most_likely(self, gene_name: str,
-                         k: int) -> List[Tuple[Gene, float]]:
-        """
-        For a single gene
-        """
-        if gene_name not in self.gmap:
-            return [(Gene(g_name), 0) for g_name in self.gmap]
-
-        geneid = self.gmap[gene_name]
-        scores = self.gmat[geneid]
-        ids_sorted = np.argsort(scores * -1)[: k]
-        return [(Gene(self.rgmap[id]), scores[id]) for id in ids_sorted]
-
-    def final_list(self, genes: List[Gene],
-                   k: int) -> List[Tuple[Gene, float]]:
-        gene_scores = {}
-        for gene in genes:
-            slist = self.find_most_likely(gene.name, k)
-            for g, score in slist:
-                if g not in gene_scores:
-                    gene_scores[g] = 0
-                gene_scores[g] += score
-        gene_scores_l = [(key, gene_scores[key]) for key in gene_scores]
-        return sorted(gene_scores_l, reverse=True, key=lambda x: x[1])
+    def _update_edge_weights(self, graph: nx.Graph, gmat: np.ndarray, gmap: dict) -> nx.Graph:
+        for u, v in graph.edges():
+            graph[u][v]['weight'] = gmat[gmap[u]][gmap[v]]
+        return graph
 
     def prioritize(self, disease_genes: List[Gene],
                    graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:
-        return set(self.final_list(disease_genes,
-                                   self.__desc.hyper_params["k"]))
+
+        personalization = dict()
+        personalization = {gene.name: 1 for gene in disease_genes}
+        pr = nx.pagerank(
+            self.graph,
+            alpha=0.85,
+            personalization=personalization)
+        data_set = set()
+
+        for gene_id, score in pr.items():
+            gene = Gene(name=gene_id)
+            gene_pair = (gene, score)
+            data_set.add(gene_pair)
+        return data_set

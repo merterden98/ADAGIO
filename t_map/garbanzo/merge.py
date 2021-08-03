@@ -34,10 +34,43 @@ class MergedGarbanzo(Garbanzo):
         return len(self._genes)
 
 
+def add_weights(data: Garbanzo) -> Garbanzo:
+    """
+    Adds weight 1 to all edges in a graph.
+    :param graph:
+    :return: A graph with weights 1.
+    """
+    for u, v in data.graph.edges():
+        data.graph[u][v]['weight'] = 1
+    return data
+
+
+def normalize(data: Garbanzo) -> Garbanzo:
+    """
+    Given a graph, normalizes the weights of the edges 
+    by the maximum edge weight.
+    """
+    max_weight = max(data.graph.edges(data='weight'), key=lambda x: x[2])[2]
+    print(max_weight)
+    for u, v in data.graph.edges():
+        data.graph[u][v]['weight'] = data.graph[u][v]['weight'] / max_weight
+    return data
+
+
 def merge(items: Iterable[Union[Garbanzo, nx.Graph]]) -> Garbanzo:
 
     if not any([isinstance(item, Garbanzo) for item in items]):
         raise Exception("At least one item needs to be of instance Garbanzo")
+
+    if any([nx.is_weighted(item.graph) for item in items]):
+        weighted_networks = [
+            item for item in items if nx.is_weighted(item.graph)]
+        unweighted_networks = [
+            item for item in items if not nx.is_weighted(item.graph)]
+        reweighted_networks = [add_weights(item)
+                               for item in unweighted_networks]
+        items = weighted_networks + reweighted_networks
+        items = [normalize(item) for item in items]
 
     garbanzos = [item for item in items if isinstance(item, Garbanzo)]
     garbanzo_graphs = [g.graph for g in garbanzos]
