@@ -12,7 +12,7 @@ class Glider(PreComputeFeta):
     def __init__(self, is_annotated=True, lamb: int = 1,
                  is_normalized: bool = False, glide_alph: float = 0.1,
                  glide_beta: int = 1000, glide_delta: int = 1,
-                 glide_loc="cw_normalized", k=20) -> None:
+                 glide_loc="cw_normalized") -> None:
         self.__desc = Description(requires_training=False, training_opts=False,
                                   hyper_params={
                                       "lamb": lamb,
@@ -21,7 +21,6 @@ class Glider(PreComputeFeta):
                                       "glide_beta": glide_beta,
                                       "glide_delta": glide_delta,
                                       "glide_loc": glide_loc,
-                                      "k": k
                                   })
 
     def description(self) -> Description:
