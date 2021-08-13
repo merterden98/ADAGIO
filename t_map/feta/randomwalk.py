@@ -7,7 +7,6 @@ from t_map.feta.feta import Feta, PreComputeFeta
 from t_map.feta.description import Description
 
 
-
 class RandomWalkWithRestart(Feta):
 
     def __init__(self, alpha=0.85):
@@ -91,4 +90,3 @@ class PreComputeRWR(PreComputeFeta):
         s = prob * (inverse_matrix)
 
         return s
-

@@ -1,4 +1,4 @@
-from typing import Union, List, Tuple, Callable, Iterable, Set
+from typing import Union, List, Tuple, Callable, Iterable, Set, Optional
 from t_map.gene.gene import Gene
 from enum import Enum, auto
 import itertools
@@ -125,3 +125,107 @@ class HummusScore:
         if not self._training and self._scores:
             self._testing_scores.append(self._scores)
             self._scores = []
+
+    def compute_roc(self) -> None:
+
+        self._collate_testing_scores()
+        merged_scores = list(
+            itertools.chain.from_iterable(self._testing_scores))
+        ranked_predictions = [testing_score['predictions']
+                              for testing_score in merged_scores]
+        target = [testing_score['ground_truth']
+                  for testing_score in merged_scores]
+        self._roc = roc_of_ranked_list(ranked_predictions, target)
+
+    def auc_roc(self, threshold: Optional[float]) -> float:
+        if not hasattr(self, '_roc'):
+            raise Exception("ROC not computed")
+        if self._roc is None:
+            raise Exception("ROC not computed")
+        tpr = list(map(lambda x: x[0], self._roc))
+        fpr = list(map(lambda x: x[1], self._roc))
+        if threshold is not None:
+            fpr, tpr = get_fpr_tpr_for_thresh(fpr, tpr, threshold)
+            return auc_from_fpr_tpr(fpr, tpr)
+        else:
+            return auc_from_fpr_tpr(fpr, tpr)
+
+
+def roc_of_ranked_list(ranked_predictions: List[List[Gene]],
+                       target: List[List[Gene]],
+                       num_intervals: int = 20) -> List[Tuple[float, float]]:
+    """
+    Given an ordered list of ranked predictions and a target list,
+    for each interval in the list, calculate the ROC score.
+
+    Args:
+        ranked_predictions: A list of ranked predictions
+        target: A list of ground truth
+        intervals: A list of intervals to calculate ROC scores
+    """
+
+    roc_scores = []
+    num_predictions = len(ranked_predictions[0])
+    intervals = list(range(1, num_predictions + 1,
+                     num_predictions // num_intervals))
+    for i, interval in enumerate(intervals):
+        # Get the top i predictions
+        top_i_predictions = [predictions[:interval]
+                             for predictions in ranked_predictions]
+        # Get the ground truth for those predictions
+        # Calculate the ROC score
+        roc_scores.append(roc_score(top_i_predictions, target,
+                          end_range=len(ranked_predictions[i])))
+    return roc_scores
+
+
+def roc_score(ranked_predictions: List[List[Gene]],
+              target: List[List[Gene]],
+              end_range: int) -> Tuple[float, float]:
+    """
+    Given a ranked list of predictions and a target list,
+    calculate the true positive rate and false positive rate.
+
+    Args:
+        ranked_predictions: A list of ranked predictions
+        target: A list of ground truth
+    Returns:
+        Tuple of true positive rate and false positive rate
+    """
+    tp = 0
+    for pred, tar in zip(ranked_predictions, target):
+        pred = [gene.name for gene in pred]
+        pred = set(pred)
+        tar = set(tar)
+        tp += len(pred & tar)
+
+    return (tp / (len(target[0]) * len(target)),
+            len(ranked_predictions[0]) / end_range)
+
+# From: https://stackoverflow.com/questions/39537443/how-to-calculate-a-partial-area-under-the-curve-auc/53464588
+# By: Ami Tavory
+
+
+def auc_from_fpr_tpr(fpr: List[float], tpr: List[float],
+                     trapezoid: bool = False) -> float:
+    import numpy as np
+    fpr = np.array(fpr)
+    tpr = np.array(tpr)
+    inds = [i for (i, (s, e)) in enumerate(
+        zip(fpr[: -1], fpr[1:])) if s != e] + [len(fpr) - 1]
+    fpr, tpr = fpr[inds], tpr[inds]
+    area = 0
+    ft = list(zip(fpr, tpr))
+    for p0, p1 in zip(ft[: -1], ft[1:]):
+        area += (p1[0] - p0[0]) * ((p1[1] + p0[1]) / 2 if trapezoid else p0[1])
+    return area
+
+
+def get_fpr_tpr_for_thresh(fpr: List[float],
+                           tpr: List[float],
+                           thresh: float) -> Tuple[List[float], List[float]]:
+    import bisect
+    p = bisect.bisect_left(fpr, thresh)
+    fpr = fpr.copy()
+    fpr[p] = thresh
+    return fpr[: p + 1], tpr[: p + 1]
