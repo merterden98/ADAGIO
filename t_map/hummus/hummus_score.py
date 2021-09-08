@@ -175,7 +175,7 @@ def roc_of_ranked_list(ranked_predictions: List[List[Gene]],
         # Get the ground truth for those predictions
         # Calculate the ROC score
         roc_scores.append(roc_score(top_i_predictions, target,
-                          end_range=len(ranked_predictions[i])))
+                          end_range=len(ranked_predictions[0])))
     return roc_scores
 
 
