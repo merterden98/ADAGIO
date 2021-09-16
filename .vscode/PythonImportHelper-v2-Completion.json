@@ -1,5 +1,189 @@
 [
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "linalg",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "linalg",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "ctypes",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ctypes",
+        "description": "ctypes",
+        "detail": "ctypes",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "networkx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "networkx",
+        "description": "networkx",
+        "detail": "networkx",
+        "documentation": {}
+    },
+    {
+        "label": "to_dict_of_lists",
+        "importPath": "networkx",
+        "description": "networkx",
+        "isExtraImport": true,
+        "detail": "networkx",
+        "documentation": {}
+    },
+    {
+        "label": "densify",
+        "importPath": "denoise.graph.operations",
+        "description": "denoise.graph.operations",
+        "isExtraImport": true,
+        "detail": "denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "densify",
+        "importPath": "denoise.graph.operations",
+        "description": "denoise.graph.operations",
+        "isExtraImport": true,
+        "detail": "denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "numpy.linalg ",
+        "description": "numpy.linalg ",
+        "isExtraImport": true,
+        "detail": "numpy.linalg ",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "numpy.linalg ",
+        "description": "numpy.linalg ",
+        "isExtraImport": true,
+        "detail": "numpy.linalg ",
+        "documentation": {}
+    },
+    {
+        "label": "itertools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "itertools",
+        "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "chain",
+        "importPath": "itertools",
+        "description": "itertools",
+        "isExtraImport": true,
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.spatial.distance",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "detail": "scipy.spatial.distance",
+        "documentation": {}
+    },
+    {
+        "label": "random_projection",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "random_projection",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "johnson_lindenstrauss_min_dim",
+        "importPath": "sklearn.random_projection",
+        "description": "sklearn.random_projection",
+        "isExtraImport": true,
+        "detail": "sklearn.random_projection",
+        "documentation": {}
+    },
+    {
+        "label": "johnson_lindenstrauss_min_dim",
+        "importPath": "sklearn.random_projection",
+        "description": "sklearn.random_projection",
+        "isExtraImport": true,
+        "detail": "sklearn.random_projection",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "denoise.algorithms.n2vec.node2vec",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "denoise.algorithms.n2vec.node2vec",
+        "description": "denoise.algorithms.n2vec.node2vec",
+        "detail": "denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "Word2Vec",
+        "importPath": "gensim.models",
+        "description": "gensim.models",
+        "isExtraImport": true,
+        "detail": "gensim.models",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -9,12 +193,225 @@
         "documentation": {}
     },
     {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "diags",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "SVC",
+        "importPath": "sklearn.svm",
+        "description": "sklearn.svm",
+        "isExtraImport": true,
+        "detail": "sklearn.svm",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "densify",
+        "importPath": "gfunc.graph.operations",
+        "description": "gfunc.graph.operations",
+        "isExtraImport": true,
+        "detail": "gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "densify",
+        "importPath": "gfunc.graph.operations",
+        "description": "gfunc.graph.operations",
+        "isExtraImport": true,
+        "detail": "gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "mygene",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mygene",
+        "description": "mygene",
+        "detail": "mygene",
+        "documentation": {}
+    },
+    {
+        "label": "pkg_resources",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pkg_resources",
+        "description": "pkg_resources",
+        "detail": "pkg_resources",
+        "documentation": {}
+    },
+    {
+        "label": "get_godag",
+        "importPath": "goatools.base",
+        "description": "goatools.base",
+        "isExtraImport": true,
+        "detail": "goatools.base",
+        "documentation": {}
+    },
+    {
+        "label": "download_ncbi_associations",
+        "importPath": "goatools.base",
+        "description": "goatools.base",
+        "isExtraImport": true,
+        "detail": "goatools.base",
+        "documentation": {}
+    },
+    {
+        "label": "GoSubDag",
+        "importPath": "goatools.gosubdag.gosubdag",
+        "description": "goatools.gosubdag.gosubdag",
+        "isExtraImport": true,
+        "detail": "goatools.gosubdag.gosubdag",
+        "documentation": {}
+    },
+    {
+        "label": "Gene2GoReader",
+        "importPath": "goatools.anno.genetogo_reader",
+        "description": "goatools.anno.genetogo_reader",
+        "isExtraImport": true,
+        "detail": "goatools.anno.genetogo_reader",
+        "documentation": {}
+    },
+    {
+        "label": "glide_predict_links",
+        "importPath": "gfunc.algorithm.glide",
+        "description": "gfunc.algorithm.glide",
+        "isExtraImport": true,
+        "detail": "gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "compute_embedding",
+        "importPath": "gfunc.algorithm.computations",
+        "description": "gfunc.algorithm.computations",
+        "isExtraImport": true,
+        "detail": "gfunc.algorithm.computations",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "denoise.graph.io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "denoise.graph.io",
+        "description": "denoise.graph.io",
+        "detail": "denoise.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "denoise",
+        "importPath": "denoise.algorithms.dsd",
+        "description": "denoise.algorithms.dsd",
+        "isExtraImport": true,
+        "detail": "denoise.algorithms.dsd",
+        "documentation": {}
+    },
+    {
+        "label": "computations",
+        "importPath": "denoise.algorithms.dsd",
+        "description": "denoise.algorithms.dsd",
+        "isExtraImport": true,
+        "detail": "denoise.algorithms.dsd",
+        "documentation": {}
+    },
+    {
+        "label": "operations",
+        "importPath": "denoise.graph",
+        "description": "denoise.graph",
+        "isExtraImport": true,
+        "detail": "denoise.graph",
+        "documentation": {}
+    },
+    {
+        "label": "scoring",
+        "importPath": "denoise",
+        "description": "denoise",
+        "isExtraImport": true,
+        "detail": "denoise",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "importPath": "denoise",
+        "description": "denoise",
+        "isExtraImport": true,
+        "detail": "denoise",
         "documentation": {}
     },
     {
@@ -33,6 +430,110 @@
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Gene",
+        "importPath": "t_map.gene.gene",
+        "description": "t_map.gene.gene",
+        "isExtraImport": true,
+        "detail": "t_map.gene.gene",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Set",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -84,6 +585,46 @@
         "documentation": {}
     },
     {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Set",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Union",
         "importPath": "typing",
         "description": "typing",
@@ -117,6 +658,38 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -252,6 +825,78 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Feta",
+        "importPath": "t_map.feta.feta",
+        "description": "t_map.feta.feta",
+        "isExtraImport": true,
+        "detail": "t_map.feta.feta",
+        "documentation": {}
+    },
+    {
+        "label": "PreComputeFeta",
+        "importPath": "t_map.feta.feta",
+        "description": "t_map.feta.feta",
+        "isExtraImport": true,
+        "detail": "t_map.feta.feta",
+        "documentation": {}
+    },
+    {
+        "label": "Feta",
+        "importPath": "t_map.feta.feta",
+        "description": "t_map.feta.feta",
+        "isExtraImport": true,
+        "detail": "t_map.feta.feta",
+        "documentation": {}
+    },
+    {
+        "label": "PreComputeFeta",
+        "importPath": "t_map.feta.feta",
+        "description": "t_map.feta.feta",
+        "isExtraImport": true,
+        "detail": "t_map.feta.feta",
+        "documentation": {}
+    },
+    {
+        "label": "Description",
+        "importPath": "t_map.feta.description",
+        "description": "t_map.feta.description",
+        "isExtraImport": true,
+        "detail": "t_map.feta.description",
+        "documentation": {}
+    },
+    {
+        "label": "Description",
+        "importPath": "t_map.feta.description",
+        "description": "t_map.feta.description",
+        "isExtraImport": true,
+        "detail": "t_map.feta.description",
+        "documentation": {}
+    },
+    {
+        "label": "Description",
+        "importPath": "t_map.feta.description",
+        "description": "t_map.feta.description",
+        "isExtraImport": true,
+        "detail": "t_map.feta.description",
+        "documentation": {}
+    },
+    {
+        "label": "Description",
+        "importPath": "t_map.feta.description",
+        "description": "t_map.feta.description",
+        "isExtraImport": true,
+        "detail": "t_map.feta.description",
+        "documentation": {}
+    },
+    {
         "label": "dataclasses",
         "kind": 6,
         "isExtraImport": true,
@@ -269,23 +914,6 @@
         "documentation": {}
     },
     {
-        "label": "networkx",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "networkx",
-        "description": "networkx",
-        "detail": "networkx",
-        "documentation": {}
-    },
-    {
-        "label": "to_dict_of_lists",
-        "importPath": "networkx",
-        "description": "networkx",
-        "isExtraImport": true,
-        "detail": "networkx",
-        "documentation": {}
-    },
-    {
         "label": "ABC",
         "importPath": "abc",
         "description": "abc",
@@ -334,92 +962,60 @@
         "documentation": {}
     },
     {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Gene",
-        "importPath": "t_map.gene.gene",
-        "description": "t_map.gene.gene",
-        "isExtraImport": true,
-        "detail": "t_map.gene.gene",
-        "documentation": {}
-    },
-    {
-        "label": "Description",
-        "importPath": "t_map.feta.description",
-        "description": "t_map.feta.description",
-        "isExtraImport": true,
-        "detail": "t_map.feta.description",
-        "documentation": {}
-    },
-    {
-        "label": "Description",
-        "importPath": "t_map.feta.description",
-        "description": "t_map.feta.description",
-        "isExtraImport": true,
-        "detail": "t_map.feta.description",
-        "documentation": {}
-    },
-    {
-        "label": "numpy",
+        "label": "pickle",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
         "documentation": {}
     },
     {
-        "label": "Feta",
-        "importPath": "t_map.feta.feta",
-        "description": "t_map.feta.feta",
+        "label": "Dada",
+        "importPath": "t_map.feta.dada",
+        "description": "t_map.feta.dada",
         "isExtraImport": true,
-        "detail": "t_map.feta.feta",
+        "detail": "t_map.feta.dada",
         "documentation": {}
     },
     {
-        "label": "PreComputeFeta",
-        "importPath": "t_map.feta.feta",
-        "description": "t_map.feta.feta",
+        "label": "RandomWalkWithRestart",
+        "importPath": "t_map.feta.randomwalk",
+        "description": "t_map.feta.randomwalk",
         "isExtraImport": true,
-        "detail": "t_map.feta.feta",
+        "detail": "t_map.feta.randomwalk",
+        "documentation": {}
+    },
+    {
+        "label": "PreComputeRWR",
+        "importPath": "t_map.feta.randomwalk",
+        "description": "t_map.feta.randomwalk",
+        "isExtraImport": true,
+        "detail": "t_map.feta.randomwalk",
+        "documentation": {}
+    },
+    {
+        "label": "RandomWalkWithRestart",
+        "importPath": "t_map.feta.randomwalk",
+        "description": "t_map.feta.randomwalk",
+        "isExtraImport": true,
+        "detail": "t_map.feta.randomwalk",
+        "documentation": {}
+    },
+    {
+        "label": "glide_mat",
+        "importPath": "gfunc.command",
+        "description": "gfunc.command",
+        "isExtraImport": true,
+        "detail": "gfunc.command",
+        "documentation": {}
+    },
+    {
+        "label": "Garbanzo",
+        "importPath": "t_map.garbanzo.garbanzo",
+        "description": "t_map.garbanzo.garbanzo",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.garbanzo",
         "documentation": {}
     },
     {
@@ -489,20 +1085,19 @@
         "documentation": {}
     },
     {
+        "label": "EdgeListGarbanzo",
+        "importPath": "t_map.garbanzo.edgelist",
+        "description": "t_map.garbanzo.edgelist",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.edgelist",
+        "documentation": {}
+    },
+    {
         "label": "annotations",
         "importPath": "__future__",
         "description": "__future__",
         "isExtraImport": true,
         "detail": "__future__",
-        "documentation": {}
-    },
-    {
-        "label": "random",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
         "documentation": {}
     },
     {
@@ -570,36 +1165,27 @@
         "documentation": {}
     },
     {
-        "label": "itertools",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "itertools",
-        "description": "itertools",
-        "detail": "itertools",
-        "documentation": {}
-    },
-    {
-        "label": "PreComputeRWR",
-        "importPath": "t_map.feta.randomwalk",
-        "description": "t_map.feta.randomwalk",
-        "isExtraImport": true,
-        "detail": "t_map.feta.randomwalk",
-        "documentation": {}
-    },
-    {
-        "label": "RandomWalkWithRestart",
-        "importPath": "t_map.feta.randomwalk",
-        "description": "t_map.feta.randomwalk",
-        "isExtraImport": true,
-        "detail": "t_map.feta.randomwalk",
-        "documentation": {}
-    },
-    {
         "label": "Huri",
         "importPath": "t_map.garbanzo.huri",
         "description": "t_map.garbanzo.huri",
         "isExtraImport": true,
         "detail": "t_map.garbanzo.huri",
+        "documentation": {}
+    },
+    {
+        "label": "merge",
+        "importPath": "t_map.garbanzo.merge",
+        "description": "t_map.garbanzo.merge",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.merge",
+        "documentation": {}
+    },
+    {
+        "label": "StringDB",
+        "importPath": "t_map.garbanzo.stringdb",
+        "description": "t_map.garbanzo.stringdb",
+        "isExtraImport": true,
+        "detail": "t_map.garbanzo.stringdb",
         "documentation": {}
     },
     {
@@ -611,19 +1197,1596 @@
         "documentation": {}
     },
     {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
+        "label": "LIBRARY_FILE",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.csrc.Reweighting.reweighting_debug",
+        "description": "GLIDER.GLIDER.glide.csrc.Reweighting.reweighting_debug",
+        "peekOfCode": "LIBRARY_FILE = \"./libReweight.so\"\nlibf         = ctypes.CDLL(LIBRARY_FILE)\nemat         = np.array([[0, 1, 0, 0, 0], [1, 0, 0, 0.5, 0], [0, 0, 0, 1, 0], [0, 0, 1, 0, 0], [0.5, 0, 0, 0, 1]], dtype = np.double)\nedges        = np.array([[1, 2], [4, 2], [4, 3]], dtype = np.intc)\nout          = np.zeros((3, ), dtype = np.double)\nemat_f       = emat.flatten()\nedges_f      = edges.flatten()\nlibf.predict_edge(ctypes.c_void_p(emat_f.ctypes.data),\n                  ctypes.c_void_p(edges_f.ctypes.data),\n                  ctypes.c_int(5),",
+        "detail": "GLIDER.GLIDER.glide.csrc.Reweighting.reweighting_debug",
         "documentation": {}
     },
     {
-        "label": "find_packages",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
+        "label": "compute_degree",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def compute_degree(A, weighted = True):\n    e   = np.ones((A.shape[0], 1))\n    if weighted:\n        deg = A @ e\n    else:\n        A_  = np.where(A > 0, 1, 0)\n        deg = A_ @ e\n    return deg.flatten()\ndef compute_clustering(A, sc):\n    G  = nx.from_numpy_matrix(A)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "compute_clustering",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def compute_clustering(A, sc):\n    G  = nx.from_numpy_matrix(A)\n    cc = nx.clustering(G)\n    av = 0\n    for c in cc:\n        av += cc[c]\n    av = av / (len(cc) *  sc)\n    return cc, av\ndef weight_dijkstra(A, p, q,\n                    f_s_to_d,",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "weight_dijkstra",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def weight_dijkstra(A, p, q,\n                    f_s_to_d,\n                    f_d_to_s,\n                    smat):\n    ps = f_s_to_d(p)\n    qs = f_d_to_s(q)\n    rs = qs\n    r  = q\n    wt = 0\n    while rs != ps:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "add_node_Dst",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def add_node_Dst(A, nA, ranked_edgelist, l_to_i_src, SDIST_MAT, SDIST_JS, nodes_to_look, no_edges_added, return_added_edgelist = False):\n    with open(SDIST_JS, \"r\") as sp:\n        l_to_i_dist = json.load(sp)\n    i_to_l_src = {}\n    for k in l_to_i_src:\n        i_to_l_src[l_to_i_src[k]] = k\n    i_to_l_dist = {}\n    for k in l_to_i_dist:\n        i_to_l_dist[l_to_i_dist[k]] = k\n    def id_s_to_d(p):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "add_nodebased_Dst",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def add_nodebased_Dst(A, nA, ranked_edgelist, l_to_i_src, SDIST_MAT, SDIST_JS, n_add = 10, d_thres = 25, d_min= 5, between_both = True):\n    with open(SDIST_JS, \"r\") as sp:\n        l_to_i_dist = json.load(sp)\n    i_to_l_src = {}\n    for k in l_to_i_src:\n        i_to_l_src[l_to_i_src[k]] = k\n    i_to_l_dist = {}\n    for k in l_to_i_dist:\n        i_to_l_dist[l_to_i_dist[k]] = k\n    def id_s_to_d(p):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "add_nodebased_Res",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def add_nodebased_Res(A, nA, ranked_edgelist, l_to_i_src, INVL_MAT, INVL_JS, n_add = 10, d_thres = 10, between_both = True):\n    with open(INVL_JS, \"r\") as ip:\n        l_to_i_invl = json.load(ip)\n    i_to_l_src = {}\n    for k in l_to_i_src:\n        i_to_l_src[l_to_i_src[k]] = k\n    i_to_l_invl = {}\n    for k in l_to_i_invl:\n        i_to_l_invl[l_to_i_invl[k]] = k\n    def id_s_to_i(p):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "add_global_Dst",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def add_global_Dst(A, nA, ranked_edgelist, l_to_i_src, SDIST_MAT, SDIST_JS, p_add = 0.1, return_added_edgelist = False):\n    with open(SDIST_JS, \"r\") as sp:\n        l_to_i_dist = json.load(sp)\n    i_to_l_src = {}\n    for k in l_to_i_src:\n        i_to_l_src[l_to_i_src[k]] = k\n    i_to_l_dist = {}\n    for k in l_to_i_dist:\n        i_to_l_dist[l_to_i_dist[k]] = k\n    def id_s_to_d(p):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "add_global_Res",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def add_global_Res(A, nA, ranked_edgelist, l_to_i_src, INVL_MAT, INVL_JS, p_add = 0.1):\n    with open(INVL_JS, \"r\") as ip:\n        l_to_i_invl = json.load(ip)\n    i_to_l_src = {}\n    for k in l_to_i_src:\n        i_to_l_src[l_to_i_src[k]] = k\n    i_to_l_invl = {}\n    for k in l_to_i_invl:\n        i_to_l_invl[l_to_i_invl[k]] = k\n    def id_s_to_i(p):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "add_nodebased_DSD",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def add_nodebased_DSD(A, nA, ranked_edgelist, dsd_dist, min_deg = 5, max_deg = 20, n_add = 25, between_both = True):    \n    A_added_edges      = A.copy()\n    deg_vec       = compute_degree(A, weighted = False)\n    added_dict    = {}\n    for i in range(deg_vec.shape[0]): \n        if deg_vec[i] >= min_deg and deg_vec[i] <= max_deg:\n            added_dict[i] = n_add\n    counter       = 0\n    n_ranked      = len(ranked_edgelist)\n    n_added       = 0",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "add_node_tri_Dst",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "peekOfCode": "def add_node_tri_Dst(A, nA, ranked_edgelist, l_to_i_src, SDIST_MAT, SDIST_JS, n_add = 10, d_thres = 25, d_min= 5):\n    with open(SDIST_JS, \"r\") as sp:\n        l_to_i_dist = json.load(sp)\n    i_to_l_src = {}\n    for k in l_to_i_src:\n        i_to_l_src[l_to_i_src[k]] = k\n    i_to_l_dist = {}\n    for k in l_to_i_dist:\n        i_to_l_dist[l_to_i_dist[k]] = k\n    def id_s_to_d(p):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.add_methods",
+        "documentation": {}
+    },
+    {
+        "label": "compute_degree_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "peekOfCode": "def compute_degree_mat(A):\n    e = np.ones((A.shape[0], 1))\n    deg = np.matmul(A, e)\n    return np.diag(deg.flatten())\ndef compute_laplacian(A):\n    D = np.diag(deg.flatten())\n    return D - A\ndef compute_pinverse_diagonal(diag):\n    i_diag = np.zeros((diag.shape[0], diag.shape[0]))\n    for i in range(diag.shape[0]):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_laplacian",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "peekOfCode": "def compute_laplacian(A):\n    D = np.diag(deg.flatten())\n    return D - A\ndef compute_pinverse_diagonal(diag):\n    i_diag = np.zeros((diag.shape[0], diag.shape[0]))\n    for i in range(diag.shape[0]):\n        di = diag[i, i]\n        if di != 0.0:\n            i_diag[i, i] = 1 / float(di)\n    return i_diag",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_pinverse_diagonal",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "peekOfCode": "def compute_pinverse_diagonal(diag):\n    i_diag = np.zeros((diag.shape[0], diag.shape[0]))\n    for i in range(diag.shape[0]):\n        di = diag[i, i]\n        if di != 0.0:\n            i_diag[i, i] = 1 / float(di)\n    return i_diag\ndef compute_X_normalized(A, D, t = -1, lm = 1, is_normalized = True):\n    D_i = compute_pinverse_diagonal(D)\n    P = np.matmul(D_i, A)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_X_normalized",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "peekOfCode": "def compute_X_normalized(A, D, t = -1, lm = 1, is_normalized = True):\n    D_i = compute_pinverse_diagonal(D)\n    P = np.matmul(D_i, A)\n    Identity = np.identity(A.shape[0])\n    e = np.ones((A.shape[0], 1))\n    # Compute W\n    scale = np.matmul(e.T, np.matmul(D, e))[0, 0]\n    W = np.multiply(1 / scale, np.matmul(e, np.matmul(e.T, D)))\n    up_P = np.multiply(lm, P - W)\n    X_ = Identity - up_P",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_sim_matrix",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "peekOfCode": "def compute_sim_matrix(embedding_mat, meth=\"rbf\", params = None):\n    \"\"\"\n    Given a embedding matrix, returns the similarity matrix\n    @param embedding_mat -> A  (nxn) numpy matrix containing embedding\n    @param meth          -> A  method by which the similarity metric computed\n                            Currently only rbf kernel implemented\n    @param params        -> parameters required for @meth\n    @return sim          -> Similarity matrix computed from the embedding\n    \"\"\"\n    prod    = embedding_mat @ embedding_mat.T",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_embedding",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "peekOfCode": "def compute_embedding(edge_list, lm = 1, is_normalized = True):\n    A     = densify(edge_list)\n    D     = compute_degree_mat(A)\n    X     = compute_X_normalized(A, D, lm = lm, is_normalized = is_normalized)\n    return X\ndef compute_reduced_X_embedding(A, D, dims = 50):\n    n            = A.shape[0]\n    D_p          = np.sqrt(D)\n    D_n          = np.sqrt(compute_pinverse_diagonal(D))\n    N            = np.matmul(np.matmul(D_n, A), D_n)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_reduced_X_embedding",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "peekOfCode": "def compute_reduced_X_embedding(A, D, dims = 50):\n    n            = A.shape[0]\n    D_p          = np.sqrt(D)\n    D_n          = np.sqrt(compute_pinverse_diagonal(D))\n    N            = np.matmul(np.matmul(D_n, A), D_n)\n    L            = np.identity(n) - N\n    spec, X_spec = LA.eig(L + np.identity(n))\n    index_chosen = np.argsort(spec)[1 : dims + 1]\n    spec_mat     = spec[index_chosen] - 1\n    spec_mat     = np.diag(spec_mat)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.computations",
+        "documentation": {}
+    },
+    {
+        "label": "rank_edges",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def rank_edges(edgelist, X):\n    \"\"\"Ranks the edges in the edgelist according to their L2 distance from\n    each other in the embedding.\n    \"\"\"\n    existing_edgelist = []\n    best_known_list    = []\n    for ed in edgelist:\n        p, q, wt = ed\n        _norm    = norm(X[p] - X[q])\n        best_known_list.append((p, q, wt, _norm))",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "predict_links",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def predict_links(X, metric=\"euclidean\"):\n    \"\"\"Predicts the most likely links in a graph given an embedding X\n    of a graph.\n    Returns a ranked list of (edges, distances) sorted from closest to\n    furthest.\n    \"\"\"\n    distances = spatial.pdist(X, metric=metric)\n    n = X.shape[0]\n    edges = itertools.combinations(range(n), 2) # generator expression doesn't actualize list :)\n    edges_and_distances = list(zip(edges, distances))",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "create_edge_dict",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def create_edge_dict(edgelist):\n    \"\"\"\n    Creates an edge dictionary with the edge `(p, q)` as the key, and weight `w` as the value.\n    @param  edgelist -> A list with elements of form `(p, q, w)`\n    @return edgedict -> A dictionary with key `(p, q)` and value `w`.\n    \"\"\"\n    edgedict             = {}\n    for (p, q, w) in edgelist:\n        edgedict[(p, q)] = w\n    return edgedict",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "create_neighborhood_dict",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def create_neighborhood_dict(edgelist):\n    \"\"\"\n    Create a dictionary with nodes as key and a list of neighborhood nodes as the value\n    @param edgelist          -> A list with elements of form `(p, q, w)`\n    @param neighborhood_dict -> A dictionary with key `p` and value, a set `{p1, p2, p3, ...}`\n    \"\"\"\n    ndict                = {}\n    for ed in edgelist:\n        p, q, _          = ed\n        if p not in ndict:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "compute_cw_score",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def compute_cw_score(p, q, edgedict, ndict, params = None):\n    \"\"\"\n    Computes the common weighted score between p and q\n    @param p        -> A node of the graph\n    @param q        -> Another node in the graph\n    @param edgedict -> A dictionary with key `(p, q)` and value `w`.\n    @param ndict    -> A dictionary with key `p` and the value a set `{p1, p2, ...}`\n    @param params   -> Should always be none here\n    @return         -> A real value representing the score\n    \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "compute_cw_score_normalized",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def compute_cw_score_normalized(p, q, edgedict, ndict, params = None):\n    \"\"\"\n    Computes the common weighted normalized score between p and q\n    @param p        -> A node of the graph\n    @param q        -> Another node in the graph\n    @param edgedict -> A dictionary with key `(p, q)` and value `w`.\n    @param ndict    -> A dictionary with key `p` and the value a set `{p1, p2, ...}`\n    @param params   -> Should always be none here\n    @return         -> A real value representing the score\n    \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "compute_l3_unweighted_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def compute_l3_unweighted_mat(A):\n    A_u  = np.where(A>0, 1, 0)\n    d, _ = A_u.shape \n    e    = np.ones((d, 1))\n    deg  = A_u @ e\n    ideg = np.where(deg > 0, 1 / deg, 0)\n    sdeg = np.diag(np.sqrt(ideg).flatten())\n    A1   = sdeg @ A_u @ sdeg\n    return A1\ndef compute_l3_weighted_mat(A):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "compute_l3_weighted_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def compute_l3_weighted_mat(A):\n    d, _ = A.shape\n    e    = np.ones((d, 1))\n    deg  = A @ e\n    ideg = np.where(deg > 0, 1 / deg, 0)\n    sdeg = np.diag(np.sqrt(ideg).flatten())\n    A1   = sdeg @ A @ sdeg        \n    return A1\ndef compute_l3_score_mat(p, q, edgedict, ndict, params = None):\n    L3 = params[\"l3\"]",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "compute_l3_score_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def compute_l3_score_mat(p, q, edgedict, ndict, params = None):\n    L3 = params[\"l3\"]\n    return L3[p, q]\ndef compute_degree_vec(edgelist):\n    A   = densify(edgelist)\n    e   = np.ones((A.shape[0], 1))\n    deg = A @ e\n    return deg.flatten()\n###################################################################################################################################################\ndef glide_predict_links(edgelist, X, params={}):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "compute_degree_vec",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def compute_degree_vec(edgelist):\n    A   = densify(edgelist)\n    e   = np.ones((A.shape[0], 1))\n    deg = A @ e\n    return deg.flatten()\n###################################################################################################################################################\ndef glide_predict_links(edgelist, X, params={}):\n    \"\"\"Predicts the most likely links in a graph given an embedding X\n    of a graph.\n    Returns a ranked list of (edges, distances) sorted from closest to ",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "glide_predict_links",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def glide_predict_links(edgelist, X, params={}):\n    \"\"\"Predicts the most likely links in a graph given an embedding X\n    of a graph.\n    Returns a ranked list of (edges, distances) sorted from closest to \n    furthest.\n    @param edgelist -> A list with elements of type `(p, q, wt)`\n    @param X        -> A nxk embedding matrix\n    @param params   -> A dictionary with entries \n    {\n        alpha       => real number",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "glide_remove_links",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def glide_remove_links(edgelist, params):\n    edgedict      = create_edge_dict(edgelist)\n    ndict         = create_neighborhood_dict(edgelist)\n    params_ = {}        \n    # Compute Embedding\n    A_            = densify(edgelist)\n    D_            = compute_degree_mat(A_)\n    X             = compute_X_normalized(A_, D_)\n    N             = X.shape[0]\n    alpha         = params[\"alpha\"]",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "return_connected_edgelist",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "peekOfCode": "def return_connected_edgelist(edgelist, no_removed):\n    p, q, r, w  = edgelist.pop(0)\n    n_added     = {}\n    n_added[p]  = True\n    n_added[q]  = True\n    tree  = [(p, q, w)]\n    extra = []\n    while(True):\n        edgelist_top = []\n        if len(edgelist) == 0:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.denoise",
+        "documentation": {}
+    },
+    {
+        "label": "r_projection",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.r_projections",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.r_projections",
+        "peekOfCode": "def r_projection(input_data, no_components = None, e = 0.1):\n    if no_components == None:\n        no_components = johnson_lindenstrauss_min_dim(n_samples = input_data.shape[0], eps = e)\n    projected_data = random_projection.GaussianRandomProjection(n_components = no_components).fit_transform(input_data)\n    return projected_data",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.r_projections",
+        "documentation": {}
+    },
+    {
+        "label": "constant_reweight",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "peekOfCode": "def constant_reweight(new_edges, params):\n    \"\"\"\n    Takes in a list of `new_edges` of elements `(p, q, wt)` and returns \n    `(p, q, params[\"wt\"])`\n    @param new_edges : A list of form `(p, q, _)`, with p and q the nodes\n    @param params    : A dictionary with one key \"wt\", which is a constant \n                       weight to be applied to every edges in `new_edges`.\n    @return          : A list with all edges in `new_edges` reweighted to \n                       params[\"wt\"]\n    \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "documentation": {}
+    },
+    {
+        "label": "linear_reweight",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "peekOfCode": "def linear_reweight(new_edges, params):\n    \"\"\"\n    Perform linear reweighting on the `new_edges`.\n    @param new_edges: A list of form `(p, q, _)`, with p and q as nodes.\n    @param params   : A dictionary with keys; \n    {\n        \"max_weight\"  => Initial (max) weight. Should be greater than 0.\n        \"spacing\"     => After how many edges should the weight be reduced.\n                         If spacing = 10, the same weight appled to the 10 \n                         consecutive edges, before a linear operation is ",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "documentation": {}
+    },
+    {
+        "label": "geometric_reweight",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "peekOfCode": "def geometric_reweight(new_edges, params):\n    \"\"\"\n    Perform geometric reweighting on the `new_edges`.\n    @param new_edges: A list of form `(p, q, _)`, with p and q as nodes.\n    @param params   : A dictionary with keys; \n    {\n        \"max_weight\"  => Initial (max) weight. Should be greater than 0.\n        \"spacing\"     => After how many edges should the weight be reduced.\n                         If spacing = 10, the same weight appled to the 10 \n                         consecutive edges, before a linear operation is ",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "documentation": {}
+    },
+    {
+        "label": "inverse_reweight",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "peekOfCode": "def inverse_reweight(new_edges, params):\n    \"\"\"\n    Perform geometric reweighting on the `new_edges`.\n    @param new_edges: A list of form `(p, q, _)`, with p and q as nodes.\n    @param params   : A dictionary with keys; \n    {\n        \"max_weight\"  => Initial (max) weight. Should be greater than 0.\n        \"spacing\"     => After how many edges should the weight be reduced.\n                         If spacing = 10, the same weight appled to the 10 \n                         consecutive edges, before a linear operation is ",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "documentation": {}
+    },
+    {
+        "label": "dijkstra_reweight",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "peekOfCode": "def dijkstra_reweight(new_edges, A_mat):\n    \"\"\"\n    Function that performs dijkstra reweighting.\n    \"\"\"\n    e_inv_f  = np.vectorize(lambda l : 0.0 if l == 0.0 else 1.0 / l)\n    A_mat_i  = e_inv_f(A_mat)\n    G        = nx.from_numpy_matrix(A_mat_i)\n    r_d      = nx.floyd_warshall(G)\n    ret_list = []\n    for e in new_edges:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.dsd.weighting",
+        "documentation": {}
+    },
+    {
+        "label": "default_args",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "def default_args(args = {}):\n\tkeys   = [\"input\", \"dimensions\", \"walk-length\", \"num-walks\", \"window-size\", \"iter\", \"workers\", \"p\", \"q\", \"weighted\", \"unweighted\", \"directed\", \"undirected\"]\n\tvalues = [\"karate.edgelist\",\n\t\t  50,\n\t\t  80,\n\t\t  10,\n\t\t  10,\n\t\t  1,\n\t\t  8,\n\t\t  1,",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "read_graph",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "def read_graph(args):\n\t'''\n\tReads the input network in networkx.\n\t'''\n\tif args[\"weighted\"]:\n\t\tG = nx.read_edgelist(args[\"input\"], nodetype=int, data=(('weight',float),), create_using=nx.DiGraph())\n\telse:\n\t\tG = nx.read_edgelist(args[\"input\"], nodetype=int, create_using=nx.DiGraph())\n\t\tfor edge in G.edges():\n\t\t\tG[edge[0]][edge[1]]['weight'] = 1",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "learn_embeddings",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "def learn_embeddings(walks, args):\n\t'''\n\tLearn embeddings by optimizing the Skipgram objective using SGD.\n\targs -- A dictionary\n\t    dimensions - \n\t'''\n\twalks = [list(map(str, walk)) for walk in walks]\n\tprint(args)\n\tmodel = Word2Vec(walks, size=args[\"dimensions\"], window=args[\"window-size\"], min_count=0, sg=1, workers=args[\"workers\"], iter=args[\"iter\"])\n\tprint(\"Here\")",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "compute_embedding",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "def compute_embedding(edgelist, args):\n\t'''\n\tPipeline for representational learning for all nodes in a graph.\n\t'''\n\targs = default_args(args)\n\tnx_G = nx.Graph()\n\tnx_G.add_weighted_edges_from(edgelist)\n\tG = nv.Graph(nx_G, args[\"directed\"], args[\"p\"], args[\"q\"])\n\tG.preprocess_transition_probs()\n\twalks = G.simulate_walks(args[\"num-walks\"], args[\"walk-length\"])",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\tvalues",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\tvalues = [\"karate.edgelist\",\n\t\t  50,\n\t\t  80,\n\t\t  10,\n\t\t  10,\n\t\t  1,\n\t\t  8,\n\t\t  1,\n\t\t  1,\n\t\t  True,",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tvalue",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\tvalue = values[i]\n\t\tif key not in args:\n\t\t\targs[key] = value\n\treturn args\ndef read_graph(args):\n\t'''\n\tReads the input network in networkx.\n\t'''\n\tif args[\"weighted\"]:\n\t\tG = nx.read_edgelist(args[\"input\"], nodetype=int, data=(('weight',float),), create_using=nx.DiGraph())",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\targs[key]",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\t\targs[key] = value\n\treturn args\ndef read_graph(args):\n\t'''\n\tReads the input network in networkx.\n\t'''\n\tif args[\"weighted\"]:\n\t\tG = nx.read_edgelist(args[\"input\"], nodetype=int, data=(('weight',float),), create_using=nx.DiGraph())\n\telse:\n\t\tG = nx.read_edgelist(args[\"input\"], nodetype=int, create_using=nx.DiGraph())",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tG",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\tG = nx.read_edgelist(args[\"input\"], nodetype=int, data=(('weight',float),), create_using=nx.DiGraph())\n\telse:\n\t\tG = nx.read_edgelist(args[\"input\"], nodetype=int, create_using=nx.DiGraph())\n\t\tfor edge in G.edges():\n\t\t\tG[edge[0]][edge[1]]['weight'] = 1\n\tif not args[\"directed\"]:\n\t\tG = G.to_undirected()\n\treturn G\ndef learn_embeddings(walks, args):\n\t'''",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tG",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\tG = nx.read_edgelist(args[\"input\"], nodetype=int, create_using=nx.DiGraph())\n\t\tfor edge in G.edges():\n\t\t\tG[edge[0]][edge[1]]['weight'] = 1\n\tif not args[\"directed\"]:\n\t\tG = G.to_undirected()\n\treturn G\ndef learn_embeddings(walks, args):\n\t'''\n\tLearn embeddings by optimizing the Skipgram objective using SGD.\n\targs -- A dictionary",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tG[edge[0]][edge[1]]['weight']",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\t\tG[edge[0]][edge[1]]['weight'] = 1\n\tif not args[\"directed\"]:\n\t\tG = G.to_undirected()\n\treturn G\ndef learn_embeddings(walks, args):\n\t'''\n\tLearn embeddings by optimizing the Skipgram objective using SGD.\n\targs -- A dictionary\n\t    dimensions - \n\t'''",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tG",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\tG = G.to_undirected()\n\treturn G\ndef learn_embeddings(walks, args):\n\t'''\n\tLearn embeddings by optimizing the Skipgram objective using SGD.\n\targs -- A dictionary\n\t    dimensions - \n\t'''\n\twalks = [list(map(str, walk)) for walk in walks]\n\tprint(args)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\twalks",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\twalks = [list(map(str, walk)) for walk in walks]\n\tprint(args)\n\tmodel = Word2Vec(walks, size=args[\"dimensions\"], window=args[\"window-size\"], min_count=0, sg=1, workers=args[\"workers\"], iter=args[\"iter\"])\n\tprint(\"Here\")\n\tfname = datetime.now().strftime(\"%d-%m-%Y-%H-%M-%S.txt\")\n\tmodel.wv.save_word2vec_format(fname)\n\twith open(fname, \"r\") as fp:\n\t\temb = []\n\t\tid  = 0\n\t\tnode_map = {}",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\tmodel",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\tmodel = Word2Vec(walks, size=args[\"dimensions\"], window=args[\"window-size\"], min_count=0, sg=1, workers=args[\"workers\"], iter=args[\"iter\"])\n\tprint(\"Here\")\n\tfname = datetime.now().strftime(\"%d-%m-%Y-%H-%M-%S.txt\")\n\tmodel.wv.save_word2vec_format(fname)\n\twith open(fname, \"r\") as fp:\n\t\temb = []\n\t\tid  = 0\n\t\tnode_map = {}\n\t\tfor line in fp:\n\t\t\twords                   = line.rstrip().lstrip().split()",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\tfname",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\tfname = datetime.now().strftime(\"%d-%m-%Y-%H-%M-%S.txt\")\n\tmodel.wv.save_word2vec_format(fname)\n\twith open(fname, \"r\") as fp:\n\t\temb = []\n\t\tid  = 0\n\t\tnode_map = {}\n\t\tfor line in fp:\n\t\t\twords                   = line.rstrip().lstrip().split()\n\t\t\tnode_map[int(words[0])] = id\n\t\t\tid                     += 1",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\temb",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\temb = []\n\t\tid  = 0\n\t\tnode_map = {}\n\t\tfor line in fp:\n\t\t\twords                   = line.rstrip().lstrip().split()\n\t\t\tnode_map[int(words[0])] = id\n\t\t\tid                     += 1\n\t\t\tvec                     = [float(f) for f in words[1: ]]\n\t\t\temb.append(vec)\n\ts_list = []",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tnode_map",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\tnode_map = {}\n\t\tfor line in fp:\n\t\t\twords                   = line.rstrip().lstrip().split()\n\t\t\tnode_map[int(words[0])] = id\n\t\t\tid                     += 1\n\t\t\tvec                     = [float(f) for f in words[1: ]]\n\t\t\temb.append(vec)\n\ts_list = []\n\tfor i in range(len(node_map)):\n\t\ts_list.append(node_map[i])",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tnode_map[int(words[0])]",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\t\t\tnode_map[int(words[0])] = id\n\t\t\tid                     += 1\n\t\t\tvec                     = [float(f) for f in words[1: ]]\n\t\t\temb.append(vec)\n\ts_list = []\n\tfor i in range(len(node_map)):\n\t\ts_list.append(node_map[i])\n\temb = np.array(emb)\n\treturn emb[s_list]\ndef compute_embedding(edgelist, args):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\ts_list",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\ts_list = []\n\tfor i in range(len(node_map)):\n\t\ts_list.append(node_map[i])\n\temb = np.array(emb)\n\treturn emb[s_list]\ndef compute_embedding(edgelist, args):\n\t'''\n\tPipeline for representational learning for all nodes in a graph.\n\t'''\n\targs = default_args(args)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\temb",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\temb = np.array(emb)\n\treturn emb[s_list]\ndef compute_embedding(edgelist, args):\n\t'''\n\tPipeline for representational learning for all nodes in a graph.\n\t'''\n\targs = default_args(args)\n\tnx_G = nx.Graph()\n\tnx_G.add_weighted_edges_from(edgelist)\n\tG = nv.Graph(nx_G, args[\"directed\"], args[\"p\"], args[\"q\"])",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\targs",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\targs = default_args(args)\n\tnx_G = nx.Graph()\n\tnx_G.add_weighted_edges_from(edgelist)\n\tG = nv.Graph(nx_G, args[\"directed\"], args[\"p\"], args[\"q\"])\n\tG.preprocess_transition_probs()\n\twalks = G.simulate_walks(args[\"num-walks\"], args[\"walk-length\"])\n\treturn learn_embeddings(walks, args)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\tnx_G",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\tnx_G = nx.Graph()\n\tnx_G.add_weighted_edges_from(edgelist)\n\tG = nv.Graph(nx_G, args[\"directed\"], args[\"p\"], args[\"q\"])\n\tG.preprocess_transition_probs()\n\twalks = G.simulate_walks(args[\"num-walks\"], args[\"walk-length\"])\n\treturn learn_embeddings(walks, args)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\tG",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\tG = nv.Graph(nx_G, args[\"directed\"], args[\"p\"], args[\"q\"])\n\tG.preprocess_transition_probs()\n\twalks = G.simulate_walks(args[\"num-walks\"], args[\"walk-length\"])\n\treturn learn_embeddings(walks, args)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "\twalks",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "peekOfCode": "\twalks = G.simulate_walks(args[\"num-walks\"], args[\"walk-length\"])\n\treturn learn_embeddings(walks, args)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.n2vec_embedding",
+        "documentation": {}
+    },
+    {
+        "label": "Graph",
+        "kind": 6,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "class Graph():\n\tdef __init__(self, nx_G, is_directed, p, q):\n\t\tself.G = nx_G\n\t\tself.is_directed = is_directed\n\t\tself.p = p\n\t\tself.q = q\n\tdef node2vec_walk(self, walk_length, start_node):\n\t\t'''\n\t\tSimulate a random walk starting from start node.\n\t\t'''",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "alias_setup",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "def alias_setup(probs):\n\t'''\n\tCompute utility lists for non-uniform sampling from discrete distributions.\n\tRefer to https://hips.seas.harvard.edu/blog/2013/03/03/the-alias-method-efficient-sampling-with-many-discrete-outcomes/\n\tfor details\n\t'''\n\tK = len(probs)\n\tq = np.zeros(K)\n\tJ = np.zeros(K, dtype=np.int)\n\tsmaller = []",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "alias_draw",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "def alias_draw(J, q):\n\t'''\n\tDraw sample from a non-uniform discrete distribution using alias sampling.\n\t'''\n\tK = len(J)\n\tkk = int(np.floor(np.random.rand()*K))\n\tif np.random.rand() < q[kk]:\n\t    return kk\n\telse:\n\t    return J[kk]",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.G",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tself.G = nx_G\n\t\tself.is_directed = is_directed\n\t\tself.p = p\n\t\tself.q = q\n\tdef node2vec_walk(self, walk_length, start_node):\n\t\t'''\n\t\tSimulate a random walk starting from start node.\n\t\t'''\n\t\tG = self.G\n\t\talias_nodes = self.alias_nodes",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.is_directed",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tself.is_directed = is_directed\n\t\tself.p = p\n\t\tself.q = q\n\tdef node2vec_walk(self, walk_length, start_node):\n\t\t'''\n\t\tSimulate a random walk starting from start node.\n\t\t'''\n\t\tG = self.G\n\t\talias_nodes = self.alias_nodes\n\t\talias_edges = self.alias_edges",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.p",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tself.p = p\n\t\tself.q = q\n\tdef node2vec_walk(self, walk_length, start_node):\n\t\t'''\n\t\tSimulate a random walk starting from start node.\n\t\t'''\n\t\tG = self.G\n\t\talias_nodes = self.alias_nodes\n\t\talias_edges = self.alias_edges\n\t\twalk = [start_node]",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.q",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tself.q = q\n\tdef node2vec_walk(self, walk_length, start_node):\n\t\t'''\n\t\tSimulate a random walk starting from start node.\n\t\t'''\n\t\tG = self.G\n\t\talias_nodes = self.alias_nodes\n\t\talias_edges = self.alias_edges\n\t\twalk = [start_node]\n\t\twhile len(walk) < walk_length:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tG",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tG = self.G\n\t\talias_nodes = self.alias_nodes\n\t\talias_edges = self.alias_edges\n\t\twalk = [start_node]\n\t\twhile len(walk) < walk_length:\n\t\t\tcur = walk[-1]\n\t\t\tcur_nbrs = sorted(G.neighbors(cur))\n\t\t\tif len(cur_nbrs) > 0:\n\t\t\t\tif len(walk) == 1:\n\t\t\t\t\twalk.append(cur_nbrs[alias_draw(alias_nodes[cur][0], alias_nodes[cur][1])])",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\talias_nodes",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\talias_nodes = self.alias_nodes\n\t\talias_edges = self.alias_edges\n\t\twalk = [start_node]\n\t\twhile len(walk) < walk_length:\n\t\t\tcur = walk[-1]\n\t\t\tcur_nbrs = sorted(G.neighbors(cur))\n\t\t\tif len(cur_nbrs) > 0:\n\t\t\t\tif len(walk) == 1:\n\t\t\t\t\twalk.append(cur_nbrs[alias_draw(alias_nodes[cur][0], alias_nodes[cur][1])])\n\t\t\t\telse:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\talias_edges",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\talias_edges = self.alias_edges\n\t\twalk = [start_node]\n\t\twhile len(walk) < walk_length:\n\t\t\tcur = walk[-1]\n\t\t\tcur_nbrs = sorted(G.neighbors(cur))\n\t\t\tif len(cur_nbrs) > 0:\n\t\t\t\tif len(walk) == 1:\n\t\t\t\t\twalk.append(cur_nbrs[alias_draw(alias_nodes[cur][0], alias_nodes[cur][1])])\n\t\t\t\telse:\n\t\t\t\t\tprev = walk[-2]",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\twalk",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\twalk = [start_node]\n\t\twhile len(walk) < walk_length:\n\t\t\tcur = walk[-1]\n\t\t\tcur_nbrs = sorted(G.neighbors(cur))\n\t\t\tif len(cur_nbrs) > 0:\n\t\t\t\tif len(walk) == 1:\n\t\t\t\t\twalk.append(cur_nbrs[alias_draw(alias_nodes[cur][0], alias_nodes[cur][1])])\n\t\t\t\telse:\n\t\t\t\t\tprev = walk[-2]\n\t\t\t\t\tnext = cur_nbrs[alias_draw(alias_edges[(prev, cur)][0], ",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tcur",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\tcur = walk[-1]\n\t\t\tcur_nbrs = sorted(G.neighbors(cur))\n\t\t\tif len(cur_nbrs) > 0:\n\t\t\t\tif len(walk) == 1:\n\t\t\t\t\twalk.append(cur_nbrs[alias_draw(alias_nodes[cur][0], alias_nodes[cur][1])])\n\t\t\t\telse:\n\t\t\t\t\tprev = walk[-2]\n\t\t\t\t\tnext = cur_nbrs[alias_draw(alias_edges[(prev, cur)][0], \n\t\t\t\t\t\talias_edges[(prev, cur)][1])]\n\t\t\t\t\twalk.append(next)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tcur_nbrs",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\tcur_nbrs = sorted(G.neighbors(cur))\n\t\t\tif len(cur_nbrs) > 0:\n\t\t\t\tif len(walk) == 1:\n\t\t\t\t\twalk.append(cur_nbrs[alias_draw(alias_nodes[cur][0], alias_nodes[cur][1])])\n\t\t\t\telse:\n\t\t\t\t\tprev = walk[-2]\n\t\t\t\t\tnext = cur_nbrs[alias_draw(alias_edges[(prev, cur)][0], \n\t\t\t\t\t\talias_edges[(prev, cur)][1])]\n\t\t\t\t\twalk.append(next)\n\t\t\telse:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tprev",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\t\t\tprev = walk[-2]\n\t\t\t\t\tnext = cur_nbrs[alias_draw(alias_edges[(prev, cur)][0], \n\t\t\t\t\t\talias_edges[(prev, cur)][1])]\n\t\t\t\t\twalk.append(next)\n\t\t\telse:\n\t\t\t\tbreak\n\t\treturn walk\n\tdef simulate_walks(self, num_walks, walk_length):\n\t\t'''\n\t\tRepeatedly simulate random walks from each node.",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tnext",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\t\t\tnext = cur_nbrs[alias_draw(alias_edges[(prev, cur)][0], \n\t\t\t\t\t\talias_edges[(prev, cur)][1])]\n\t\t\t\t\twalk.append(next)\n\t\t\telse:\n\t\t\t\tbreak\n\t\treturn walk\n\tdef simulate_walks(self, num_walks, walk_length):\n\t\t'''\n\t\tRepeatedly simulate random walks from each node.\n\t\t'''",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tG",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tG = self.G\n\t\twalks = []\n\t\tnodes = list(G.nodes())\n\t\tprint('Walk iteration:')\n\t\tfor walk_iter in range(num_walks):\n\t\t\tprint(str(walk_iter+1), '/', str(num_walks))\n\t\t\trandom.shuffle(nodes)\n\t\t\tfor node in nodes:\n\t\t\t\twalks.append(self.node2vec_walk(walk_length=walk_length, start_node=node))\n\t\treturn walks",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\twalks",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\twalks = []\n\t\tnodes = list(G.nodes())\n\t\tprint('Walk iteration:')\n\t\tfor walk_iter in range(num_walks):\n\t\t\tprint(str(walk_iter+1), '/', str(num_walks))\n\t\t\trandom.shuffle(nodes)\n\t\t\tfor node in nodes:\n\t\t\t\twalks.append(self.node2vec_walk(walk_length=walk_length, start_node=node))\n\t\treturn walks\n\tdef get_alias_edge(self, src, dst):",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tnodes",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tnodes = list(G.nodes())\n\t\tprint('Walk iteration:')\n\t\tfor walk_iter in range(num_walks):\n\t\t\tprint(str(walk_iter+1), '/', str(num_walks))\n\t\t\trandom.shuffle(nodes)\n\t\t\tfor node in nodes:\n\t\t\t\twalks.append(self.node2vec_walk(walk_length=walk_length, start_node=node))\n\t\treturn walks\n\tdef get_alias_edge(self, src, dst):\n\t\t'''",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tG",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tG = self.G\n\t\tp = self.p\n\t\tq = self.q\n\t\tunnormalized_probs = []\n\t\tfor dst_nbr in sorted(G.neighbors(dst)):\n\t\t\tif dst_nbr == src:\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight']/p)\n\t\t\telif G.has_edge(dst_nbr, src):\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight'])\n\t\t\telse:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tp",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tp = self.p\n\t\tq = self.q\n\t\tunnormalized_probs = []\n\t\tfor dst_nbr in sorted(G.neighbors(dst)):\n\t\t\tif dst_nbr == src:\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight']/p)\n\t\t\telif G.has_edge(dst_nbr, src):\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight'])\n\t\t\telse:\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight']/q)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tq",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tq = self.q\n\t\tunnormalized_probs = []\n\t\tfor dst_nbr in sorted(G.neighbors(dst)):\n\t\t\tif dst_nbr == src:\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight']/p)\n\t\t\telif G.has_edge(dst_nbr, src):\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight'])\n\t\t\telse:\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight']/q)\n\t\tnorm_const = sum(unnormalized_probs)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tunnormalized_probs",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tunnormalized_probs = []\n\t\tfor dst_nbr in sorted(G.neighbors(dst)):\n\t\t\tif dst_nbr == src:\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight']/p)\n\t\t\telif G.has_edge(dst_nbr, src):\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight'])\n\t\t\telse:\n\t\t\t\tunnormalized_probs.append(G[dst][dst_nbr]['weight']/q)\n\t\tnorm_const = sum(unnormalized_probs)\n\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tnorm_const",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tnorm_const = sum(unnormalized_probs)\n\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]\n\t\treturn alias_setup(normalized_probs)\n\tdef preprocess_transition_probs(self):\n\t\t'''\n\t\tPreprocessing of transition probabilities for guiding the random walks.\n\t\t'''\n\t\tG = self.G\n\t\tis_directed = self.is_directed\n\t\talias_nodes = {}",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tnormalized_probs",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]\n\t\treturn alias_setup(normalized_probs)\n\tdef preprocess_transition_probs(self):\n\t\t'''\n\t\tPreprocessing of transition probabilities for guiding the random walks.\n\t\t'''\n\t\tG = self.G\n\t\tis_directed = self.is_directed\n\t\talias_nodes = {}\n\t\tfor node in G.nodes():",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tG",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tG = self.G\n\t\tis_directed = self.is_directed\n\t\talias_nodes = {}\n\t\tfor node in G.nodes():\n\t\t\tunnormalized_probs = [G[node][nbr]['weight'] for nbr in sorted(G.neighbors(node))]\n\t\t\tnorm_const = sum(unnormalized_probs)\n\t\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]\n\t\t\talias_nodes[node] = alias_setup(normalized_probs)\n\t\talias_edges = {}\n\t\ttriads = {}",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tis_directed",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tis_directed = self.is_directed\n\t\talias_nodes = {}\n\t\tfor node in G.nodes():\n\t\t\tunnormalized_probs = [G[node][nbr]['weight'] for nbr in sorted(G.neighbors(node))]\n\t\t\tnorm_const = sum(unnormalized_probs)\n\t\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]\n\t\t\talias_nodes[node] = alias_setup(normalized_probs)\n\t\talias_edges = {}\n\t\ttriads = {}\n\t\tif is_directed:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\talias_nodes",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\talias_nodes = {}\n\t\tfor node in G.nodes():\n\t\t\tunnormalized_probs = [G[node][nbr]['weight'] for nbr in sorted(G.neighbors(node))]\n\t\t\tnorm_const = sum(unnormalized_probs)\n\t\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]\n\t\t\talias_nodes[node] = alias_setup(normalized_probs)\n\t\talias_edges = {}\n\t\ttriads = {}\n\t\tif is_directed:\n\t\t\tfor edge in G.edges():",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tunnormalized_probs",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\tunnormalized_probs = [G[node][nbr]['weight'] for nbr in sorted(G.neighbors(node))]\n\t\t\tnorm_const = sum(unnormalized_probs)\n\t\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]\n\t\t\talias_nodes[node] = alias_setup(normalized_probs)\n\t\talias_edges = {}\n\t\ttriads = {}\n\t\tif is_directed:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\telse:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tnorm_const",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\tnorm_const = sum(unnormalized_probs)\n\t\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]\n\t\t\talias_nodes[node] = alias_setup(normalized_probs)\n\t\talias_edges = {}\n\t\ttriads = {}\n\t\tif is_directed:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\telse:\n\t\t\tfor edge in G.edges():",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tnormalized_probs",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\tnormalized_probs =  [float(u_prob)/norm_const for u_prob in unnormalized_probs]\n\t\t\talias_nodes[node] = alias_setup(normalized_probs)\n\t\talias_edges = {}\n\t\ttriads = {}\n\t\tif is_directed:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\telse:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\talias_nodes[node]",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\talias_nodes[node] = alias_setup(normalized_probs)\n\t\talias_edges = {}\n\t\ttriads = {}\n\t\tif is_directed:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\telse:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\t\t\talias_edges[(edge[1], edge[0])] = self.get_alias_edge(edge[1], edge[0])",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\talias_edges",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\talias_edges = {}\n\t\ttriads = {}\n\t\tif is_directed:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\telse:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\t\t\talias_edges[(edge[1], edge[0])] = self.get_alias_edge(edge[1], edge[0])\n\t\tself.alias_nodes = alias_nodes",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ttriads",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\ttriads = {}\n\t\tif is_directed:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\telse:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\t\t\talias_edges[(edge[1], edge[0])] = self.get_alias_edge(edge[1], edge[0])\n\t\tself.alias_nodes = alias_nodes\n\t\tself.alias_edges = alias_edges",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\talias_edges[edge]",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\telse:\n\t\t\tfor edge in G.edges():\n\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\t\t\talias_edges[(edge[1], edge[0])] = self.get_alias_edge(edge[1], edge[0])\n\t\tself.alias_nodes = alias_nodes\n\t\tself.alias_edges = alias_edges\n\t\treturn\ndef alias_setup(probs):\n\t'''",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\talias_edges[edge]",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\t\t\talias_edges[edge] = self.get_alias_edge(edge[0], edge[1])\n\t\t\t\talias_edges[(edge[1], edge[0])] = self.get_alias_edge(edge[1], edge[0])\n\t\tself.alias_nodes = alias_nodes\n\t\tself.alias_edges = alias_edges\n\t\treturn\ndef alias_setup(probs):\n\t'''\n\tCompute utility lists for non-uniform sampling from discrete distributions.\n\tRefer to https://hips.seas.harvard.edu/blog/2013/03/03/the-alias-method-efficient-sampling-with-many-discrete-outcomes/\n\tfor details",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.alias_nodes",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tself.alias_nodes = alias_nodes\n\t\tself.alias_edges = alias_edges\n\t\treturn\ndef alias_setup(probs):\n\t'''\n\tCompute utility lists for non-uniform sampling from discrete distributions.\n\tRefer to https://hips.seas.harvard.edu/blog/2013/03/03/the-alias-method-efficient-sampling-with-many-discrete-outcomes/\n\tfor details\n\t'''\n\tK = len(probs)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.alias_edges",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\t\tself.alias_edges = alias_edges\n\t\treturn\ndef alias_setup(probs):\n\t'''\n\tCompute utility lists for non-uniform sampling from discrete distributions.\n\tRefer to https://hips.seas.harvard.edu/blog/2013/03/03/the-alias-method-efficient-sampling-with-many-discrete-outcomes/\n\tfor details\n\t'''\n\tK = len(probs)\n\tq = np.zeros(K)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\tK",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\tK = len(probs)\n\tq = np.zeros(K)\n\tJ = np.zeros(K, dtype=np.int)\n\tsmaller = []\n\tlarger = []\n\tfor kk, prob in enumerate(probs):\n\t    q[kk] = K*prob\n\t    if q[kk] < 1.0:\n\t        smaller.append(kk)\n\t    else:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\tq",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\tq = np.zeros(K)\n\tJ = np.zeros(K, dtype=np.int)\n\tsmaller = []\n\tlarger = []\n\tfor kk, prob in enumerate(probs):\n\t    q[kk] = K*prob\n\t    if q[kk] < 1.0:\n\t        smaller.append(kk)\n\t    else:\n\t        larger.append(kk)",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\tJ",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\tJ = np.zeros(K, dtype=np.int)\n\tsmaller = []\n\tlarger = []\n\tfor kk, prob in enumerate(probs):\n\t    q[kk] = K*prob\n\t    if q[kk] < 1.0:\n\t        smaller.append(kk)\n\t    else:\n\t        larger.append(kk)\n\twhile len(smaller) > 0 and len(larger) > 0:",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\tsmaller",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\tsmaller = []\n\tlarger = []\n\tfor kk, prob in enumerate(probs):\n\t    q[kk] = K*prob\n\t    if q[kk] < 1.0:\n\t        smaller.append(kk)\n\t    else:\n\t        larger.append(kk)\n\twhile len(smaller) > 0 and len(larger) > 0:\n\t    small = smaller.pop()",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\tlarger",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\tlarger = []\n\tfor kk, prob in enumerate(probs):\n\t    q[kk] = K*prob\n\t    if q[kk] < 1.0:\n\t        smaller.append(kk)\n\t    else:\n\t        larger.append(kk)\n\twhile len(smaller) > 0 and len(larger) > 0:\n\t    small = smaller.pop()\n\t    large = larger.pop()",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\tK",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\tK = len(J)\n\tkk = int(np.floor(np.random.rand()*K))\n\tif np.random.rand() < q[kk]:\n\t    return kk\n\telse:\n\t    return J[kk]",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "\tkk",
+        "kind": 5,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "peekOfCode": "\tkk = int(np.floor(np.random.rand()*K))\n\tif np.random.rand() < q[kk]:\n\t    return kk\n\telse:\n\t    return J[kk]",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.n2vec.node2vec",
+        "documentation": {}
+    },
+    {
+        "label": "network_enhancement",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "peekOfCode": "def network_enhancement(W, k=20, alpha=0.9, order=2):\n    \"\"\"\n    Performs the network enhancement algorithm.\n    Inputs:\n    - W the the adjacency matrix of the input network of size n x n\n    - k the number of neighbors.\n    - alpha is the regularization parameter.\n    - order determines the extent of diffusion. Typical values are 0.5,1,2.\n    Outputs:\n    - An adjacency matrix of the denoised network.",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "documentation": {}
+    },
+    {
+        "label": "transition_fields",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "peekOfCode": "def transition_fields(W):\n    n, _ = W.shape\n    W = W * n # This seems to be a no-op... a little confused here.\n    W = transition_matrix(W)\n    w = np.sqrt(np.sum(W, axis=0))\n    w = np.tile(w, (n, 1))\n    W = np.divide(W, w)\n    W = W @ W.T\n    return W\n\"\"\"",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "documentation": {}
+    },
+    {
+        "label": "nearest_neighbors_graph",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "peekOfCode": "def nearest_neighbors_graph(W, knn):\n    n, _ = W.shape\n    indices = np.argsort(-1 * W)\n    indicator_mat = np.zeros((n, n))\n    for i in range(n):\n        for k in range(knn):\n            j = indices[i][k]\n            indicator_mat[i, j] = 1\n    knn_mat = np.multiply(W, indicator_mat)\n    knn_mat = (knn_mat + knn_mat.T) / 2",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "documentation": {}
+    },
+    {
+        "label": "transition_matrix",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "description": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "peekOfCode": "def transition_matrix(W):\n    D = np.diag(1 / np.sum(W, axis=-1))\n    return D@W",
+        "detail": "GLIDER.GLIDER.glide.denoise.algorithms.network_enhancement",
+        "documentation": {}
+    },
+    {
+        "label": "parse_go_label_file",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "peekOfCode": "def parse_go_label_file(fname):\n    \"\"\"Parses a GO label file.\n    Outputs two dicts:\n    - One associating GO labels to proteins\n    - One associating proteins to GO labels\n    \"\"\"\n    with open(fname, \"r\") as f:\n        rows = f.readlines()\n        go_to_proteins = {}\n        proteins_to_go = {}",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "parse_graph_file",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "peekOfCode": "def parse_graph_file(fname, weighted = True, normalize = True):\n    \"\"\"Parses a graph represented as an adjacency list. Works on either\n    directed or undirected graphs.\n    Outputs a triple:\n    - An edgelist for the weighted graph G\n    - A list mapping node indices to names\n    - A dictionary mapping node names to node indices\n    \"\"\"\n    with open(fname, \"r\") as f:\n        edgelist, node_map = [], {}",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "write_graph_to_file",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "peekOfCode": "def write_graph_to_file(filename, edgelist, node_map=None):\n    \"\"\"Given an output filename and a list of edges, writes the contents\n    of the list to the file.\n    \"\"\"\n    list_str = \"\"\n    for edge in lst:\n        p, q, wt = edge\n        if node_map is not None:\n            p = node_map[p]\n            q = node_map[q]",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "sparsify",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def sparsify(A, directed = False, node_map = None):\n    \"\"\"Given an adjacency matrix as a numpy matrix, returns the\n    sparsified form of the matrix (or adjacency list).\n    \"\"\"\n    dim = A.shape[0]\n    edgelist = []\n    for i in range(dim):\n        for j in range(i + 1):\n            if i <= j:\n                continue",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "densify",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def densify(edgelist, dim = None, directed = False):\n    \"\"\"Given an adjacency list for the graph, computes the adjacency\n    matrix.\n    \"\"\"\n    if dim is None:\n        dim = get_dim(edgelist)\n    A = np.zeros((dim, dim), dtype = np.double)\n    for edge in edgelist:\n        p, q, wt = edge\n        A[p, q] = wt",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "get_dim",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def get_dim(edgelist):\n    \"\"\"Given an adjacency list for a graph, returns the number of nodes in\n    the graph.\n    \"\"\"\n    node_dict = {}\n    node_count = 0\n    for edge in edgelist:\n        p, q = edge[ :2]\n        if p not in node_dict:\n            node_dict[p] = True",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_numbering",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def add_random_numbering(edgelist):\n    \"\"\"Adds a random number to each of the edges in the adjacency list,\n    for randomization.\n    \"\"\"\n    no_edges = len(edgelist)\n    perm = np.random.permutation(no_edges)\n    _edgelist = []\n    for i in range(no_edges):\n        _edgelist.append((edgelist[i][0], edgelist[i][1], edgelist[i][2], perm[i]))\n    return _edgelist",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_reduced_graph",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def compute_reduced_graph(edgelist, dims = None, p_reduced = 0.1):\n    \"\"\"Given an adjacency list `edgelist`, splits `edgelist` into two. One of the\n    subgraph should be connected, have all the nodes in `edgelist` and\n    should contain `(1 - p_reduced) * edgelist` number of edges.\n    \"\"\"\n    if dims == None:\n        _edgelist = add_random_numbering(edgelist)\n    no_edges = len(edgelist)\n    node_dict = {}\n    nodes_added = 0",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "get_connected_components",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def get_connected_components(edgelist):\n    \"\"\"This function takes in an adjacency list and returns one of the\n    connected components from the list\n    \"\"\"\n    _edgelist = add_random_numbering(edgelist)\n    node_dict = {}\n    nodes_added = 0\n    cc = []\n    _edgelist = sorted(_edgelist, key = lambda x: x[3])\n    # Automatically add the first edge",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_graph_reduced_nodes",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def compute_graph_reduced_nodes(edgelist, no_nodes):\n    \"\"\"\n    Given an adjacency list, returns a connected subgraph from the adjacency list containing all the edge \n    connections, with randomly selected nodes of size `no_nodes`.\n    \"\"\"\n    _edgelist = add_random_numbering(edgelist)\n    no_edges = len(edgelist)\n    node_dict = {}\n    nodes_added = 0\n    rA = []",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_clustering_coeff",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def compute_clustering_coeff(edgelist):\n    \"\"\"Create a datastructure that is a dictionary of dictionaries,\n    indexed by node label, and uses it to compute the clustering\n    coeffecient.\n    \"\"\"\n    edge_dict = {}\n    node_dict = {}    \n    for e in edgelist:\n        p, q, wt = e\n        if p == q:",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_shortest_separation",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def compute_shortest_separation(adjacency_dict, node, computed_dict = None):\n    \"\"\"\n    Takes in an adjacency dict, which is a dictionary of dictionaries, a node as a key to the dict\n    and a already computed dict, returns the dictionary whose key is the tuple of two nodes, and \n    the value is the distance between nodes.\n    \"\"\"\n    nodes = list(adjacency_dict.keys())\n    len_nodes = len(nodes)\n    accounted_for_nodes = {node : True}\n    return_dict = {(node, node) : 0}",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_graph_separation_dict",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def compute_graph_separation_dict(adjacency_dict):\n    \"\"\"Given a dictionary that represents two nodes with edges between\n    them, returns the dictionary whose key is the tuple of two nodes,\n    and the value is the distance between nodes.\n    \"\"\"\n    nodes = list(adjacency_dict.keys())\n    computed_dict = None\n    for node in nodes:\n        if computed_dict == None:\n            computed_dict = compute_shortest_separation(adjacency_dict, node, computed_dict = None)",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "convert_to_adjacency_dict",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def convert_to_adjacency_dict(edge_connections):\n    \"\"\"Given an edge list, returns the adjacency dict `adict` where\n    `adict[p][q]` is true if p and q are nodes and p and q have edges\n    between them.\n    \"\"\"\n    adjacency_dict = {}\n    for edge in edge_connections:\n        e1, e2 = edge[ : 2]\n        if e1 not in adjacency_dict:\n            adjacency_dict[e1] = {}",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_graph_distances",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def compute_graph_distances(edge_connections):\n    adjdict = convert_to_adjacency_dict(edge_connections)\n    return compute_graph_separation_dict(adjdict)\ndef compute_shortest_paths(edgelist):\n    \"\"\" \n    \"\"\"\n    G               = nx.Graph()\n    G.add_weighted_edges_from(edgelist)\n    predecessors, _ = nx.floyd_warshall_predecessor_and_distance(G)\n    n_nodes         = len(G)",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_shortest_paths",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "description": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "peekOfCode": "def compute_shortest_paths(edgelist):\n    \"\"\" \n    \"\"\"\n    G               = nx.Graph()\n    G.add_weighted_edges_from(edgelist)\n    predecessors, _ = nx.floyd_warshall_predecessor_and_distance(G)\n    n_nodes         = len(G)\n    p_matrix        = np.zeros((n_nodes, n_nodes), dtype = np.int)\n    for src in predecessors:\n        for intr in predecessors[src]:",
+        "detail": "GLIDER.GLIDER.glide.denoise.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "add_edges",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.edgeoperations",
+        "description": "GLIDER.GLIDER.glide.denoise.edgeoperations",
+        "peekOfCode": "def add_edges(A, ranked_edgelist, alpha):\n    \"\"\"Denoises a graph by adding edges to it.\n    Inputs:\n    - A: an adjacency matrix representing the graph to add edges to.\n    - ranked_edgelist: a list of edges of the form (u, v, w) to add to the\n    graph ranked from most to least likely.\n    - alpha: a parameter in (0, 1] denoting the proportion of edges to add to\n    the graph.\n    Returns: a new adjacency matrix representing the graph\n    with a portion of the edges added to it.",
+        "detail": "GLIDER.GLIDER.glide.denoise.edgeoperations",
+        "documentation": {}
+    },
+    {
+        "label": "lsr_convert",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.edgeoperations",
+        "description": "GLIDER.GLIDER.glide.denoise.edgeoperations",
+        "peekOfCode": "def lsr_convert(ranked_edgelist, edgelist):\n    \"\"\"Converts a ranked edgelist of scores to a ranked edgelist of\n    weights using a least squares linear regression model\n    Inputs:\n    - ranked_edgelist: a list of edges of the form (u, v, s) ranked from\n    most to least likely. \n    - edgelist: the original graphs edgelist\n    Returns: a ranked edgelist of the form (u, v, w) where the weights\n    are predicted from the scores.\n    \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.denoise.edgeoperations",
+        "documentation": {}
+    },
+    {
+        "label": "vote",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def vote(voters, labels_f, weight_f):\n    \"\"\"\n    Votes for the most popular label among the voters,\n    weighted by their significance. \n    Input:\n      - A list of voters.\n      - A function mapping each voter to a list of labels.\n      - A function mapping each voter to its weight.\n    Output:\n      - The most popoular label or none if no voters have labels.",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "wmv",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def wmv(A, labels_f, weight_f=lambda x: x, default_label=\"????\", params = None):\n    \"\"\"\n    Weighted majority vote algorithm for an undirected graph.\n    Input:\n      - An adjacency matrix for a graph.\n      - A function mapping node IDs to a list of labels. An\n      empty list represents no known label.\n      - A function mapping weights to new values. \n      - A label to give when no label is predicted\n    Output:",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "mv",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def mv(A, labels_f, default_label=\"????\"):\n    \"\"\"\n    Unweighted majority vote algorithm for an undirected graph.\n    Input:\n      - An adjacency matrix for a graph.\n      - A function mapping node IDs to a list of labels. An\n      empty list represents no known label.\n      - A label to give when no label is predicted\n    Output:\n      - A dictionary mapping node IDs to a label. If the label",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "glide",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def glide(node_association, labels_f, params = None):\n    n = len(node_association)\n    predicted_labels = {}\n    for i in range(n):\n        labels = labels_f(i)\n        if labels:\n            predicted_labels[i] = labels[0]\n            continue\n        voters = [p for p in node_association[i]]\n        weight_f = lambda voter: node_association[i][voter]",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "knn",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def knn(distances, labels_f, k, default_label=\"????\", is_weighted=True, params = None):\n    \"\"\"Performs k-nearest neighors voting algorithm using the passed in\n    distance matrix.\n    Input:\n      - An n x n matrix where each entry represents the distance\n      between two points.\n      - A function mapping node IDs to a list of labels. An\n      empty list represents no known label.\n      - A label to give when no label is predicted\n    Output:",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "svm",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def svm(embedding, labels_f, inv_labels_f = lambda x: x, default_label = \"????\"):\n    \"\"\"\n    Performs SVM classification\n    labels_f: returns a class label\n    \"\"\"    \n    clf = SVC(gamma = \"auto\")\n    n = embedding.shape[0]\n    training = []\n    testing  = []\n    labels   = []",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "jaccard_filter",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def jaccard_filter(labels_dct, threshold=0.1):\n    \"\"\"\n    filters the set of labels so that no two labels have a jacard similarity\n    greater than the threshold\n    @param labels_dct: A dictionary with labels as keys and a list of indices\n        as its values\n    @param threshold: the maximum tolerable similarity\n    @return (used_label, unused_labels): the dict passed in split into used and\n        unused\n    \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "jaccard_filter_added_unused",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def jaccard_filter_added_unused(labels_dct, threshold=0.1):\n    \"\"\"\n    filters the set of labels so that no two labels have a jacard similarity\n    greater than the threshold\n    @param labels_dct: A dictionary with labels as keys and a list of indices\n        as its values\n    @param threshold: the maximum tolerable similarity\n    @return (used_label, unused_labels): the dict passed in split into used and\n        unused\n    \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "perform_binary_OVA",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.predict",
+        "description": "GLIDER.GLIDER.glide.denoise.predict",
+        "peekOfCode": "def perform_binary_OVA(E, labels, params = {}, clf_type=\"LR\"):\n    \"\"\"\n    Perform binary svc on embedding and return the new labels\n    @param E: Embedding of size n x k\n    @param labels: A dictionary that maps the index in the row of embedding to labels. An index can have many labels\n    @param params:\n    @return labels: Since the dictionary labels is incomplete (some of the indices donot have any labels associated with it), this function performs SVC for each labels and completels the labels dictionary, and returns it.\n    \"\"\"\n    def convert_labels_to_dict(lls):\n        \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.denoise.predict",
+        "documentation": {}
+    },
+    {
+        "label": "score_cv",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.scoring",
+        "description": "GLIDER.GLIDER.glide.denoise.scoring",
+        "peekOfCode": "def score_cv(test_nodes, test_labelling, real_labelling, debug_params = {\"DEBUG\" : False}):\n    \"\"\"Scores cross validation by counting the number of test nodes that\n    were accurately labeled after their removal from the true\n    labelling.\n    \"\"\"\n    correct = 0\n    total   = 0\n    if debug_params[\"DEBUG\"] == True:\n        if debug_params[\"D_TYPE\"] == \"degree_check\":\n            degree_vec   = debug_params[\"degree_vec\"]",
+        "detail": "GLIDER.GLIDER.glide.denoise.scoring",
+        "documentation": {}
+    },
+    {
+        "label": "kfoldcv",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.denoise.scoring",
+        "description": "GLIDER.GLIDER.glide.denoise.scoring",
+        "peekOfCode": "def kfoldcv(k, labels, prediction_algorithm, randomized=True, degree_vec = None, reverse = False):\n    \"\"\"Performs k-fold cross validation.\n    Args:\n      - A number of folds k\n      - A labeling for the nodes.\n      - An algorithm that takes the training labels\n      and outputs a predicted labelling.\n    Output: \n      - A list where each element is the accuracy of the\n      learning algorithm holding out one fold of the data.",
+        "detail": "GLIDER.GLIDER.glide.denoise.scoring",
+        "documentation": {}
+    },
+    {
+        "label": "compute_degree_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "peekOfCode": "def compute_degree_mat(A):\n    e = np.ones((A.shape[0], 1))\n    deg = np.matmul(A, e)\n    return np.diag(deg.flatten())\ndef compute_laplacian(A):\n    D = np.diag(deg.flatten())\n    return D - A\ndef compute_pinverse_diagonal(diag):\n    i_diag = np.zeros((diag.shape[0], diag.shape[0]))\n    for i in range(diag.shape[0]):",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_laplacian",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "peekOfCode": "def compute_laplacian(A):\n    D = np.diag(deg.flatten())\n    return D - A\ndef compute_pinverse_diagonal(diag):\n    i_diag = np.zeros((diag.shape[0], diag.shape[0]))\n    for i in range(diag.shape[0]):\n        di = diag[i, i]\n        if di != 0.0:\n            i_diag[i, i] = 1 / float(di)\n    return i_diag",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_pinverse_diagonal",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "peekOfCode": "def compute_pinverse_diagonal(diag):\n    i_diag = np.zeros((diag.shape[0], diag.shape[0]))\n    for i in range(diag.shape[0]):\n        di = diag[i, i]\n        if di != 0.0:\n            i_diag[i, i] = 1 / float(di)\n    return i_diag\ndef compute_X_normalized(A, D, t=-1, lm=1, is_normalized=True):\n    D_i = compute_pinverse_diagonal(D)\n    P = np.matmul(D_i, A)",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_X_normalized",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "peekOfCode": "def compute_X_normalized(A, D, t=-1, lm=1, is_normalized=True):\n    D_i = compute_pinverse_diagonal(D)\n    P = np.matmul(D_i, A)\n    Identity = np.identity(A.shape[0])\n    e = np.ones((A.shape[0], 1))\n    # Compute W\n    scale = np.matmul(e.T, np.matmul(D, e))[0, 0]\n    W = np.multiply(1 / scale, np.matmul(e, np.matmul(e.T, D)))\n    up_P = np.multiply(lm, P - W)\n    X_ = Identity - up_P",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_sim_matrix",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "peekOfCode": "def compute_sim_matrix(embedding_mat, meth=\"rbf\", params=None):\n    \"\"\"\n    Given a embedding matrix, returns the similarity matrix\n    @param embedding_mat -> A  (nxn) numpy matrix containing embedding\n    @param meth          -> A  method by which the similarity metric computed\n                            Currently only rbf kernel implemented\n    @param params        -> parameters required for @meth\n    @return sim          -> Similarity matrix computed from the embedding\n    \"\"\"\n    prod = embedding_mat @ embedding_mat.T",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_embedding",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "peekOfCode": "def compute_embedding(edge_list, lm=1, is_normalized=True):\n    A = densify(edge_list)\n    D = compute_degree_mat(A)\n    X = compute_X_normalized(A, D, lm=lm, is_normalized=is_normalized)\n    return X\ndef compute_reduced_X_embedding(A, D, dims=50):\n    n = A.shape[0]\n    D_p = np.sqrt(D)\n    D_n = np.sqrt(compute_pinverse_diagonal(D))\n    N = np.matmul(np.matmul(D_n, A), D_n)",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_reduced_X_embedding",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "peekOfCode": "def compute_reduced_X_embedding(A, D, dims=50):\n    n = A.shape[0]\n    D_p = np.sqrt(D)\n    D_n = np.sqrt(compute_pinverse_diagonal(D))\n    N = np.matmul(np.matmul(D_n, A), D_n)\n    L = np.identity(n) - N\n    spec, X_spec = LA.eig(L + np.identity(n))\n    index_chosen = np.argsort(spec)[1: dims + 1]\n    spec_mat = spec[index_chosen] - 1\n    spec_mat = np.diag(spec_mat)",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.computations",
+        "documentation": {}
+    },
+    {
+        "label": "rank_edges",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def rank_edges(edgelist, X):\n    \"\"\"Ranks the edges in the edgelist according to their L2 distance from\n    each other in the embedding.\n    \"\"\"\n    existing_edgelist = []\n    best_known_list    = []\n    for ed in edgelist:\n        p, q, wt = ed\n        _norm    = norm(X[p] - X[q])\n        best_known_list.append((p, q, wt, _norm))",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "predict_links",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def predict_links(X, metric=\"euclidean\"):\n    \"\"\"Predicts the most likely links in a graph given an embedding X\n    of a graph.\n    Returns a ranked list of (edges, distances) sorted from closest to\n    furthest.\n    \"\"\"\n    distances = spatial.pdist(X, metric=metric)\n    n = X.shape[0]\n    edges = itertools.combinations(range(n), 2) # generator expression doesn't actualize list :)\n    edges_and_distances = list(zip(edges, distances))",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "create_edge_dict",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def create_edge_dict(edgelist):\n    \"\"\"\n    Creates an edge dictionary with the edge `(p, q)` as the key, and weight `w` as the value.\n    @param  edgelist -> A list with elements of form `(p, q, w)`\n    @return edgedict -> A dictionary with key `(p, q)` and value `w`.\n    \"\"\"\n    edgedict             = {}\n    for (p, q, w) in edgelist:\n        edgedict[(p, q)] = w\n    return edgedict",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "create_neighborhood_dict",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def create_neighborhood_dict(edgelist):\n    \"\"\"\n    Create a dictionary with nodes as key and a list of neighborhood nodes as the value\n    @param edgelist          -> A list with elements of form `(p, q, w)`\n    @param neighborhood_dict -> A dictionary with key `p` and value, a set `{p1, p2, p3, ...}`\n    \"\"\"\n    ndict                = {}\n    for ed in edgelist:\n        p, q, _          = ed\n        if p not in ndict:",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "compute_cw_score",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def compute_cw_score(p, q, edgedict, ndict, params = None):\n    \"\"\"\n    Computes the common weighted score between p and q\n    @param p        -> A node of the graph\n    @param q        -> Another node in the graph\n    @param edgedict -> A dictionary with key `(p, q)` and value `w`.\n    @param ndict    -> A dictionary with key `p` and the value a set `{p1, p2, ...}`\n    @param params   -> Should always be none here\n    @return         -> A real value representing the score\n    \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "compute_cw_score_normalized",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def compute_cw_score_normalized(p, q, edgedict, ndict, params = None):\n    \"\"\"\n    Computes the common weighted normalized score between p and q\n    @param p        -> A node of the graph\n    @param q        -> Another node in the graph\n    @param edgedict -> A dictionary with key `(p, q)` and value `w`.\n    @param ndict    -> A dictionary with key `p` and the value a set `{p1, p2, ...}`\n    @param params   -> Should always be none here\n    @return         -> A real value representing the score\n    \"\"\"",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "compute_l3_unweighted_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def compute_l3_unweighted_mat(A):\n    A_u  = np.where(A>0, 1, 0)\n    d, _ = A_u.shape \n    e    = np.ones((d, 1))\n    deg  = A_u @ e\n    ideg = np.where(deg > 0, 1 / deg, 0)\n    sdeg = np.diag(np.sqrt(ideg).flatten())\n    A1   = sdeg @ A_u @ sdeg\n    return A1\ndef compute_l3_weighted_mat(A):",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "compute_l3_weighted_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def compute_l3_weighted_mat(A):\n    d, _ = A.shape\n    e    = np.ones((d, 1))\n    deg  = A @ e\n    ideg = np.where(deg > 0, 1 / deg, 0)\n    sdeg = np.diag(np.sqrt(ideg).flatten())\n    A1   = sdeg @ A @ sdeg        \n    return A1\ndef compute_l3_score_mat(p, q, edgedict, ndict, params = None):\n    L3 = params[\"l3\"]",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "compute_l3_score_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def compute_l3_score_mat(p, q, edgedict, ndict, params = None):\n    L3 = params[\"l3\"]\n    return L3[p, q]\ndef compute_degree_vec(edgelist):\n    A   = densify(edgelist)\n    e   = np.ones((A.shape[0], 1))\n    deg = A @ e\n    return deg.flatten()\n###################################################################################################################################################\ndef glide_predict_links(edgelist, X, params={}):",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "compute_degree_vec",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def compute_degree_vec(edgelist):\n    A   = densify(edgelist)\n    e   = np.ones((A.shape[0], 1))\n    deg = A @ e\n    return deg.flatten()\n###################################################################################################################################################\ndef glide_predict_links(edgelist, X, params={}):\n    \"\"\"Predicts the most likely links in a graph given an embedding X\n    of a graph.\n    Returns a ranked list of (edges, distances) sorted from closest to ",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "glide_predict_links",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "peekOfCode": "def glide_predict_links(edgelist, X, params={}):\n    \"\"\"Predicts the most likely links in a graph given an embedding X\n    of a graph.\n    Returns a ranked list of (edges, distances) sorted from closest to \n    furthest.\n    @param edgelist -> A list with elements of type `(p, q, wt)`\n    @param X        -> A nxk embedding matrix\n    @param params   -> A dictionary with entries \n    {\n        alpha       => real number",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.glide",
+        "documentation": {}
+    },
+    {
+        "label": "r_projection",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.algorithm.r_projections",
+        "description": "GLIDER.GLIDER.glide.gfunc.algorithm.r_projections",
+        "peekOfCode": "def r_projection(input_data, no_components = None, e = 0.1):\n    if no_components == None:\n        no_components = johnson_lindenstrauss_min_dim(n_samples = input_data.shape[0], eps = e)\n    projected_data = random_projection.GaussianRandomProjection(n_components = no_components).fit_transform(input_data)\n    return projected_data",
+        "detail": "GLIDER.GLIDER.glide.gfunc.algorithm.r_projections",
+        "documentation": {}
+    },
+    {
+        "label": "GoTool",
+        "kind": 6,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "peekOfCode": "class GoTool:\n    def __init__(self):\n        gdagfile = pkg_resources.resource_filename('glide', 'data/go-basic.obo.dat')\n        # self.godag = get_godag('go-basic.obo', optional_attrs='relationship')\n        self.godag = get_godag(gdagfile, optional_attrs='relationship')\n    def get_labels(self, filters = None):\n        if filters == None:\n            return list(self.godag.keys())\n        go_terms   = []\n        for k in self.godag.keys():",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "parse_go_label_file",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "peekOfCode": "def parse_go_label_file(fname):\n    \"\"\"Parses a GO label file.\n    Outputs two dicts:\n    - One associating GO labels to proteins\n    - One associating proteins to GO labels\n    \"\"\"\n    with open(fname, \"r\") as f:\n        rows = f.readlines()\n        go_to_proteins = {}\n        proteins_to_go = {}",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "parse_graph_file",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "peekOfCode": "def parse_graph_file(fname, weighted = True, normalize = True):\n    \"\"\"Parses a graph represented as an adjacency list. Works on either\n    directed or undirected graphs.\n    Outputs a triple:\n    - An edgelist for the weighted graph G\n    - A list mapping node indices to names\n    - A dictionary mapping node names to node indices\n    \"\"\"\n    with open(fname, \"r\") as f:\n        edgelist, node_map = [], {}",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "write_graph_to_file",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "peekOfCode": "def write_graph_to_file(filename, edgelist, node_map=None):\n    \"\"\"Given an output filename and a list of edges, writes the contents\n    of the list to the file.\n    \"\"\"\n    list_str = \"\"\n    for edge in lst:\n        p, q, wt = edge\n        if node_map is not None:\n            p = node_map[p]\n            q = node_map[q]",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "get_go_labels_and_parents",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "peekOfCode": "def get_go_labels_and_parents(filter_protein, filter_label, filter_parent, entrez_labels, anno_map = lambda x : x):\n    g2gofile = pkg_resources.resource_filename('glide', 'data/gene2go.dat')\n    objanno = Gene2GoReader(g2gofile, taxids=[9606])\n    go2geneids_human = objanno.get_id2gos(namespace=filter_protein[\"namespace\"], \n                                          go2geneids=True)\n    mg = mygene.MyGeneInfo()\n    gt          = GoTool()\n    labels      = gt.get_labels(filter_label)\n    print(\"Read gene2go.dat File\")\n    labels_dict = {}",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.io",
+        "documentation": {}
+    },
+    {
+        "label": "sparsify",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def sparsify(A, directed = False, node_map = None):\n    \"\"\"Given an adjacency matrix as a numpy matrix, returns the\n    sparsified form of the matrix (or adjacency list).\n    \"\"\"\n    dim = A.shape[0]\n    edgelist = []\n    for i in range(dim):\n        for j in range(i + 1):\n            if i <= j:\n                continue",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "densify",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def densify(edgelist, dim = None, directed = False):\n    \"\"\"Given an adjacency list for the graph, computes the adjacency\n    matrix.\n    \"\"\"\n    if dim is None:\n        dim = get_dim(edgelist)\n    A = np.zeros((dim, dim), dtype = np.double)\n    for edge in edgelist:\n        p, q, wt = edge\n        A[p, q] = wt",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "get_dim",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def get_dim(edgelist):\n    \"\"\"Given an adjacency list for a graph, returns the number of nodes in\n    the graph.\n    \"\"\"\n    node_dict = {}\n    node_count = 0\n    for edge in edgelist:\n        p, q = edge[ :2]\n        if p not in node_dict:\n            node_dict[p] = True",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_numbering",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def add_random_numbering(edgelist):\n    \"\"\"Adds a random number to each of the edges in the adjacency list,\n    for randomization.\n    \"\"\"\n    no_edges = len(edgelist)\n    perm = np.random.permutation(no_edges)\n    _edgelist = []\n    for i in range(no_edges):\n        _edgelist.append((edgelist[i][0], edgelist[i][1], edgelist[i][2], perm[i]))\n    return _edgelist",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_reduced_graph",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def compute_reduced_graph(edgelist, dims = None, p_reduced = 0.1):\n    \"\"\"Given an adjacency list `edgelist`, splits `edgelist` into two. One of the\n    subgraph should be connected, have all the nodes in `edgelist` and\n    should contain `(1 - p_reduced) * edgelist` number of edges.\n    \"\"\"\n    if dims == None:\n        _edgelist = add_random_numbering(edgelist)\n    no_edges = len(edgelist)\n    node_dict = {}\n    nodes_added = 0",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "get_connected_components",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def get_connected_components(edgelist):\n    \"\"\"This function takes in an adjacency list and returns one of the\n    connected components from the list\n    \"\"\"\n    _edgelist = add_random_numbering(edgelist)\n    node_dict = {}\n    nodes_added = 0\n    cc = []\n    _edgelist = sorted(_edgelist, key = lambda x: x[3])\n    # Automatically add the first edge",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_graph_reduced_nodes",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def compute_graph_reduced_nodes(edgelist, no_nodes):\n    \"\"\"\n    Given an adjacency list, returns a connected subgraph from the adjacency list containing all the edge \n    connections, with randomly selected nodes of size `no_nodes`.\n    \"\"\"\n    _edgelist = add_random_numbering(edgelist)\n    no_edges = len(edgelist)\n    node_dict = {}\n    nodes_added = 0\n    rA = []",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_clustering_coeff",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def compute_clustering_coeff(edgelist):\n    \"\"\"Create a datastructure that is a dictionary of dictionaries,\n    indexed by node label, and uses it to compute the clustering\n    coeffecient.\n    \"\"\"\n    edge_dict = {}\n    node_dict = {}    \n    for e in edgelist:\n        p, q, wt = e\n        if p == q:",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_shortest_separation",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def compute_shortest_separation(adjacency_dict, node, computed_dict = None):\n    \"\"\"\n    Takes in an adjacency dict, which is a dictionary of dictionaries, a node as a key to the dict\n    and a already computed dict, returns the dictionary whose key is the tuple of two nodes, and \n    the value is the distance between nodes.\n    \"\"\"\n    nodes = list(adjacency_dict.keys())\n    len_nodes = len(nodes)\n    accounted_for_nodes = {node : True}\n    return_dict = {(node, node) : 0}",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_graph_separation_dict",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def compute_graph_separation_dict(adjacency_dict):\n    \"\"\"Given a dictionary that represents two nodes with edges between\n    them, returns the dictionary whose key is the tuple of two nodes,\n    and the value is the distance between nodes.\n    \"\"\"\n    nodes = list(adjacency_dict.keys())\n    computed_dict = None\n    for node in nodes:\n        if computed_dict == None:\n            computed_dict = compute_shortest_separation(adjacency_dict, node, computed_dict = None)",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "convert_to_adjacency_dict",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def convert_to_adjacency_dict(edge_connections):\n    \"\"\"Given an edge list, returns the adjacency dict `adict` where\n    `adict[p][q]` is true if p and q are nodes and p and q have edges\n    between them.\n    \"\"\"\n    adjacency_dict = {}\n    for edge in edge_connections:\n        e1, e2 = edge[ : 2]\n        if e1 not in adjacency_dict:\n            adjacency_dict[e1] = {}",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_graph_distances",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def compute_graph_distances(edge_connections):\n    adjdict = convert_to_adjacency_dict(edge_connections)\n    return compute_graph_separation_dict(adjdict)\ndef compute_shortest_paths(edgelist):\n    \"\"\" \n    \"\"\"\n    G               = nx.Graph()\n    G.add_weighted_edges_from(edgelist)\n    predecessors, _ = nx.floyd_warshall_predecessor_and_distance(G)\n    n_nodes         = len(G)",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "compute_shortest_paths",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "description": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "peekOfCode": "def compute_shortest_paths(edgelist):\n    \"\"\" \n    \"\"\"\n    G               = nx.Graph()\n    G.add_weighted_edges_from(edgelist)\n    predecessors, _ = nx.floyd_warshall_predecessor_and_distance(G)\n    n_nodes         = len(G)\n    p_matrix        = np.zeros((n_nodes, n_nodes), dtype = np.int)\n    for src in predecessors:\n        for intr in predecessors[src]:",
+        "detail": "GLIDER.GLIDER.glide.gfunc.graph.operations",
+        "documentation": {}
+    },
+    {
+        "label": "glide_mat",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide.gfunc.command",
+        "description": "GLIDER.GLIDER.glide.gfunc.command",
+        "peekOfCode": "def glide_mat(edgelist, \n              is_annotated = True,\n              lamb         = 1,\n              is_normalized= False,\n              glide_alph   = 0.1,\n              glide_beta   = 1000,\n              glide_delta  = 1,\n              glide_loc    = \"cw_normalized\"):\n    \"\"\"\n    edgelist: list of edges in the format [(p, q, w), ... ]",
+        "detail": "GLIDER.GLIDER.glide.gfunc.command",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide_main",
+        "description": "GLIDER.GLIDER.glide_main",
+        "peekOfCode": "def log(msg):\n    if verbose:\n        print(msg)\ndef main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--network\", help=\"The network file.\")\n    parser.add_argument(\"--output\", help  = \"The output GLIDE list\")\n    parser.add_argument(\"--glide_loc\", default = 'cw_normalized', choices=['l3', 'cw' , 'cw_normalized'], help = \"Type of Local Score\")\n    parser.add_argument(\"-v\", action=\"store_true\", help=\"Verbose mode\")\n    parser.add_argument(\"--glide_params\", default=\"1:0.1:1000:1:N\", help = \"GLIDE Params: format {gamma:alpha:beta:delta}. If UDSED then N, else (DSED) 'Y'\")",
+        "detail": "GLIDER.GLIDER.glide_main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "GLIDER.GLIDER.glide_main",
+        "description": "GLIDER.GLIDER.glide_main",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--network\", help=\"The network file.\")\n    parser.add_argument(\"--output\", help  = \"The output GLIDE list\")\n    parser.add_argument(\"--glide_loc\", default = 'cw_normalized', choices=['l3', 'cw' , 'cw_normalized'], help = \"Type of Local Score\")\n    parser.add_argument(\"-v\", action=\"store_true\", help=\"Verbose mode\")\n    parser.add_argument(\"--glide_params\", default=\"1:0.1:1000:1:N\", help = \"GLIDE Params: format {gamma:alpha:beta:delta}. If UDSED then N, else (DSED) 'Y'\")\n    args = parser.parse_args()\n    global verbose\n    verbose = args.v",
+        "detail": "GLIDER.GLIDER.glide_main",
         "documentation": {}
     },
     {
@@ -807,6 +2970,69 @@
         "documentation": {}
     },
     {
+        "label": "inv_square",
+        "kind": 2,
+        "importPath": "scripts.argument_parsing",
+        "description": "scripts.argument_parsing",
+        "peekOfCode": "def inv_square(x: float) -> float:\n    return 1.0 / (x * x)\nwith open(\"file\", \"r\") as f:\n    lines = f.readlines()\nf = open(\"file\", \"r\")\nlines = f.readlines()\nf.close()",
+        "detail": "scripts.argument_parsing",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "scripts.argument_parsing",
+        "description": "scripts.argument_parsing",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument(\"-f\", \"--file\", help=\"The name of the file to read in.\")\nparser.add_argument(\"-o\", \"--output\", help=\"The name of the file to write to.\")\nparser.add_argument(\"-t\", \"--type\", help=\"The type of the file.\")\n# Fast inverse square.\ndef inv_square(x: float) -> float:\n    return 1.0 / (x * x)\nwith open(\"file\", \"r\") as f:\n    lines = f.readlines()\nf = open(\"file\", \"r\")",
+        "detail": "scripts.argument_parsing",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "scripts.argument_parsing",
+        "description": "scripts.argument_parsing",
+        "peekOfCode": "f = open(\"file\", \"r\")\nlines = f.readlines()\nf.close()",
+        "detail": "scripts.argument_parsing",
+        "documentation": {}
+    },
+    {
+        "label": "lines",
+        "kind": 5,
+        "importPath": "scripts.argument_parsing",
+        "description": "scripts.argument_parsing",
+        "peekOfCode": "lines = f.readlines()\nf.close()",
+        "detail": "scripts.argument_parsing",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def main(args: argparse.Namespace) -> None:\n\t...\nif __name__ == \"__main__\":\n    # create the top-level parser\n    parser = argparse.ArgumentParser(description=\"TMAP CLI\")\n    parser.add_argument('--model', type=str, choices=[\"glide\", \"rwr\"], required=True)\n    parser.add_argument('--disease_file', type=str, required=True)\n    parser.add_argument('--dataset', type=str, choices=[\"huri\", \"stringdb\"], required=True)\n    parser.add_argument('--cv', type=bool, default=False, action=argparse.BooleanOptionalAction)\n    parser.add_argument('--k', type=int, default=100)",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "args = parser.parse_args()\nprint(f\"{args}\")\nmain(args)",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "Dada",
+        "kind": 6,
+        "importPath": "t_map.feta.dada",
+        "description": "t_map.feta.dada",
+        "peekOfCode": "class Dada(Feta):\n    def __init__(self, alpha=0.85):\n        self._desc = Description(\n            requires_training=False,\n            training_opts=None,\n            hyper_params={\"alpha\": alpha})\n    def description(self) -> Description:\n        return self.__desc\n    def prioritize(self, disease_gene: List[Gene],\n                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:",
+        "detail": "t_map.feta.dada",
+        "documentation": {}
+    },
+    {
         "label": "Description",
         "kind": 6,
         "importPath": "t_map.feta.description",
@@ -834,6 +3060,15 @@
         "documentation": {}
     },
     {
+        "label": "Glider",
+        "kind": 6,
+        "importPath": "t_map.feta.glide",
+        "description": "t_map.feta.glide",
+        "peekOfCode": "class Glider(PreComputeFeta):\n    def __init__(self, is_annotated=True, lamb: int = 1,\n                 is_normalized: bool = False, glide_alph: float = 0.1,\n                 glide_beta: int = 1000, glide_delta: int = 1,\n                 with_dada: bool = False, dada_alpha: float = 0.85,\n                 glide_loc=\"cw_normalized\") -> None:\n        self.__desc = Description(requires_training=False, training_opts=False,\n                                  hyper_params={\n                                      \"lamb\": lamb,\n                                      \"is_normalized\": is_normalized,",
+        "detail": "t_map.feta.glide",
+        "documentation": {}
+    },
+    {
         "label": "RandomWalkWithRestart",
         "kind": 6,
         "importPath": "t_map.feta.randomwalk",
@@ -849,6 +3084,15 @@
         "description": "t_map.feta.randomwalk",
         "peekOfCode": "class PreComputeRWR(PreComputeFeta):\n    def __init__(self, alpha=0.85):\n        self.__desc = Description(\n            requires_training=False,\n            training_opts=None,\n            hyper_params={\"alpha\": alpha})\n    def description(self) -> Description:\n        return self.__desc\n    def prioritize(self, disease_gene: List[Gene],\n                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:",
         "detail": "t_map.feta.randomwalk",
+        "documentation": {}
+    },
+    {
+        "label": "reweight_graph_by_tissue",
+        "kind": 2,
+        "importPath": "t_map.garbanzo.transforms.tissue_reweight",
+        "description": "t_map.garbanzo.transforms.tissue_reweight",
+        "peekOfCode": "def reweight_graph_by_tissue(graph: nx.Graph,\n                             file_path: str,\n                             weight: float = 0.001) -> nx.Graph:\n    \"\"\"\n    Given a network `graph` of ppi interactions, and a file path to containing data\n    as to where or not a gene is expressed in a given tissue:\n        Gene\t[0-1]\n    where 0 indicates low expression and 1 indicates high expression. The function\n    reweights the graph by multiplying the weight of each edge by w' = w * weight^{2 - n}\n    where n is the number of highly expressed genes in the tissue.",
+        "detail": "t_map.garbanzo.transforms.tissue_reweight",
         "documentation": {}
     },
     {
@@ -876,6 +3120,51 @@
         "description": "t_map.garbanzo.huri",
         "peekOfCode": "class Huri(EdgeListGarbanzo):\n    HURI_URL = \"https://bcb.cs.tufts.edu/huri/huri.tsv\"\n    HURI_HUGO = \"https://bcb.cs.tufts.edu/huri/huri_hgnc.tsv\"\n    def __init__(self, gene_path: str, download_path: str = \"/tmp/\",\n                 with_hugo: bool = False):\n        self._gene_path = gene_path\n        self._with_hugo = with_hugo\n        self._graph_pathlib: pathlib.Path = pathlib.Path(\n            download_path) / \"huri\"\n        self._graph = self._download_and_parse_graph()",
         "detail": "t_map.garbanzo.huri",
+        "documentation": {}
+    },
+    {
+        "label": "MergedGarbanzo",
+        "kind": 6,
+        "importPath": "t_map.garbanzo.merge",
+        "description": "t_map.garbanzo.merge",
+        "peekOfCode": "class MergedGarbanzo(Garbanzo):\n    def __init__(self, graph: nx.Graph, genes: List[Gene]):\n        self._graph = graph\n        self._genes = genes\n    @property\n    def graph(self) -> nx.Graph:\n        return self._graph\n    @property\n    def graph_path(self) -> str:\n        raise Exception(\"Merged Graphs Do Not Have a graph path\")",
+        "detail": "t_map.garbanzo.merge",
+        "documentation": {}
+    },
+    {
+        "label": "add_weights",
+        "kind": 2,
+        "importPath": "t_map.garbanzo.merge",
+        "description": "t_map.garbanzo.merge",
+        "peekOfCode": "def add_weights(data: Garbanzo) -> Garbanzo:\n    \"\"\"\n    Adds weight 1 to all edges in a graph.\n    :param graph:\n    :return: A graph with weights 1.\n    \"\"\"\n    for u, v in data.graph.edges():\n        data.graph[u][v]['weight'] = 1\n    return data\ndef normalize(data: Garbanzo) -> Garbanzo:",
+        "detail": "t_map.garbanzo.merge",
+        "documentation": {}
+    },
+    {
+        "label": "normalize",
+        "kind": 2,
+        "importPath": "t_map.garbanzo.merge",
+        "description": "t_map.garbanzo.merge",
+        "peekOfCode": "def normalize(data: Garbanzo) -> Garbanzo:\n    \"\"\"\n    Given a graph, normalizes the weights of the edges \n    by the maximum edge weight.\n    \"\"\"\n    max_weight = max(data.graph.edges(data='weight'), key=lambda x: x[2])[2]\n    print(max_weight)\n    for u, v in data.graph.edges():\n        data.graph[u][v]['weight'] = data.graph[u][v]['weight'] / max_weight\n    return data",
+        "detail": "t_map.garbanzo.merge",
+        "documentation": {}
+    },
+    {
+        "label": "merge",
+        "kind": 2,
+        "importPath": "t_map.garbanzo.merge",
+        "description": "t_map.garbanzo.merge",
+        "peekOfCode": "def merge(items: Iterable[Union[Garbanzo, nx.Graph]]) -> Garbanzo:\n    if not any([isinstance(item, Garbanzo) for item in items]):\n        raise Exception(\"At least one item needs to be of instance Garbanzo\")\n    if any([nx.is_weighted(item.graph) for item in items]):\n        weighted_networks = [\n            item for item in items if nx.is_weighted(item.graph)]\n        unweighted_networks = [\n            item for item in items if not nx.is_weighted(item.graph)]\n        reweighted_networks = [add_weights(item)\n                               for item in unweighted_networks]",
+        "detail": "t_map.garbanzo.merge",
+        "documentation": {}
+    },
+    {
+        "label": "StringDB",
+        "kind": 6,
+        "importPath": "t_map.garbanzo.stringdb",
+        "description": "t_map.garbanzo.stringdb",
+        "peekOfCode": "class StringDB(EdgeListGarbanzo):\n    STRING_URL = \"https://bcb.cs.tufts.edu/string_db/string_links.csv\"\n    def __init__(self, gene_path: str, download_path: str = \"/tmp/\"):\n        self._gene_path = gene_path\n        self._graph_pathlib: pathlib.Path = pathlib.Path(\n            download_path) / \"string_db\"\n        self._graph = self._download_and_parse_graph()\n        self._genes = self._read_genes_from_path(gene_path)\n    @property\n    def graph_path(self) -> str:",
+        "detail": "t_map.garbanzo.stringdb",
         "documentation": {}
     },
     {
@@ -951,6 +3240,42 @@
         "documentation": {}
     },
     {
+        "label": "roc_of_ranked_list",
+        "kind": 2,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "def roc_of_ranked_list(ranked_predictions: List[List[Gene]],\n                       target: List[List[Gene]],\n                       num_intervals: int = 20) -> List[Tuple[float, float]]:\n    \"\"\"\n    Given an ordered list of ranked predictions and a target list,\n    for each interval in the list, calculate the ROC score.\n    Args:\n        ranked_predictions: A list of ranked predictions\n        target: A list of ground truth\n        intervals: A list of intervals to calculate ROC scores",
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "roc_score",
+        "kind": 2,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "def roc_score(ranked_predictions: List[List[Gene]],\n              target: List[List[Gene]],\n              end_range: int) -> Tuple[float, float]:\n    \"\"\"\n    Given a ranked list of predictions and a target list,\n    calculate the true positive rate and false positive rate.\n    Args:\n        ranked_predictions: A list of ranked predictions\n        target: A list of ground truth\n    Returns:",
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "auc_from_fpr_tpr",
+        "kind": 2,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "def auc_from_fpr_tpr(fpr: List[float], tpr: List[float],\n                     trapezoid: bool = False) -> float:\n    import numpy as np\n    fpr = np.array(fpr)\n    tpr = np.array(tpr)\n    inds = [i for (i, (s, e)) in enumerate(\n        zip(fpr[: -1], fpr[1:])) if s != e] + [len(fpr) - 1]\n    fpr, tpr = fpr[inds], tpr[inds]\n    area = 0\n    ft = list(zip(fpr, tpr))",
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
+        "label": "get_fpr_tpr_for_thresh",
+        "kind": 2,
+        "importPath": "t_map.hummus.hummus_score",
+        "description": "t_map.hummus.hummus_score",
+        "peekOfCode": "def get_fpr_tpr_for_thresh(fpr: List[float],\n                           tpr: List[float],\n                           thresh: float) -> Tuple[List[float], List[float]]:\n    import bisect\n    p = bisect.bisect_left(fpr, thresh)\n    fpr = fpr.copy()\n    fpr[p] = thresh\n    return fpr[: p + 1], tpr[: p + 1]",
+        "detail": "t_map.hummus.hummus_score",
+        "documentation": {}
+    },
+    {
         "label": "ScoreFn",
         "kind": 5,
         "importPath": "t_map.hummus.hummus_score",
@@ -982,7 +3307,16 @@
         "kind": 2,
         "importPath": "tests.test_garbanzo",
         "description": "tests.test_garbanzo",
-        "peekOfCode": "def test_huri():\n    data = Huri(\"./tests/data/gene.list\")\n    # maybe not the best test as only works for posix\n    assert(data.graph_path == \"/tmp/huri/huri.tsv\")\n    assert data.get(0)\n    assert data.graph",
+        "peekOfCode": "def test_huri():\n    data = Huri(\"./tests/data/gene.list\")\n    # maybe not the best test as only works for posix\n    assert(data.graph_path == \"/tmp/huri/huri.tsv\")\n    assert data.get(0)\n    assert data.graph\ndef test_merge():\n    huri = Huri(\"./tests/data/gene.list\")\n    stringdb = StringDB(\"./tests/data/gene.list\")\n    merged = merge([huri, stringdb])",
+        "detail": "tests.test_garbanzo",
+        "documentation": {}
+    },
+    {
+        "label": "test_merge",
+        "kind": 2,
+        "importPath": "tests.test_garbanzo",
+        "description": "tests.test_garbanzo",
+        "peekOfCode": "def test_merge():\n    huri = Huri(\"./tests/data/gene.list\")\n    stringdb = StringDB(\"./tests/data/gene.list\")\n    merged = merge([huri, stringdb])\n    assert merged.graph\n    assert list(huri.graph.nodes)[0] in merged.graph",
         "detail": "tests.test_garbanzo",
         "documentation": {}
     },

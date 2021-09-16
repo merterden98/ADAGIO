@@ -1,4 +1,5 @@
 data/*
+GLIDER/*
 target/
 Cargo.lock
 
