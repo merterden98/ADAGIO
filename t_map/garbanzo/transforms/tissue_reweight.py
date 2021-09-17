@@ -7,7 +7,7 @@ def reweight_graph_by_tissue(graph: nx.Graph,
     """
     Given a network `graph` of ppi interactions, and a file path to containing data
     as to where or not a gene is expressed in a given tissue:
-        Gene	[0-1]
+        ENSEMBL_ID   Gene	[0-1]
     where 0 indicates low expression and 1 indicates high expression. The function
     reweights the graph by multiplying the weight of each edge by w' = w * weight^{2 - n}
     where n is the number of highly expressed genes in the tissue.
@@ -34,7 +34,7 @@ def reweight_graph_by_tissue(graph: nx.Graph,
     # Read in the tissue-specific interaction file.
     with open(file_path, 'r') as f:
         for line in f:
-            gene, is_expressed_str = line.split('\t')
+            _, gene, is_expressed_str = line.split('\t')
             is_expressed[gene] = int(is_expressed_str)
 
     # Create a new graph with the same nodes and edges as the input graph.
