@@ -42,7 +42,7 @@ def main(args: argparse.Namespace):
         huri = Huri(args.gene_set, with_hugo=True)
         stringdb = StringDB(args.gene_set)
         merged = merge([huri, stringdb])
-        merged.graph = reweight_graph_by_tissue(merged.graph, tissue_file)
+        merged._graph = reweight_graph_by_tissue(merged.graph, tissue_file)
         for alg in algs:
             model = models[alg]()
             if isinstance(model, PreComputeFeta):
