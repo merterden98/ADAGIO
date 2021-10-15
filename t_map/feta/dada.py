@@ -34,7 +34,10 @@ class Dada(Feta):
 
         for gene_id, score in pr.items():
             gene = Gene(name=gene_id)
-            score = np.log10(score / pr_no_restart[gene_id])
+            if pr_no_restart[gene_id] == 0:
+                score = 0
+            else:
+                score = np.log10(score / pr_no_restart[gene_id])
             gene_pair = (gene, score)
             data_set.add(gene_pair)
         return data_set
