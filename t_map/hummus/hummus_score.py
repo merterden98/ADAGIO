@@ -226,6 +226,7 @@ def get_fpr_tpr_for_thresh(fpr: List[float],
                            thresh: float) -> Tuple[List[float], List[float]]:
     import bisect
     p = bisect.bisect_left(fpr, thresh)
+    assert p < len(fpr), f"Attempted to bisect_left on value {thresh=} in {fpr=} that yielded an index {p=} out of bounds"
     fpr = fpr.copy()
     fpr[p] = thresh
     return fpr[: p + 1], tpr[: p + 1]
