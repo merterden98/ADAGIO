@@ -1,3 +1,4 @@
+#!/cluster/tufts/cowenlab/.envs/tmap/bin/python
 import glob
 import argparse
 import matplotlib.pyplot as plt
@@ -20,7 +21,7 @@ parser.add_argument('-a', '--algorithms',
 parser.add_argument('-g', '--gene-set', type=str,
                     required=True, help="path to genesets")
 parser.add_argument('-th', '--thresholds', type=list,
-                    default=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0])
+                    default=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
 
 models = {
     'rwr': RandomWalkWithRestart,
@@ -37,7 +38,6 @@ def main(args: argparse.Namespace):
         algs = ['rwr', 'glider', 'dada', 'glider+dada']
     else:
         algs = [args.algorithms]
-
     for tissue_file in tissue_files:
         huri = Huri(args.gene_set, with_hugo=True)
         stringdb = StringDB(args.gene_set)
@@ -48,25 +48,32 @@ def main(args: argparse.Namespace):
             if isinstance(model, PreComputeFeta):
                 model.setup(merged.graph)
 
-            scoring = HummusScore(score_type=ScoreTypes.TOP_K)
+            scoring = HummusScore(score_type=ScoreTypes.TOP_K, k=len(merged.graph.nodes()))
             runner = Hummus(merged, with_scoring=scoring)
             for i, test_runner in enumerate(runner.with_cv(k_fold="LOO")):
-                with test_runner as (disease_genes, graph, fn):
-                    predictions = model(disease_genes, graph)
+                with test_runner as (genes, graph, fn):
+                    predictions = model(genes, graph)
                     fn(predictions)
 
             # This is how we get the gene set predictions without LOO cross
             # validation.
-            gene_list = model(merged.disease_genes, merged.graph)
+            gene_list = model(merged.genes, merged.graph)
             # TODO: Figure out how to score this gdamn thing.
             scoring.compute_roc()
             for threshold in args.thresholds:
                 scoring.auc_roc(threshold)
 
             true_pos = [x[0] for x in scoring._roc]
-            print(true_pos)
-
+            false_pos = [x[1] for x in scoring._roc]
+            plt.plot(false_pos, true_pos, label=alg)
+            plt.legend()
+            plt.xlabel("False Positive")
+            plt.ylabel("True Positive")
+    
             print(scoring._roc)
+   
+    plt.savefig(tissue_file.strip(".tsv") + '.jpg')        
+    plt.show()           
 
 
 if __name__ == '__main__':
