@@ -44,7 +44,9 @@ def reweight_graph_by_tissue(graph: nx.Graph,
 
     # Iterate through each edge in the new graph.
     for edge in new_graph.edges():
+      try:
         new_graph[edge[0]][edge[1]]['weight'] = graph[edge[0]][edge[1]]['weight'] * \
             (weight ** (2 - is_expressed[edge[0]] - is_expressed[edge[1]]))
-
+      except:
+        new_graph[edge[0]][edge[1]]['weight'] = graph[edge[0]][edge[1]]['weight']
     return new_graph
