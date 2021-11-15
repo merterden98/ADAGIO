@@ -1,11 +1,10 @@
 import networkx as nx
 from t_map.gene.gene import Gene
-from typing import Union, Tuple, Set, Any, List
+from typing import Union, Tuple, Set, Any, List, Optional
 import numpy as np
 from networkx import to_dict_of_lists
 from t_map.feta.feta import Feta, PreComputeFeta
 from t_map.feta.description import Description
-
 
 class RandomWalkWithRestart(Feta):
 
@@ -19,8 +18,7 @@ class RandomWalkWithRestart(Feta):
         return self.__desc
 
     def prioritize(self, disease_gene: List[Gene],
-                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:
-
+                   graph: Union[nx.Graph, None], **kwargs) -> Set[Tuple[Gene, float]]:
         personalization = dict()
         personalization = {gene.name: 1 for gene in disease_gene}
         pr = nx.pagerank(
@@ -37,7 +35,7 @@ class RandomWalkWithRestart(Feta):
 
 
 class PreComputeRWR(PreComputeFeta):
-    def __init__(self, alpha=0.85):
+    def __init__(self, alpha=0.85, **kwargs):
         self.__desc = Description(
             requires_training=False,
             training_opts=None,
@@ -47,7 +45,7 @@ class PreComputeRWR(PreComputeFeta):
         return self.__desc
 
     def prioritize(self, disease_gene: List[Gene],
-                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:
+                   graph: Union[nx.Graph, None], **kwargs) -> Set[Tuple[Gene, float]]:     
         gene_list = to_dict_of_lists(graph)
         indicator_vector = []
         disease_gene_names = [gene.name for gene in disease_gene]

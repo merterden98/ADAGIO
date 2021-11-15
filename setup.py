@@ -17,7 +17,7 @@ test_requirements = ['pytest>=3', ]
 setup(
     author="Mert Erden",
     author_email='mert.erden@tufts.edu',
-    python_requires='>=3.6',
+    python_requires='>=3.9',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

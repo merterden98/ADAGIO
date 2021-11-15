@@ -1,6 +1,6 @@
 import networkx as nx
 from t_map.gene.gene import Gene
-from typing import Union, Tuple, Set, List
+from typing import Union, Tuple, Set, List, Optional
 import numpy as np
 from t_map.feta.feta import Feta
 from t_map.feta.description import Description
@@ -18,8 +18,8 @@ class Dada(Feta):
         return self.__desc
 
     def prioritize(self, disease_gene: List[Gene],
-                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:
-
+                   graph: Union[nx.Graph, None], **kwargs) -> Set[Tuple[Gene, float]]:
+        
         personalization = dict()
         personalization = {gene.name: 1 for gene in disease_gene}
         pr = nx.pagerank(

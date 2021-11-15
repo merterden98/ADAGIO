@@ -1,7 +1,7 @@
 import networkx as nx
 from abc import ABC, abstractmethod, abstractproperty
 from t_map.gene.gene import Gene
-from typing import Union, Tuple, Set, List
+from typing import Union, Tuple, Set, List, Optional
 from t_map.feta.description import Description
 import pickle
 
@@ -41,16 +41,16 @@ class Feta(ABC):
 
     @abstractmethod
     def prioritize(self, disease_gene: List[Gene],
-                   graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:
+                   graph: Union[nx.Graph, None], tissue_file: Optional[str] = None, **kwargs) -> Set[Tuple[Gene, float]]:
         ...
 
     def __call__(self, disease_gene: Union[Gene, List[Gene]],
-                 graph: Union[nx.Graph, None]) -> Set[Tuple[Gene, float]]:
+                 graph: Union[nx.Graph, None], **kwargs) -> Set[Tuple[Gene, float]]:
         if isinstance(disease_gene, Gene):
-            return self.prioritize([disease_gene], graph)
+            return self.prioritize([disease_gene], graph, **kwargs)
         elif isinstance(disease_gene, list) and \
                 all(isinstance(x, Gene) for x in disease_gene):
-            return self.prioritize(disease_gene, graph)
+            return self.prioritize(disease_gene, graph, **kwargs)
         else:
             Exception(
                 "Need to pass a Gene or a list of Genes, instead passed:",
