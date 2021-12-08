@@ -9,6 +9,7 @@ import networkx as nx
 import numpy as np
 from gfunc.command import glide_mat
 
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -19,6 +20,7 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
 
 class Glider(PreComputeFeta):
 
@@ -48,11 +50,13 @@ class Glider(PreComputeFeta):
             elist = list(
                 map(lambda x_y_z: (x_y_z[0], x_y_z[1], x_y_z[2]['weight']), elist))
         except KeyError as e:
-            print(bcolors.WARNING + "Warning: Could not detect edgeweights, defaulting to 1." + bcolors.ENDC)
+            print(bcolors.WARNING +
+                  "Warning: Could not detect edgeweights, defaulting to 1." + bcolors.ENDC)
             elist = list(
                 map(lambda x_y_z: (x_y_z[0], x_y_z[1], 1), elist))
 
-        self.gmat, self.gmap = glide_mat(elist, self.description().hyper_params)
+        self.gmat, self.gmap = glide_mat(
+            elist, self.description().hyper_params)
         self.rgmap = {self.gmap[key]: key for key in self.gmap}
         self.graph = self._update_edge_weights(graph, self.gmat, self.gmap)
 
