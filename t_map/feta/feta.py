@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod, abstractproperty
 from t_map.gene.gene import Gene
 from typing import Union, Tuple, Set, List, Optional
 from t_map.feta.description import Description
-import pickle
+import dill as pickle
 
 
 class Feta(ABC):
@@ -73,7 +73,7 @@ class PreComputeFeta(Feta):
 
     def save(self, file_name: str):
         with open(file_name, 'wb') as f:
-            pickle.dump(self, f)
+            pickle.dumps(self, f, protocol=pickle.HIGHEST_PROTOCOL)
 
     @classmethod
     def load(cls, file_name: str):

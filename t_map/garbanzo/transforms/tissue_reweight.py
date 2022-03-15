@@ -3,7 +3,8 @@ import networkx as nx
 
 def reweight_graph_by_tissue(graph: nx.Graph,
                              file_path: str,
-                             weight: float = 0.001) -> nx.Graph:
+                             weight: float = 0.001,
+                             getter=None) -> nx.Graph:
     """
     Given a network `graph` of ppi interactions, and a file path to containing data
     as to where or not a gene is expressed in a given tissue:
@@ -34,8 +35,12 @@ def reweight_graph_by_tissue(graph: nx.Graph,
     # Read in the tissue-specific interaction file.
     with open(file_path, 'r') as f:
         for line in f:
-            _, gene, is_expressed_str = line.split('\t')
-            is_expressed[gene] = int(is_expressed_str)
+            if getter:
+                gene, is_expressed_flag = getter(line)
+                is_expressed[gene] = is_expressed_flag
+            else:
+                _, gene, is_expressed_str = line.split('\t')
+                is_expressed[gene] = int(is_expressed_str)
 
     # Create a new graph with the same nodes and edges as the input graph.
     new_graph = nx.Graph()
@@ -44,9 +49,10 @@ def reweight_graph_by_tissue(graph: nx.Graph,
 
     # Iterate through each edge in the new graph.
     for edge in new_graph.edges():
-      try:
-        new_graph[edge[0]][edge[1]]['weight'] = graph[edge[0]][edge[1]]['weight'] * \
-            (weight ** (2 - is_expressed[edge[0]] - is_expressed[edge[1]]))
-      except:
-        new_graph[edge[0]][edge[1]]['weight'] = graph[edge[0]][edge[1]]['weight']
+        try:
+            new_graph[edge[0]][edge[1]]['weight'] = graph[edge[0]][edge[1]]['weight'] * \
+                (weight ** (2 - is_expressed[edge[0]] - is_expressed[edge[1]]))
+        except:
+            new_graph[edge[0]][edge[1]
+                               ]['weight'] = graph[edge[0]][edge[1]]['weight']
     return new_graph

@@ -1,3 +1,8 @@
+from __future__ import annotations
+import networkx as nx
+import numpy as np
+from contextlib import contextmanager
+from copy import deepcopy
 from t_map.gene.gene import Gene
 from typing import Any, List, Set, Tuple, Union, Optional
 from t_map.feta.description import Description
@@ -5,8 +10,6 @@ from t_map.feta.feta import PreComputeFeta
 from t_map.feta.dada import Dada
 from t_map.feta.randomwalk import RandomWalkWithRestart
 from t_map.garbanzo.transforms.tissue_reweight import reweight_graph_by_tissue
-import networkx as nx
-import numpy as np
 from gfunc.command import glide_mat
 
 
@@ -28,7 +31,9 @@ class Glider(PreComputeFeta):
                  is_normalized: bool = False, glide_alph: float = 0.1,
                  glide_beta: int = 1000, glide_delta: int = 1,
                  with_dada: bool = False, dada_alpha: float = 0.85,
-                 glide_loc="cw_normalized",  **kwargs) -> None:
+                 glide_loc="cw_normalized", extend_network: bool = False,
+                 per_node_new_edges_count: int = 0,
+                 global_new_edges_percentage: float = 0, **kwargs) -> None:
         self.__desc = Description(requires_training=False, training_opts=False,
                                   hyper_params={
                                       "lamb": lamb,
@@ -37,6 +42,8 @@ class Glider(PreComputeFeta):
                                       "glide_beta": glide_beta,
                                       "glide_delta": glide_delta,
                                       "glide_loc": glide_loc,
+                                      "per_node_new_edges_count": per_node_new_edges_count,
+                                      "global_new_edges_percentage": global_new_edges_percentage,
                                   })
         if with_dada:
             self.__dada = Dada(alpha=dada_alpha)
@@ -49,16 +56,92 @@ class Glider(PreComputeFeta):
         try:
             elist = list(
                 map(lambda x_y_z: (x_y_z[0], x_y_z[1], x_y_z[2]['weight']), elist))
-        except KeyError as e:
+        except KeyError as _:
             print(bcolors.WARNING +
                   "Warning: Could not detect edgeweights, defaulting to 1." + bcolors.ENDC)
             elist = list(
                 map(lambda x_y_z: (x_y_z[0], x_y_z[1], 1), elist))
 
+        self.graph = deepcopy(graph)
         self.gmat, self.gmap = glide_mat(
             elist, self.description().hyper_params)
         self.rgmap = {self.gmap[key]: key for key in self.gmap}
-        self.graph = self._update_edge_weights(graph, self.gmat, self.gmap)
+        self._original_graph: nx.Graph = deepcopy(graph)
+
+        # self._get_sorted_similarity_indexes()
+        # self._get_sorted_similarity_indexes(descending=True)
+        self.reweight_graph()
+
+    def reweight_graph(self) -> None:
+        self.graph = self._update_edge_weights(
+            self.graph, self.gmat, self.gmap)
+
+    def reset_graph(self) -> None:
+        self.graph = deepcopy(self._original_graph)
+
+    def add_new_edges(self, global_new_edges_percentage: float,
+                      in_place: bool = False) -> Optional[nx.Graph]:
+        graph = deepcopy(self.graph)
+        if global_new_edges_percentage > 0:
+            new_edges_count = int(
+                global_new_edges_percentage * len(graph.edges()))
+            indexes = self._get_sorted_similarity_indexes()
+            edges = graph.edges()
+            print(bcolors.OKGREEN +
+                  "Filtering {} new edges.".format(len(edges)) + bcolors.ENDC)
+            avail_indexes = [(i, j) for i, j in indexes if (
+                self.rgmap[i], self.rgmap[j]) not in edges][:new_edges_count]
+
+            print(bcolors.OKGREEN +
+                  "Adding {} new edges.".format(len(avail_indexes)) + bcolors.ENDC)
+            for i, j in avail_indexes:
+                graph.add_edge(
+                    self.rgmap[i], self.rgmap[j], weight=self.gmat[i][j])
+
+        if in_place:
+            self.graph = graph
+        else:
+            return graph
+
+    def remove_old_edges(self, edge_percentage_removal: float,
+                         in_place: bool = False) -> Optional[nx.Graph]:
+        graph = deepcopy(self.graph)
+        if edge_percentage_removal > 0:
+            removal_edges_count = int(
+                edge_percentage_removal * len(graph.edges()))
+            edges = list(graph.edges())
+            indexes = self._get_sorted_similarity_indexes(descending=True)
+            avail_indexes = [(i, j) for i, j in indexes if (
+                self.rgmap[i], self.rgmap[j]) not in edges][:removal_edges_count]
+
+            print(bcolors.OKGREEN +
+                  "Removing {} edges.".format(len(edges)) + bcolors.ENDC)
+
+            for u, v in avail_indexes:
+                graph.remove_edge(self.rgmap[u], self.rgmap[v])
+        if in_place:
+            self.graph = graph
+        else:
+            return graph
+
+    def _get_sorted_similarity_indexes(self, descending=False) -> List[Tuple[int, int]]:
+        if hasattr(self, "_sorted_similarity_indexes") and not descending:
+            return self._sorted_similarity_indexes
+        elif hasattr(self, "_sorted_similarity_indexes_desc") and descending:
+            return self._sorted_similarity_indexes_desc
+        else:
+            shape = self.gmat.shape
+            indexes = np.unravel_index(np.argsort(
+                self.gmat.ravel(), axis=None), shape)
+            if descending:
+                indexes = [(indexes[0][i], indexes[1][i])
+                           for i in range(len(indexes[0]))]
+                self._sorted_similarity_indexes_desc = indexes
+            else:
+                indexes = list(reversed([(indexes[0][i], indexes[1][i])
+                                        for i in range(len(indexes[0]))]))
+                self._sorted_similarity_indexes = indexes
+            return indexes
 
     def _update_edge_weights(self, graph: nx.Graph,
                              gmat: np.ndarray,
@@ -68,7 +151,9 @@ class Glider(PreComputeFeta):
         return graph
 
     def prioritize(self, disease_genes: List[Gene],
-                   graph: Union[nx.Graph, None], tissue_file: Optional[str] = None, **kwargs) -> Set[Tuple[Gene, float]]:
+                   graph: Union[nx.Graph, None],
+                   tissue_file: Optional[str] = None,
+                   **kwargs) -> Set[Tuple[Gene, float]]:
 
         if tissue_file:
             graph = reweight_graph_by_tissue(graph, tissue_file)
@@ -78,3 +163,19 @@ class Glider(PreComputeFeta):
         else:
             rwr = RandomWalkWithRestart(alpha=0.85)
             return rwr.prioritize(disease_genes, self.graph)
+
+    @classmethod
+    def glider_with_pickle(cls, file_name: str, reset: bool = True) -> Glider:
+        glide: Glider = cls.load(file_name)
+        return glide._context(reset=reset)
+
+    @classmethod
+    def with_reset(cls, model) -> Glider:
+        new_model = deepcopy(model)
+        return new_model._context(reset=True)
+
+    @contextmanager
+    def _context(self, reset: bool = True) -> Glider:
+        if reset:
+            self.reset_graph()
+        yield self

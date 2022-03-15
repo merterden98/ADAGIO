@@ -1,13 +1,13 @@
 import networkx as nx
-from typing import List
+from typing import List, Optional
 from t_map.gene.gene import Gene
 from t_map.garbanzo.garbanzo import Garbanzo
 
 
 class Networkx(Garbanzo):
-    def __init__(self, graph: nx.Graph, genes: List[Gene]):
+    def __init__(self, graph: nx.Graph, genes: Optional[List[Gene]] = None):
         self._graph = graph
-        self._genes = genes
+        self._genes = genes if genes is not None else []
 
     @property
     def graph(self) -> nx.Graph:
