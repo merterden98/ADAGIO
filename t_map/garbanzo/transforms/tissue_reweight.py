@@ -1,10 +1,11 @@
+from typing import Callable, Optional, Tuple
 import networkx as nx
 
 
 def reweight_graph_by_tissue(graph: nx.Graph,
                              file_path: str,
                              weight: float = 0.001,
-                             getter=None) -> nx.Graph:
+                             getter: Optional[Callable[[str], Tuple[str, int]]] = None) -> nx.Graph:
     """
     Given a network `graph` of ppi interactions, and a file path to containing data
     as to where or not a gene is expressed in a given tissue:
@@ -47,12 +48,18 @@ def reweight_graph_by_tissue(graph: nx.Graph,
     new_graph.add_nodes_from(graph.nodes())
     new_graph.add_edges_from(graph.edges())
 
+    def expressed_reweight(x, y):
+        return weight ** (1 - max(is_expressed[x], is_expressed[y]))
+
+    count = 0
     # Iterate through each edge in the new graph.
     for edge in new_graph.edges():
         try:
             new_graph[edge[0]][edge[1]]['weight'] = graph[edge[0]][edge[1]]['weight'] * \
-                (weight ** (2 - is_expressed[edge[0]] - is_expressed[edge[1]]))
+                expressed_reweight(edge[0], edge[1])
+            count += 1
         except:
             new_graph[edge[0]][edge[1]
                                ]['weight'] = graph[edge[0]][edge[1]]['weight']
+    print("Reweighted {} edges".format(count))
     return new_graph
