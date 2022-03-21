@@ -109,8 +109,8 @@ def read_genelist(path: str) -> List[Gene]:
 def restructure_splits(splits: List[str], splits_path: str) -> Dict[int, List[Split]]:
     rep_to_files = defaultdict(list)
     rep_to_split = dict()
+    prefix = splits_path + "/"
     for split in splits:
-        prefix = splits_path + "/"
         rep = split.removeprefix(prefix).split(".")[0]
         rep_to_files[rep].append(split)
 
@@ -120,13 +120,13 @@ def restructure_splits(splits: List[str], splits_path: str) -> Dict[int, List[Sp
         training_fold = [f for f in files if "_val" not in f]
         int_rep = int(rep[3:])
         rep_to_split[int_rep] = generate_split_for_fold(
-            int_rep, validation_fold, training_fold)
+            int_rep, validation_fold, training_fold, prefix)
 
     return rep_to_split
 
 
 def generate_split_for_fold(fold: int, validation_fold: List[str],
-                            training_fold: List[str]) -> List[Split]:
+                            training_fold: List[str], prefix: str) -> List[Split]:
     # A dictionary that takes the type of the split
     # and returns a tuple of training and validation folds
     ty = Dict[CLS_TYPE, Tuple[List[str], List[str]]]
@@ -134,7 +134,7 @@ def generate_split_for_fold(fold: int, validation_fold: List[str],
     disease_to_data_type_to_fold: ty = dict()
 
     for tf, vf in zip(sorted(training_fold), sorted(validation_fold)):
-        _, disease_name, disease_type, *_ = tf.split("_")
+        _, disease_name, disease_type, *_ = tf.removeprefix(prefix).split("_")
         if disease_type not in disease_to_data_type_to_fold:
             disease_to_data_type_to_fold[disease_type] = dict()
         if disease_name not in disease_to_data_type_to_fold[disease_type]:
@@ -149,7 +149,7 @@ def generate_split_for_fold(fold: int, validation_fold: List[str],
         for disease_name, (training_folds,
                            validation_folds) in disease_to_fold.items():
             splits.append(
-                Split(fold, disease_name, disease_type, training_folds,
+                Split(fold, disease_name, disease_type.removesuffix(".csv"), training_folds,
                       validation_folds))
     return splits
 
