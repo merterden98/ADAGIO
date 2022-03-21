@@ -73,7 +73,7 @@ class PreComputeFeta(Feta):
 
     def save(self, file_name: str):
         with open(file_name, 'wb') as f:
-            pickle.dumps(self, f, protocol=pickle.HIGHEST_PROTOCOL)
+            pickle.dump(self, f, protocol=pickle.HIGHEST_PROTOCOL)
 
     @classmethod
     def load(cls, file_name: str):

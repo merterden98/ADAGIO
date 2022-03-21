@@ -84,9 +84,9 @@ def run_split(split: Split, graph: nx.Graph,
                        f"{output_path}/{split.disease_name}_{split.rep}_{split.data_type}_Fold{i}.csv")
         validation_score_per_fold = []
         # If PreComputeFeta, save the model
-        if isinstance(model, PreComputeFeta) and needs_to_load_pickle:
-            needs_to_load_pickle = False
-            model.save(pickle_path)
+        #if isinstance(model, PreComputeFeta) and needs_to_load_pickle:
+        #    needs_to_load_pickle = False
+        #    model.save(pickle_path)
 
 
 def output_results(results: List[List[Tuple[Gene, float]]],
