@@ -111,8 +111,14 @@ class Glider(PreComputeFeta):
                 edge_percentage_removal * len(graph.edges()))
             edges = list(graph.edges())
             indexes = self._get_sorted_similarity_indexes(descending=True)
-            avail_indexes = [(i, j) for i, j in indexes if (
-                self.rgmap[i], self.rgmap[j]) not in edges][:removal_edges_count]
+            avail_indexes = []
+            i = 0
+            for i, j in indexes:
+                if (self.rgmap[i], self.rgmap[j]) in edges:
+                    avail_indexes.append((i, j))
+                    i += 1
+                    if i == removal_edges_count:
+                        break
 
             print(bcolors.OKGREEN +
                   "Removing {} edges.".format(len(edges)) + bcolors.ENDC)
