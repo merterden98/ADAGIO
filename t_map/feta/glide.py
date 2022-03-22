@@ -109,10 +109,11 @@ class Glider(PreComputeFeta):
         if edge_percentage_removal > 0:
             removal_edges_count = int(
                 edge_percentage_removal * len(graph.edges()))
-            edges = list(graph.edges())
+            edges = graph.edges()
             indexes = self._get_sorted_similarity_indexes(descending=True)
             avail_indexes = []
             i = 0
+            print(len(indexes))
             for i, j in indexes:
                 if (self.rgmap[i], self.rgmap[j]) in edges:
                     avail_indexes.append((i, j))
