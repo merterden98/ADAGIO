@@ -125,7 +125,10 @@ class Glider(PreComputeFeta):
                   "Removing {} edges.".format(len(edges)) + bcolors.ENDC)
 
             for u, v in avail_indexes:
-                graph.remove_edge(self.rgmap[u], self.rgmap[v])
+                try:
+                    graph.remove_edge(self.rgmap[u], self.rgmap[v])
+                except:
+                    pass
         if in_place:
             self.graph = graph
         else:
