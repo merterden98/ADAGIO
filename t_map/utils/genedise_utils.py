@@ -27,7 +27,8 @@ def run_genedise(graph_path: str,
                  model: Union[type[Union[Feta, PreComputeFeta]],
                               Feta,
                               PreComputeFeta],
-                 pickle_path: Optional[str] = None) -> None:
+                 pickle_path: Optional[str] = None,
+                 variant: str="none") -> None:
 
     graph = load_graph(graph_path)
 
@@ -40,7 +41,7 @@ def run_genedise(graph_path: str,
     for rep, splits in split_dict.items():
         print(f"Running rep {rep} {len(splits)}")
         for split in splits:
-            run_split(split, graph, model, output_path, pickle_path)
+            run_split(split, graph, model, output_path, pickle_path, variant)
 
 
 def getter(string: str):
@@ -53,7 +54,8 @@ def run_split(split: Split, graph: nx.Graph,
                            Feta,
                            PreComputeFeta],
               output_path: str,
-              pickle_path: Optional[str] = None) -> None:
+              pickle_path: Optional[str] = None,
+              variant:str="none") -> None:
     needs_to_load_pickle = pickle_path is not None
     training_folds = split.training_folds
     validation_folds = split.validation_folds
@@ -73,9 +75,9 @@ def run_split(split: Split, graph: nx.Graph,
                 model = model.load(pickle_path)
             except OSError:
                 model.setup(data.graph)
-            predictions = model(data.genes, model.graph)
+            predictions = model(data.genes, model.graph, variant=variant)
         else:
-            predictions = model(data.genes, data.graph)
+            predictions = model(data.genes, data.graph, variant=variant)
 
         # Extract validation genes from predictions
         validation_scores = [(g, s) for g, s in predictions]

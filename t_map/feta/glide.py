@@ -4,7 +4,6 @@ import numpy as np
 from contextlib import contextmanager
 from copy import deepcopy
 
-from torch_sparse import add_
 from t_map.gene.gene import Gene
 from typing import Any, List, Set, Tuple, Union, Optional
 from t_map.feta.description import Description
@@ -139,17 +138,26 @@ class Glider(PreComputeFeta):
         else:
             return graph
 
-    def add_edges_around_node(self, node: str, new_edges_count: int) -> List[Tuple[int, int]]:
+    def add_edges_around_node(self, node: str, new_edges_count: int, variant: str="none") -> List[Tuple[int, int]]:
         indexes = self._get_sorted_similarity_indexes()
         node_idx = self.gmap[node]
         graph_edges = self.graph.edges()
         add_cnt = 0
         pairs_to_add = []
+        max_edges = self.graph.edges(node)
         for i, j in indexes:
             if node_idx == i or node_idx == j:
                 if (self.rgmap[i], self.rgmap[j]) not in graph_edges:
                     pairs_to_add.append((i, j))
                     add_cnt += 1
+                else:
+                    if variant == "min":
+                        break
+                    elif variant == "max":
+                        if add_cnt >= len(max_edges):
+                            break
+                    else:
+                        pass
             if add_cnt == new_edges_count:
                 break
         return pairs_to_add
@@ -183,11 +191,13 @@ class Glider(PreComputeFeta):
     def prioritize(self, disease_genes: List[Gene],
                    graph: Union[nx.Graph, None],
                    tissue_file: Optional[str] = None,
+                   variant: str = "none",
                    **kwargs) -> Set[Tuple[Gene, float]]:
 
         if tissue_file:
             graph = reweight_graph_by_tissue(graph, tissue_file)
 
+        print(f"Genelist Length:", len(disease_genes))
         if hasattr(self, '__dada'):
             return self.__dada.prioritize(disease_genes, self.graph)
         elif hasattr(self, 'to_add'):
@@ -195,11 +205,12 @@ class Glider(PreComputeFeta):
             graph = deepcopy(self.graph)
             for disease_gene in disease_genes:
                 to_add_pairs = self.add_edges_around_node(
-                    disease_genes, self.to_add)
+                    disease_gene.name, self.to_add, variant)
+                print(f"Amount to add {len(to_add_pairs)}")
                 for (i, j) in to_add_pairs:
                     graph.add_edge(
                         self.rgmap[i], self.rgmap[j], weight=self.gmat[i][j])
-            return rwr.prioritize(disease_genes, self.graph)
+            return rwr.prioritize(disease_genes, graph)
         else:
             rwr = RandomWalkWithRestart(alpha=0.85)
             return rwr.prioritize(disease_genes, self.graph)
