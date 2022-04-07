@@ -188,6 +188,10 @@ class Glider(PreComputeFeta):
             graph[u][v]['weight'] = gmat[gmap[u]][gmap[v]]
         return graph
 
+    def make_glider_graph():
+        # Change self.graph to be the glider graph.
+        # 
+
     def prioritize(self, disease_genes: List[Gene],
                    graph: Union[nx.Graph, None],
                    tissue_file: Optional[str] = None,
@@ -203,6 +207,9 @@ class Glider(PreComputeFeta):
         elif hasattr(self, 'to_add'):
             rwr = RandomWalkWithRestart(alpha=0.85)
             graph = deepcopy(self.graph)
+            if variant == "avg":
+                avg_degree= int(2 * graph.number_of_edges() / float(graph.number_of_nodes()))
+                self.set_add_edges_amount(avg_degree)
             for disease_gene in disease_genes:
                 to_add_pairs = self.add_edges_around_node(
                     disease_gene.name, self.to_add, variant)
