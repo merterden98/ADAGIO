@@ -138,7 +138,7 @@ class Glider(PreComputeFeta):
         else:
             return graph
 
-    def add_edges_around_node(self, node: str, new_edges_count: int, variant: str="none") -> List[Tuple[int, int]]:
+    def add_edges_around_node(self, node: str, new_edges_count: int, variant: str = "none") -> List[Tuple[int, int]]:
         indexes = self._get_sorted_similarity_indexes()
         node_idx = self.gmap[node]
         graph_edges = self.graph.edges()
@@ -206,7 +206,6 @@ class Glider(PreComputeFeta):
             for disease_gene in disease_genes:
                 to_add_pairs = self.add_edges_around_node(
                     disease_gene.name, self.to_add, variant)
-                print(f"Amount to add {len(to_add_pairs)}")
                 for (i, j) in to_add_pairs:
                     graph.add_edge(
                         self.rgmap[i], self.rgmap[j], weight=self.gmat[i][j])

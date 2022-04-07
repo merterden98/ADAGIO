@@ -50,7 +50,12 @@ class Feta(ABC):
             return self.prioritize([disease_gene], graph, **kwargs)
         elif isinstance(disease_gene, list) and \
                 all(isinstance(x, Gene) for x in disease_gene):
-            return self.prioritize(disease_gene, graph, **kwargs)
+            sanitized_disease_gene = list(filter(
+                lambda x: x.name in graph.nodes, disease_gene))
+            if len(sanitized_disease_gene) != len(disease_gene):
+                print(
+                    f"{len(disease_gene) - len(sanitized_disease_gene)} genes were not found in the graph")
+            return self.prioritize(sanitized_disease_gene, graph, **kwargs)
         else:
             Exception(
                 "Need to pass a Gene or a list of Genes, instead passed:",
