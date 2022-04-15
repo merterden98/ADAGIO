@@ -12,6 +12,7 @@ from t_map.feta.dada import Dada
 from t_map.feta.randomwalk import RandomWalkWithRestart
 from t_map.garbanzo.transforms.tissue_reweight import reweight_graph_by_tissue
 from gfunc.command import glide_mat
+from networkx.algorithms import tree
 
 
 class bcolors:
@@ -75,6 +76,9 @@ class Glider(PreComputeFeta):
 
     def set_add_edges_amount(self, amount: int) -> None:
         self.to_add = amount
+
+    def set_remove_edges_percent(self, percentage: float) -> None:
+        self.to_remove = percentage
 
     def reweight_graph(self) -> None:
         self.graph = self._update_edge_weights(
@@ -162,6 +166,28 @@ class Glider(PreComputeFeta):
                 break
         return pairs_to_add
 
+    def remove_edges_around_node(self, node: str, edge_percentage_removal: float, mst: nx.Graph) -> List[Tuple[int, int]]:
+        graph_edges = self.graph.edges(node)
+        pairs_to_remove = []
+
+        edges_idx = [(self.gmap[u], self.gmap[v], self.gmat[self.gmap[u]]
+                      [self.gmap[v]]) for u, v in graph_edges]
+        sorted_edges_idx = sorted(edges_idx, key=lambda x: x[2])
+        num_to_remove = int(edge_percentage_removal * len(sorted_edges_idx))
+
+        cnt = 0
+        for i, j in sorted_edges_idx:
+            if cnt >= num_to_remove:
+                break
+            edge = (self.rgmap[i], self.rgmap[j])
+            if edge in mst:
+                pass
+            else:
+                pairs_to_remove.append((i, j))
+                cnt += 1
+
+        return pairs_to_remove
+
     def _get_sorted_similarity_indexes(self, descending=False) -> List[Tuple[int, int]]:
         if hasattr(self, "_sorted_similarity_indexes") and not descending:
             return self._sorted_similarity_indexes
@@ -188,10 +214,6 @@ class Glider(PreComputeFeta):
             graph[u][v]['weight'] = gmat[gmap[u]][gmap[v]]
         return graph
 
-    def make_glider_graph():
-        # Change self.graph to be the glider graph.
-        # 
-
     def prioritize(self, disease_genes: List[Gene],
                    graph: Union[nx.Graph, None],
                    tissue_file: Optional[str] = None,
@@ -201,25 +223,29 @@ class Glider(PreComputeFeta):
         if tissue_file:
             graph = reweight_graph_by_tissue(graph, tissue_file)
 
-        print(f"Genelist Length:", len(disease_genes))
-        if hasattr(self, '__dada'):
-            return self.__dada.prioritize(disease_genes, self.graph)
-        elif hasattr(self, 'to_add'):
-            rwr = RandomWalkWithRestart(alpha=0.85)
-            graph = deepcopy(self.graph)
-            if variant == "avg":
-                avg_degree= int(2 * graph.number_of_edges() / float(graph.number_of_nodes()))
-                self.set_add_edges_amount(avg_degree)
+        graph = deepcopy(self.graph)
+        if hasattr(self, "to_add"):
             for disease_gene in disease_genes:
                 to_add_pairs = self.add_edges_around_node(
                     disease_gene.name, self.to_add, variant)
                 for (i, j) in to_add_pairs:
                     graph.add_edge(
                         self.rgmap[i], self.rgmap[j], weight=self.gmat[i][j])
-            return rwr.prioritize(disease_genes, graph)
+        if hasattr(self, "to_remove"):
+            mst = tree.maximum_spanning_edges(
+                graph, algorithm="prim", data=False)
+            for disease_gene in disease_genes:
+                to_remove_pairs = self.remove_edges_around_node(
+                    disease_gene.name, self.to_remove, mst)
+                for (i, j) in to_remove_pairs:
+                    graph.add_edge(
+                        self.rgmap[i], self.rgmap[j], weight=self.gmat[i][j])
+
+        if hasattr(self, '__dada'):
+            return self.__dada.prioritize(disease_genes, graph)
         else:
             rwr = RandomWalkWithRestart(alpha=0.85)
-            return rwr.prioritize(disease_genes, self.graph)
+            return rwr.prioritize(disease_genes, graph)
 
     @classmethod
     def glider_with_pickle(cls, file_name: str, reset: bool = True) -> Glider:

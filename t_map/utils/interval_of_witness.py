@@ -26,7 +26,7 @@ class Witness:
         start = list(filter(lambda x: x[1][0].name ==
                             gene.name, enumerate(self.l_1)))[0][0]
         end = start
-        while any(map(lambda x: buffer(x) >= end, self.l_2_map[gene.name])):
+        while all(map(lambda x: buffer(x) >= end, self.l_2_map[gene.name])):
             end += 1
         return start, end
 
