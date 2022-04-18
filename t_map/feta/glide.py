@@ -31,7 +31,7 @@ class Glider(PreComputeFeta):
 
     def __init__(self, is_annotated=True, lamb: int = 1,
                  is_normalized: bool = False, glide_alph: float = 0.1,
-                 glide_beta: int = 1000, glide_delta: int = 1,
+                 glide_delta: int = 1,
                  with_dada: bool = False, dada_alpha: float = 0.85,
                  glide_loc="cw_normalized", extend_network: bool = False,
                  per_node_new_edges_count: int = 0,
@@ -176,7 +176,7 @@ class Glider(PreComputeFeta):
         num_to_remove = int(edge_percentage_removal * len(sorted_edges_idx))
 
         cnt = 0
-        for i, j in sorted_edges_idx:
+        for i, j, w in sorted_edges_idx:
             if cnt >= num_to_remove:
                 break
             edge = (self.rgmap[i], self.rgmap[j])
