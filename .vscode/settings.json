@@ -1,6 +1,6 @@
 {
 	"python.linting.mypyEnabled": false,
-	"python.linting.enabled": true,
+	"python.linting.enabled": false,
 	"python.pythonPath": "/Users/sarrahhakimjee/opt/miniconda3/envs/tmap/bin/python",
 	"python.linting.flake8Enabled": true
 }

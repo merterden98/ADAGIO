@@ -33,7 +33,7 @@ class EdgeListGarbanzo(Garbanzo):
     def get(self, i: int) -> Gene:
         return self._genes[i]
 
-    def _read_graph_from_path(self, path: str, weighted=False) -> nx.Graph:
+    def _read_graph_from_path(self, path: str, weighted=True) -> nx.Graph:
         if weighted:
             return nx.read_weighted_edgelist(path)
         return nx.read_edgelist(path)

@@ -27,7 +27,7 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-class Glider(PreComputeFeta):
+class ADAGIO(PreComputeFeta):
 
     def __init__(self, is_annotated=True, lamb: int = 1,
                  is_normalized: bool = False, glide_alph: float = 0.1,
@@ -41,7 +41,6 @@ class Glider(PreComputeFeta):
                                       "lamb": lamb,
                                       "is_normalized": is_normalized,
                                       "glide_alph": glide_alph,
-                                      "glide_beta": glide_beta,
                                       "glide_delta": glide_delta,
                                       "glide_loc": glide_loc,
                                       "per_node_new_edges_count": per_node_new_edges_count,
@@ -248,17 +247,17 @@ class Glider(PreComputeFeta):
             return rwr.prioritize(disease_genes, graph)
 
     @classmethod
-    def glider_with_pickle(cls, file_name: str, reset: bool = True) -> Glider:
-        glide: Glider = cls.load(file_name)
+    def ADAGIO_with_pickle(cls, file_name: str, reset: bool = True) -> ADAGIO:
+        glide: ADAGIO = cls.load(file_name)
         return glide._context(reset=reset)
 
     @classmethod
-    def with_reset(cls, model) -> Glider:
+    def with_reset(cls, model) -> ADAGIO:
         new_model = deepcopy(model)
         return new_model._context(reset=True)
 
     @contextmanager
-    def _context(self, reset: bool = True) -> Glider:
+    def _context(self, reset: bool = True) -> ADAGIO:
         if reset:
             self.reset_graph()
         yield self
