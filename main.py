@@ -10,7 +10,7 @@ def main(network_path: str, genelist_path: str, out_path: str="adagio.out"):
         graph = EdgeListGarbanzo(network_path, genelist_path)
         model = ADAGIO()
         model.setup(graph.graph)
-        predictions = sorted(list(model.prioritize(graph.genes)), key=lambda x: x[1])
+        predictions = sorted(list(model.prioritize(graph.genes, graph.graph)), key=lambda x: x[1])
         with open(out_path, "w") as f:
                 for gene, score in predictions:
                         f.write(f"{gene.name}\t{score}\n")

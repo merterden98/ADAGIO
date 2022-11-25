@@ -1,9 +1,10 @@
 from __future__ import annotations
+from multiprocessing.connection import wait
 import networkx as nx
 import numpy as np
 from contextlib import contextmanager
 from copy import deepcopy
-
+import pandas as pd
 from t_map.gene.gene import Gene
 from typing import Any, List, Set, Tuple, Union, Optional
 from t_map.feta.description import Description
@@ -11,7 +12,8 @@ from t_map.feta.feta import PreComputeFeta
 from t_map.feta.dada import Dada
 from t_map.feta.randomwalk import RandomWalkWithRestart
 from t_map.garbanzo.transforms.tissue_reweight import reweight_graph_by_tissue
-from gfunc.command import glide_mat
+# from gfunc.command import glide_mat
+from glidetools.algorithm.glide import glide
 from networkx.algorithms import tree
 
 
@@ -29,20 +31,20 @@ class bcolors:
 
 class ADAGIO(PreComputeFeta):
 
-    def __init__(self, is_annotated=True, lamb: int = 1,
+    def __init__(self, is_annotated=True, gamma: int = 1,
                  is_normalized: bool = False, glide_alph: float = 0.1,
                  glide_delta: int = 1,
                  with_dada: bool = False, dada_alpha: float = 0.85,
-                 glide_loc="cw_normalized", extend_network: bool = False,
+                 glide_loc="cw", extend_network: bool = False,
                  per_node_new_edges_count: int = 0,
                  global_new_edges_percentage: float = 0, **kwargs) -> None:
         self.__desc = Description(requires_training=False, training_opts=False,
                                   hyper_params={
-                                      "lamb": lamb,
-                                      "is_normalized": is_normalized,
-                                      "glide_alph": glide_alph,
-                                      "glide_delta": glide_delta,
-                                      "glide_loc": glide_loc,
+                                      "gamma": gamma,
+                                      "normalize_dsd": is_normalized,
+                                      "alpha": glide_alph,
+                                      "delta": glide_delta,
+                                      "local": glide_loc,
                                       "per_node_new_edges_count": per_node_new_edges_count,
                                       "global_new_edges_percentage": global_new_edges_percentage,
                                   })
@@ -64,8 +66,24 @@ class ADAGIO(PreComputeFeta):
                 map(lambda x_y_z: (x_y_z[0], x_y_z[1], 1), elist))
 
         self.graph = deepcopy(graph)
-        self.gmat, self.gmap = glide_mat(
-            elist, self.description().hyper_params)
+        
+        def compute_adj(elist):
+            df = pd.DataFrame(elist)
+            nodes = set(df[0]).union(set(df[1]))
+            gmap = {k: i for i, k in enumerate(nodes)}
+            dfi = df.replace({0: gmap, 1: gmap})
+            n = len(gmap)
+            A = np.zeros((n, n))
+            for p, q, w in dfi.values:
+                p = int(p)
+                q = int(q)
+                A[p, q] = w
+                A[q, p] = w
+            return A, gmap
+
+        A, self.gmap = compute_adj(elist)
+        self.gmat = glide(
+            A, **self.description().hyper_params)
         self.rgmap = {self.gmap[key]: key for key in self.gmap}
         self._original_graph: nx.Graph = deepcopy(graph)
 
