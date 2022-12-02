@@ -6,11 +6,11 @@ parser.add_argument('--network', '-n', type=str, required=True, help="Path to ed
 parser.add_argument('--genelist', '-g', type=str, required=True, help="Path to genelist, assumes genes are newline separated and in the network.")
 parser.add_argument('--out', '-o', type=str, default="adagio.out",help="Path to output results")
 
-def main(network_path: str, genelist_path: str, out_path: str="adagio.out"):
+def main(network_path: str, genelist_path: str, out_path: str):
         graph = EdgeListGarbanzo(network_path, genelist_path)
         model = ADAGIO()
         model.setup(graph.graph)
-        predictions = sorted(list(model.prioritize(graph.genes, graph.graph)), key=lambda x: x[1])
+        predictions = sorted(list(model.prioritize(graph.genes, graph.graph)), key=lambda x: x[1], reverse=True)
         with open(out_path, "w") as f:
                 for gene, score in predictions:
                         f.write(f"{gene.name}\t{score}\n")
@@ -18,5 +18,5 @@ def main(network_path: str, genelist_path: str, out_path: str="adagio.out"):
 
 if __name__ == "__main__":
         args = parser.parse_args()
-        main(args.network, args.genelist)
+        main(args.network, args.genelist, args.out)
         
