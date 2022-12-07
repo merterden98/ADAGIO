@@ -20,7 +20,7 @@ def main(network_path: str, genelist_path: str, out_path: str, tissue_path: str)
         
         # Reweight graph AFTER initial reweighting with GLIDE
         if tissue_path != "None":
-                reweight_graph_by_tissue(graph.graph, tissue_path)
+                graph.graph = reweight_graph_by_tissue(graph.graph, tissue_path)
 
         # Run RWR, produce output
         predictions = sorted(list(model.prioritize(graph.genes, graph.graph)), key=lambda x: x[1], reverse=True)

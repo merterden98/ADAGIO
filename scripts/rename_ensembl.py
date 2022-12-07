@@ -22,6 +22,9 @@ def main(gtex: str, id_map: str, out: str):
     # remove genes with no match in STRING10 (only keep those that got ENSP values)
     data.drop(data[data['ID'].str.match('ENSG')].index, inplace=True)
 
+    # prepend all genes with '9606.' to match network
+    data['ID'] = '9606.' + data['ID']
+
     # produce reduced CSV of renamed expression data (without unmapped genes)
     data.to_csv(out)
 
